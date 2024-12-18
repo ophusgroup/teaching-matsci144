@@ -82,6 +82,7 @@ project:
   abbreviations:
     C_p: constant pressure specific heat
     C_v: constant volume specific heat
+    CH₄: methane
     CO₂: carbon dioxide
     ppmv: parts per million by volume
     Tg: teragrams
