@@ -1,0 +1,103 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: teaching-matsci144
+  title: "Thermodynamic Evaluation of Green Energy Technologies"
+  description: "MATSCI 144: Course Reader"
+  short_title: MATSCI 144
+  # doi: n/a
+  keywords:
+    - Course Reader
+    - Undergraduate Thermodynamics
+  github: https://github.com/ophusgroup/teaching-matsci144
+  toc:
+  - file: index.md
+  - file: text/entropy.md
+    children:
+      - file: text/entropy01_problem.md
+      - file: text/entropy02_1st_law.md
+      - file: text/entropy03_defined.md
+      - file: text/entropy04_minwork.md
+  # jupyter: true
+  #  jupyter:
+  #    binder:
+  #      url: https://y2j74k9mn0bz.curvenote.dev/services/binder/
+  #      repo: msa-em/em-template
+  #      ref: main
+  jupyter:
+    server:
+      url: 'http://localhost:8888'
+      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
+  open_access: true
+  license: CC-BY-4.0
+  banner: banner.jpg
+  thumbnail: thumbnail.webp
+  date: 2024-12-17
+  # history:
+  #   submitted: 2023-06-09
+  #   published: 2024-07-24
+  requirements:
+    - 'environment.yml'
+  resources:
+    - 'notebooks/**/*'
+    - 'text/**/*'
+  references:
+    mystmd: https://mystmd.org/guide
+  # exports:
+  #   - format: meca
+  exclude:
+    - README.md
+  # authors:
+  #   - id: cophus
+  #     name: Colin Ophus
+  #     corresponding: true
+  #     email: cophus@gmail.com
+  #     orcid: 0000-0003-2348-8558
+  #     affiliations:
+  #       - id: stanford_mse
+  #         department: Materials Science and Engineering
+  #         institution: Stanford University
+  #         address: 475 Via Ortega, Stanford, CA, USA, 94305
+  #         ror: 00f54p054
+  #     roles:
+  #       - Project administration
+  #       - Visualization
+  #       - Writing
+  #       - Editing
+  #   - id: rpw
+  #     name: Peiwen Ren
+  #     email: rpw199912j@gmail.com
+  #     orcid: 
+  #     affiliations:
+  #       - id: stanford_mse
+  #     roles:
+  #       - Visualization
+  #       - Writing
+  #       - Editing
+  # funding:
+  #   - statement: This course was developed by the Stanford Materials Science and Engineering Department.
+  #     recipients:
+  #       - cophus
+  #       - rpw
+  abbreviations:
+    C_p: constant pressure specific heat
+    C_v: constant volume specific heat
+    CO₂: carbon dioxide
+    ppmv: parts per million by volume
+    Tg: teragrams
+site:
+  template: book-theme
+  # template: article-theme
+  # title: AAAA
+  # options:
+  #   logo: my_logo.png
+  # options:
+  #   title: AAA
+  # actions:
+  #   - title: Learn More
+  #     url: https://mystmd.org/guide
+  # domains: []
+  # nav: []
+  # actions:
+  #   - title: A URL
+  #   url: https://mystmd.org
