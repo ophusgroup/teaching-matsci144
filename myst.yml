@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: teaching-matsci144
+  id: colab-teaching-matsci144
   title: "Thermodynamic Evaluation of Green Energy Technologies"
   description: "MATSCI 144: Course Reader"
   short_title: MATSCI 144
