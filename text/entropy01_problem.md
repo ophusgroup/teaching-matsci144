@@ -86,7 +86,7 @@ We will describe the total quantity of state variables using uppercase letters, 
 ## The Ideal Gas Law
 
 
-
+<!-- 
 ```{figure} #entropymolecule
 :name: entropy-molecule
 caption
@@ -97,6 +97,7 @@ caption
 :remove-output: false
 :remove-input: false
 ```
+ -->
 
 ![](#entropymolecule)
 

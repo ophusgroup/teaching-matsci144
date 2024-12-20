@@ -18,6 +18,7 @@ project:
       - file: text/entropy02_1st_law.md
       - file: text/entropy03_defined.md
       - file: text/entropy04_minwork.md
+  - file: notebooks/gas_molecule.ipynb
   # jupyter: true
   #  jupyter:
   #    binder:
