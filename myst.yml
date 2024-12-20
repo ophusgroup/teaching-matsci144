@@ -83,8 +83,19 @@ project:
     C_p: constant pressure specific heat
     C_v: constant volume specific heat
     CH₄: methane
+    CO: carbon monoxide
     CO₂: carbon dioxide
+    kJ: kilojoules
+    H₂O: water
+    IGCC: integrated gasification combined cycle
+    mole: 6.022e23 amount of substance
+    NGCC: natural gas combined cycle
+    N₂: dinitrogen
+    O₂: dioxygen
+    NOₓ: nitrogen oxides
+    PCC: post-combustion carbon capture
     ppmv: parts per million by volume
+    SO₂: sulphur dioxide
     Tg: teragrams
 site:
   template: book-theme

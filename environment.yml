@@ -7,6 +7,7 @@ dependencies:
   - scipy
   - h5py
   - matplotlib
+  - plotly
   - k3d
   - imageio
   - av
