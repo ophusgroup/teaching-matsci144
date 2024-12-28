@@ -18,7 +18,9 @@ project:
       - file: text/entropy02_1st_law.md
       - file: text/entropy03_defined.md
       - file: text/entropy04_minwork.md
-  - file: notebooks/gas_molecule.ipynb
+  - title: Notebooks
+    children:
+      - file: notebooks/entropy/gas_molecule.ipynb
   # jupyter: true
   #  jupyter:
   #    binder:
@@ -32,8 +34,8 @@ project:
   open_access: true
   license: CC-BY-4.0
   banner: banner.jpg
-  thumbnail: thumbnail.webp
-  date: 2024-12-17
+  # thumbnail: thumbnail.webp
+  # date: 2024-12-17
   # history:
   #   submitted: 2023-06-09
   #   published: 2024-07-24

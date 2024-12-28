@@ -1,7 +1,7 @@
 ---
 title: The Problem
 numbering:
-  enumerator: 1.%s
+  enumerator: 1.1.%s
 ---
 
 ## Overview
@@ -251,10 +251,15 @@ $$
 P V 
 = \frac{N}{N_A} R T.
 $$
-Recognizing that the $n = N / N_A$ is the number of moles of gas molecules, we can write the Ideal Gas Law
+Recognizing that the $n = N / N_A$ is the number of moles of gas molecules, we can write 
+
+
+:::{admonition} The Ideal Gas Law
+:class: danger
 $$
 P V = n R T
 $$
+:::
 
 In summary, this equation relates the pressure $P$, volume $V$, number of molecules $n$, and temperature $T$ of an ideal gas, and demonstrated that the pressure exerted on a container is due to the thermal motion of gas molecules.
 
