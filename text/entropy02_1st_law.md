@@ -94,9 +94,32 @@ This result shows that the work done in an isothermal process depends logarithmi
 
 ### Heat
 
-Heat is the second fundamental way energy can be transferred between a thermodynamic system and its surroundings. In this section, we define and explore the concept of heat in thermodynamics, derive key equations, and illustrate examples to build intuition.
+The second fundamental way energy can be transferred between a thermodynamic system and its surroundings is **heat** $Q$. In this and the following section, we define and explore the concept of heat in thermodynamics, derive key equations, and illustrate examples to build intuition.
 
-In thermodynamics, **heat** $Q$ is the transfer of energy driven by a temperature difference between a system and its surroundings. Unlike work, which typically involves organized motion or forces, heat transfer arises from random molecular motion. This distinction is crucial to understanding thermodynamic processes.
+Heating is the transfer of energy caused by random molecular motion. Unlike work, which involves organized motion in a specific direction, such as a piston moving upward, heat is associated with disorganized, random motion of molecules. For example, when heat is added to a system, the random velocities of the gas molecules increase, raising their average kinetic energy. The sign of heat is positive when energy is added to the system and negative when energy leaves the system.
+
+:::{admonition} Definition of Heat
+:class: danger
+In thermodynamics, **heat** $Q$ is the energy transferred between a system and its surroundings by microscopic processes such as conduction, radiation, or friction, distinct from macroscopic processes like work or matter transfer.
+:::
+
+
+
+The distinction between heat and work lies in the nature of the motion. In work, molecules move collectively in a coordinated direction to transfer energy. In heat, energy transfer occurs through random motion in all directions. Both heat and work involve energy transfer, but they do so in fundamentally different ways. [](#heat_vs_work) illustrates this distinction by showing how work and heat manifest through the motions of gas molecules.
+
+
+```{figure} ../images/entropy/heat_vs_work.png
+:label: heat_vs_work
+:align: center
+:width: 680px
+Increasing gas temperature via work or heat. By time 3, the states are indistinguishable, meaning that we cannot determine if the increased temperature is due to heat transfer or applied work.
+```
+
+When we apply a force to the piston in [](#heat_vs_work), energy is transferred from the motion of the piston moving to the right, into increased motion of the gas molecules from collisions with the wall. 
+In contrast, adding heat directly to the enclosed volume in [](#heat_vs_work) increases the random velocities of gas molecules by raising their kinetic energy.
+
+
+### Heat Transfer
 
 If you have taken an introductory physics course, you may recall that heat transfer is often expressed as:
 
