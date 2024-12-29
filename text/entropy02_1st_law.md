@@ -1,19 +1,16 @@
 ---
 title: The First Law of Thermodynamics
+label: entropy02
 numbering:
   enumerator: 1.2.%s
 ---
-
-(entropy02)=
-## The First Law of Thermodynamics
-
 
 Energy can be transferred into and out of a thermodynamic system in two ways:
 1. Work
 2. Heat
 
 
-### Work
+## Work
 
 Work is one of the fundamental ways energy can be transferred between a thermodynamic system and its surroundings. In this section, we define and explore the concept of work in thermodynamics, derive key equations, and illustrate examples to build intuition.
 
@@ -92,7 +89,7 @@ This result shows that the work done in an isothermal process depends logarithmi
 
 
 
-### Heat
+## Heat
 
 The second fundamental way energy can be transferred between a thermodynamic system and its surroundings is **heat** $Q$. In this and the following section, we define and explore the concept of heat in thermodynamics, derive key equations, and illustrate examples to build intuition.
 
@@ -105,7 +102,7 @@ In thermodynamics, **heat** $Q$ is the energy transferred between a system and i
 
 
 
-### Heat Transfer
+## Heat Transfer
 
 If you have taken an introductory physics course, you may recall that heat transfer is often expressed as:
 
@@ -131,7 +128,7 @@ We typically describe heat transfer using the **heat transfer rate** $\dot{Q}$, 
 where $\Delta Q$ is the change in heat, and $\Delta t$ is the time interval.
 
 
-#### Conduction
+### Conduction
 
 Energy transfer through direct contact between molecules is known as conduction, and is governed by Fourier's law:
 ```{math}
@@ -143,7 +140,7 @@ Energy transfer through direct contact between molecules is known as conduction,
 where $k$ is the thermal conductivity, $A$ is the cross-sectional area, and $\Delta T/\Delta x$ is the temperature gradient or temperature difference $\Delta T$ over some distance $\Delta x$.
 
 
-#### Advection
+### Advection
 
 Energy transfer through the bulk motion of a fluid is known as advection, and is governed by the advection equation:
 
@@ -161,7 +158,7 @@ Advection is **not** considered heat in thermodynamics because it transfers ener
 :::
 
 
-#### Convection
+### Convection
 
 Energy transfer through fluid motion is known as convection. We can express it as:
 ```{math}
@@ -171,7 +168,7 @@ Energy transfer through fluid motion is known as convection. We can express it a
 where $h$ is the convective heat transfer coefficient, $A$ is the area through which the fluid flows, and $\Delta T$ is the temperature difference.
 
 
-#### Radiation
+### Radiation
 
 Energy transfer via electromagnetic waves is known as radiation, and is governed by the Stefan-Boltzmann law:
 ```{math}
@@ -183,7 +180,7 @@ where $\sigma$ is the Stefan-Boltzmann constant, $A$ is the area, $\epsilon$ is 
 
 
 
-### Heat vs Work
+## Heat vs Work
 
 The distinction between heat and work lies in the nature of the motion. In work, molecules move collectively in a coordinated direction to transfer energy. In heat, energy transfer occurs through random motion in all directions. Both heat and work involve energy transfer, but they do so in fundamentally different ways. [](#heat_vs_work) illustrates this distinction by showing how work and heat manifest through the motions of gas molecules.
 
@@ -201,8 +198,88 @@ In contrast, adding heat directly to the enclosed volume in [](#heat_vs_work) in
 
 
 
+## Internal Energy and the First Law of Thermodynamics
 
-Example: Heat Transfer in a Phase Change
+The internal energy of a system, denoted $U$, is the total energy contained within the system. This includes all forms of microscopic energy, such as the kinetic energy of molecular motion and the potential energy of molecular interactions. Internal energy is a state function, meaning its value depends only on the current state of the system and not on the path taken to reach that state.
+
+
+:::{admonition} The First Law of Thermodynamics
+:class: danger
+The First Law of Thermodynamics states that the change in internal energy of a system $\Delta U$ is equal to the heat $Q$ added to the system minus the work $W$ done by the system:
+```{math}
+:label: first_law_thermodynamics
+\Delta U = Q - W.
+```
+:::
+
+The first law of thermodynamics expresses the conservation of energy in a thermodynamic system. Equation [](#first_law_thermodynamics) reflects the balance of energy within the system. Each term represents a different mode of energy transfer which we discussed above:
+- $Q$: Heat added to the system increases the internal energy.
+- $W$: Work done by the system decreases the internal energy.
+
+
+### Sign Conventions
+
+To ensure consistency, thermodynamics uses specific sign conventions:
+- Heat added to the system is positive ($Q > 0$).
+- Heat leaving the system is negative ($Q < 0$).
+- Work done by the system on the surroundings is positive ($W > 0$).
+- Work done on the system by the surroundings is negative ($W < 0$).
+
+
+### Thermodynamic Systems
+
+We can classify thermodynamic systems into 3 categories based on their interface conditions, summarized in [](#tab:systems) and illustrated in [](fig:systems):
+1. An **open system** allows heat, work, and mass to cross its boundaries.
+2. A **closed system** permits only heat and work transfer, while mass remains contained.
+3. An **isolated system** allows no exchange of heat, work, or mass with its surroundings.
+
+:::{list-table} Classification of thermodynamic systems by boundary conditions.
+:label: tab:systems
+:widths: 1 1 1
+:header-rows: 1
+* - System Type
+  - Permeable to Heat and Work
+  - Permeable to Matter
+* - open
+  - yes
+  - yes
+* - closed
+  - yes
+  - no
+* - isolated
+  - no
+  - no
+:::
+
+
+```{figure} ../images/entropy/systems.png
+:label: fig:systems
+:align: center
+:width: 600px
+(left) An isolated thermodynamic system which contains a closed system, which itself contains an open system. (right) An isolated system which contains an open system.
+```
+
+Consider the closed system contained inside the isolated system in [](#fig:systems). The first law of thermodynamics states 
+```{math}
+U_{\rm{closed}} = 
+Q_{\rm{input}} - Q_{\rm{output}}
+- (
+  W_{\rm{done on system}}
+)
+```
+
+
+We can also thermodynamic systems or processes into 4 categories based on the constraints imposed on state variables:
+1. **Isothermal** - The system undergoes a process at constant temperature $T$. Heat transfer occurs to maintain thermal equilibrium as work is done or energy changes.
+2. **Isobaric** - The system experiences a process at constant pressure $P$. Heat transfer can lead to changes in volume and temperature.
+3. **Isochoric** - The system's volume $V$ remains constant . No work is done, and any energy transfer appears as heat.
+4. **Adiabatic** - The system is thermally insulated, so no heat is exchanged ($Q = 0$). Changes in the system's energy result entirely from work done on or by the system.
+
+
+
+
+
+<!-- Example: Heat Transfer in a Phase Change
 
 Consider a system undergoing a phase change, such as melting ice or boiling water. During a phase change, the temperature remains constant while heat is transferred to alter the system's state. The heat required is given by:
 
@@ -231,7 +308,7 @@ where $\Delta U$ is the change in the system's internal energy, $Q$ is the heat 
 
 Summary
 Heat is a cornerstone concept in thermodynamics, describing energy transfer due to temperature differences. The relationship $Q = T dS$ provides a powerful framework for analyzing heat transfer in diverse systems. Understanding heat not only aids in solving thermodynamic problems but also provides a foundation for exploring energy transfer at molecular and macroscopic scales.
-
+ -->
 
 
 
