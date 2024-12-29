@@ -105,20 +105,6 @@ In thermodynamics, **heat** $Q$ is the energy transferred between a system and i
 
 
 
-The distinction between heat and work lies in the nature of the motion. In work, molecules move collectively in a coordinated direction to transfer energy. In heat, energy transfer occurs through random motion in all directions. Both heat and work involve energy transfer, but they do so in fundamentally different ways. [](#heat_vs_work) illustrates this distinction by showing how work and heat manifest through the motions of gas molecules.
-
-
-```{figure} ../images/entropy/heat_vs_work.png
-:label: heat_vs_work
-:align: center
-:width: 680px
-Increasing gas temperature via work or heat. By time 3, the states are indistinguishable, meaning that we cannot determine if the increased temperature is due to heat transfer or applied work.
-```
-
-When we apply a force to the piston in [](#heat_vs_work), energy is transferred from the motion of the piston moving to the right, into increased motion of the gas molecules from collisions with the wall. 
-In contrast, adding heat directly to the enclosed volume in [](#heat_vs_work) increases the random velocities of gas molecules by raising their kinetic energy.
-
-
 ### Heat Transfer
 
 If you have taken an introductory physics course, you may recall that heat transfer is often expressed as:
@@ -129,17 +115,6 @@ Q = m c \Delta T,
 ```
 where $m$ is the mass of the material, $c$ is its specific heat capacity, and $\Delta T$ is the change in temperature. This equation describes the amount of heat required to change the temperature of a material. In this section, we will generalize this expression to account for heat transfer in a variety of systems and conditions.
 
-:::{admonition} Definition of Heat 
-:class: danger 
-
-Heat is the transfer of energy due to a temperature difference, which can be expressed as:
-
-```{math}
-:label: heat_definition
-\delta Q = T \, dS,
-```
-where $T$ is the temperature and $dS$ is the infinitesimal change in entropy of the system.
-:::
 
 Heat transfer occurs via four main mechanisms:
 1. Conduction - Transfer of heat through a solid or stationary fluid due to molecular interactions.
@@ -148,7 +123,7 @@ Heat transfer occurs via four main mechanisms:
 4. Radiation - Transfer of heat via electromagnetic waves without requiring a medium.
 
 
-We usually describe heat using the **heat transfer rate** $\dot{Q}$, equal to
+We typically describe heat transfer using the **heat transfer rate** $\dot{Q}$, equal to
 ```{math}
 \dot{Q} 
 = \frac{\Delta Q}{\Delta t},
@@ -167,8 +142,8 @@ Energy transfer through direct contact between molecules is known as conduction,
 ```
 where $k$ is the thermal conductivity, $A$ is the cross-sectional area, and $\Delta T/\Delta x$ is the temperature gradient or temperature difference $\Delta T$ over some distance $\Delta x$.
 
-#### Advection
 
+#### Advection
 
 Energy transfer through the bulk motion of a fluid is known as advection, and is governed by the advection equation:
 
@@ -180,6 +155,11 @@ where $\rho$ is the fluid density, $c_p$ is the specific heat capacity of the fl
 
 Advection is particularly important in processes involving strong bulk fluid flow, such as heat transport in pipelines, molten metal casting, or atmospheric heat distribution.
 
+:::{admonition} Advection and Heat
+:class: danger
+Advection is **not** considered heat in thermodynamics because it transfers energy through the bulk motion of matter, not random molecular motion driven by temperature differences. Instead, we consider advection to be a mechanism of energy transport.
+:::
+
 
 #### Convection
 
@@ -190,6 +170,7 @@ Energy transfer through fluid motion is known as convection. We can express it a
 ```
 where $h$ is the convective heat transfer coefficient, $A$ is the area through which the fluid flows, and $\Delta T$ is the temperature difference.
 
+
 #### Radiation
 
 Energy transfer via electromagnetic waves is known as radiation, and is governed by the Stefan-Boltzmann law:
@@ -198,6 +179,26 @@ Energy transfer via electromagnetic waves is known as radiation, and is governed
 \dot{Q} = \sigma A \epsilon \left(T^4 - T_\text{env}^4\right),
 ```
 where $\sigma$ is the Stefan-Boltzmann constant, $A$ is the area, $\epsilon$ is the emissivity of the surface, $T$ is the temperature of the object, and $T_\text{env}$ is the temperature of the surroundings.
+
+
+
+
+### Heat vs Work
+
+The distinction between heat and work lies in the nature of the motion. In work, molecules move collectively in a coordinated direction to transfer energy. In heat, energy transfer occurs through random motion in all directions. Both heat and work involve energy transfer, but they do so in fundamentally different ways. [](#heat_vs_work) illustrates this distinction by showing how work and heat manifest through the motions of gas molecules.
+
+
+```{figure} ../images/entropy/heat_vs_work.png
+:label: heat_vs_work
+:align: center
+:width: 680px
+Increasing gas temperature via work or heat. By time 3, the states are indistinguishable, meaning that we cannot determine if the increased temperature is due to heat transfer or applied work.
+```
+
+When we apply a force to the piston in [](#heat_vs_work), energy is transferred from the motion of the piston moving to the right, into increased motion of the gas molecules from collisions with the wall. 
+In contrast, adding heat directly to the enclosed volume in [](#heat_vs_work) increases the random velocities of gas molecules by raising their kinetic energy.
+
+
 
 
 
