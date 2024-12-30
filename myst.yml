@@ -16,7 +16,7 @@ project:
     children:
       - file: text/entropy01_problem.md
       - file: text/entropy02_1st_law.md
-      - file: text/entropy03_defined.md
+      - file: text/entropy03_2nd_law.md
       - file: text/entropy04_minwork.md
   - title: Notebooks
     children:

@@ -10,6 +10,7 @@ Energy can be transferred into and out of a thermodynamic system in two ways:
 2. Heat
 
 
+(sec:work)=
 ## Work
 
 Work is one of the fundamental ways energy can be transferred between a thermodynamic system and its surroundings. In this section, we define and explore the concept of work in thermodynamics, derive key equations, and illustrate examples to build intuition.
@@ -255,21 +256,22 @@ We can classify thermodynamic systems into 3 categories based on their interface
 ```{figure} ../images/entropy/systems.png
 :label: fig:systems
 :align: center
-:width: 600px
+:width: 720px
 (left) An isolated thermodynamic system which contains a closed system, which itself contains an open system. (right) An isolated system which contains an open system.
 ```
 
 Consider the closed system contained inside the isolated system in [](#fig:systems). The first law of thermodynamics states 
 ```{math}
 U_{\rm{closed}} = 
-Q_{\rm{input}} - Q_{\rm{output}}
+  Q_{\rm{input}} - Q_{\rm{output}}
 - (
-  W_{\rm{done on system}}
+  W_{\rm{system}} - W_{\rm{surroundings}},
 )
 ```
+where $Q_{\rm{input}}$ and $Q_{\rm{output}}$ refer to heat transferred across the boundary, and $W_{\rm{system}}$ and $W_{\rm{surroundings}}$ refers to work done by the system on the surroundings and vice versa. The total amount of energy in the closed system changes by exactly the amount of heat added/removed
+to the system and the work done by/to the system, i.e. total energy is conserved. On the other hand, an isolated system by definition has $Q_{\rm{isolated}} = W_{\rm{isolated}} = 0$, and therefore also $U_{\rm{isolated}}$ = 0.
 
-
-We can also thermodynamic systems or processes into 4 categories based on the constraints imposed on state variables:
+We can also categorize thermodynamic systems or processes into 4 categories based on the constraints imposed on state variables:
 1. **Isothermal** - The system undergoes a process at constant temperature $T$. Heat transfer occurs to maintain thermal equilibrium as work is done or energy changes.
 2. **Isobaric** - The system experiences a process at constant pressure $P$. Heat transfer can lead to changes in volume and temperature.
 3. **Isochoric** - The system's volume $V$ remains constant . No work is done, and any energy transfer appears as heat.
