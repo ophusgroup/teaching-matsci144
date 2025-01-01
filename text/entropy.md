@@ -1,5 +1,5 @@
 ---
-title: 1. CO2 and Entropy
+title: 1. CO₂ and Entropy
 numbering:
   enumerator: 1.%s
 ---

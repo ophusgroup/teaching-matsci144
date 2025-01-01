@@ -166,7 +166,25 @@ where $!$ is the @wiki:Factorial numerical operator. The factorial accounts for 
 ```{math}
 \Omega = \frac{J!}{(J-N)!N!}.
 ```
-Here, $\Omega$ represents the number of microstates, or distinct configurations, of indistinguishable gas molecules in the lattice.
+Here, $\Omega$ represents the number of [microstates](wiki:Microstate_(statistical_mechanics)), or distinct configurations, of indistinguishable gas molecules in the lattice. [Boltzmann](wiki:Ludwig_Boltzmann) postulated that the entropy $S$ of a system is directly related to the number of possible configurations $\Omega$:
+```{math}
+S = k_B \ln \Omega,
+```
+where $k_B$ is the Boltzmann constant ($1.38 \times 10^{-23} \ \mathrm{J K^{-1}}$). Substituting the expression for $\Omega$ and splitting the natural logarithm functions, we have:
+
+```{math}
+:label:eq:entropy_microstates
+S 
+&= k_B \ln 
+  \left[ 
+    \frac{J!}{(J-N)!N!} 
+  \right] \\
+&= k_B 
+  \left[
+    \ln(J!) - \ln((J-N)!) - log(N!)
+  \right]
+```
+
 
 ```{figure} ../images/entropy/lattice_gas.png
 :label: lattice_gas
@@ -176,50 +194,83 @@ A gas consisting of $N$ molecules arranged on $J$ lattice sites.
 ```
 
 
-
-### Entropy and Boltzmann's Postulate
-
-Boltzmann postulated that the entropy $S$ of a system is directly related to the number of possible configurations $\Omega$:
-
-```{math}
-S = k_B \ln \Omega,
-```
-
-where $k_B$ is the Boltzmann constant ($1.38 \times 10^{-23} \ \mathrm{J K^{-1}}$). Substituting the expression for $\Omega$, we have:
-
-```{math}
-S = k_B \ln \left( \frac{J!}{(J-N)!N!} \right).
-```
-
-### Simplification Using the Stirling Approximation
-
-For large values of $M$, the Stirling approximation provides:
+For large values of $M$, the [Stirling approximation](wiki:Stirling%27s_approximation) provides:
 
 ```{math}
 \ln M! \approx M \ln M - M.
 ```
 
-Applying this approximation to simplify the entropy expression:
+Applying this approximation to simplify the entropy expression given in Equation [](#eq:entropy_microstates):
 
 ```{math}
-S = k_B \big[ J \ln J - J - (J-N) \ln (J-N) + (J-N) - N \ln N + N \big].
+S 
+&= k_B 
+  \Big\{ 
+    \left[
+      J \ln J - J
+    \right] 
+    -\left[ 
+      (J-N) \ln (J-N) - (J-N)
+    \right] 
+    -\left[ 
+      N \ln N + N 
+    \right]
+  \Big\} \\
+&= k_B 
+  \Big\{ 
+    J \ln J 
+    - J
+    - J \ln (J-N) 
+    + N \ln (J-N) 
+    + J
+    - N 
+    - N \ln N 
+    + N
+  \Big\} \\
+&= k_B 
+  \Big\{ 
+    J \ln J 
+    - (J-N) \ln (J-N) 
+    - N \ln N 
+  \Big\}.
 ```
 
-Simplifying further:
-
+If the number of lattice sites far exceeds the number of gas molecules, i.e. $J \gg N$, we can simplify this expression:
 ```{math}
-S = k_B \big[ J \ln J - (J-N) \ln (J-N) - N \ln N \big].
+S 
+&= k_B 
+  \left[ 
+    J \ln J 
+    - (J-N) \ln (J- \xcancel{N})
+    - N \ln N 
+  \right] \\
+&= k_B 
+  \left[ 
+    J \ln J 
+    - (J-N) \ln J 
+    - N \ln N 
+  \right] \\
+&= k_B 
+  \left[ 
+    J \ln J 
+    - J \ln J 
+    + N \ln J 
+    - N \ln N 
+  \right] \\
+&= k_B 
+  \left[ 
+    N \ln J 
+    - N \ln N 
+  \right].
 ```
-
-### Low-Density Gas Approximation
-
-When $J \gg N$ (i.e., the number of lattice sites far exceeds the number of molecules), the first term approaches zero, as $\ln(1) = 0$. This assumption is valid for most gases under low-density conditions, except at very high pressures. In this limit, the entropy simplifies to:
+This assumption is valid for most gases under low-density conditions, except at very high pressures. In this limit, the entropy simplifies to:
 
 ```{math}
+:label: eq:entropy_gas_lattice
 S = -N k_B \ln \left( \frac{N}{J} \right).
 ```
 
-This expression describes the entropy of a low-density gas in a lattice and captures the relationship between the number of molecules, the available space, and the degree of disorder in the system.
+This expression describes the entropy of a low-density gas in a lattice and captures the relationship between the number of molecules, the available space, and the degree of disorder in the system. In thermodynamics, microstates are fundamental because they quantify the number of possible configurations a system can have, and the Second Law tells us that systems naturally evolve toward states with the greatest number of microstates, maximizing entropy.
 
 
 

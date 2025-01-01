@@ -56,11 +56,13 @@ The principles of thermodynamics set the minimum energy required to capture and 
 
 - The atmosphere consists of many different gases, primarily N₂ and O₂. CO₂ is a trace atmospheric gas, taking up approximately ~0.04% by volume.
 - The gas mixture in a smokestack of a coal combustion plant consist mainly of CO₂ (a few tens of %), H₂O, and N₂, with smaller amounts of CO, SO₂, NOₓ, and others.
-- The CO₂ capture process will separate CO₂ from the other gases:
+- The CO₂ capture process will separate CO₂ from the other gases, depicted in [](#fig:problem_sep).
 
-```{image} ../images/entropy/problem_sep.png
+```{figure} ../images/entropy/problem_sep.png
+:label: fig:problem_sep
 :width: 400px
 :align: center
+Separating CO₂ from the other gases.
 ```
 
 We can more precisely define our *initial* and *final* states. Thermodynamics does not define the time-dependent behavior of a system, so we can describe the problem using gas mixtures rather than flow rates. Specifically, we will consider a close volume of gas, potentially with internal partitioning as shown above.
@@ -241,18 +243,23 @@ PV = N k_B T.
 $$
 
 The Boltzmann constant is related to another important constant, the universal gas constant $R$, by a factor of Avagadro's number $N_A$ (equal to one mole), giving
-$$
+```{math}
+:label: eq:gas_const_avagadro_boltzmann
 R = N_A k_B
-$$
+```
 Here,Avogadro’s number $N_A$ represents the number of molecules in one mole, connecting the microscopic scale ($k_B T$) to macroscopic quantities ($R$).
 
-We can then perform the final substituion into Equation [](#eq:PV_NkBT) to get
+We can then perform the final substitution into Equation [](#eq:PV_NkBT) to get
 $$
 P V 
 = \frac{N}{N_A} R T.
 $$
-Recognizing that the $n = N / N_A$ is the number of moles of gas molecules, we can write 
-
+Recognizing that 
+```{math}
+:label: eq:num_moles
+n = N / N_A,
+```
+is the number of moles of gas molecules, we can write:
 
 :::{admonition} The Ideal Gas Law
 :class: danger
