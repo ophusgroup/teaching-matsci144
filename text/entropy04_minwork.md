@@ -47,8 +47,9 @@ W_{\text{min}} = -T \Delta S_{\text{mix}}.
 This work represents the energy required to carry out the process reversibly.
 
 
-## Entropy of Mixing
+## Entropy of Gas Expansion
 
+### Derivation from Microstates
 
 When gases mix, their individual volumes expand, increasing their entropy. 
 To calculate the entropy of mixing, we define the following parameters:
@@ -58,19 +59,110 @@ To calculate the entropy of mixing, we define the following parameters:
 
 From Equations [](#eq:gas_const_avagadro_boltzmann) and [](#eq:num_moles), we can write 
 ```{math}
-NkB = nR
+:label: eq:num_moles_sub
+N k_B = n R,
 ```
-
-Recall Equation [](#eq:entropy_gas_lattice)
-
-
-Using the expression for entropy derived earlier:
-
+where $N$ is the total number of molecules, $k_B$ is the Boltzmann constant, $n$ is the number of moles, and $R$ is the gas constant. We know that $N$ is proportional to $n$ and number of lattice sites $J$ is proportional to volume $V$. Therefore, we can rewrite Equation [](#eq:entropy_gas_lattice) to be
 ```{math}
-S = -n R \ln \left( \frac{n}{V} \right) + \text{constant},
+:label: eq:entropy_volume
+S = - n R \ln
+  \left(
+    \frac{n}{V}
+  \right)
+  + \text{constant}.
+```
+where the added constant represents the proportionality constant inside the natural logarithm term.
+
+We can see from Equation [](#eq:entropy_volume) that as the volume expands at constant $n$ and $T$, the entropy increases. This occurs because a larger volume provides more lattice sites, reducing the fraction of occupied sites and thus increasing the disorder of the gas. Another way to understand this expansion is to use the ideal gas law, Equation [](#eq:ideal_gas_law), and the assumption of constant temperature $T$ to get
+```{math}
+:label: eq:entropy_pressure
+S = - n R \ln
+  \left(
+    P
+  \right)
+  + \text{constant}.
+```
+This expression shows that as the pressure decreases, the entropy if the system will increase. If we evaluate the change in entropy if the pressure changes from $P_1$ to $P_2$, we get
+```{math}
+:label: eq:DeltaS_pressure
+\Delta S 
+&= S_2 - S_1 \\
+&= 
+  - n R \ln
+  \left(
+    P_2
+  \right)
+  + \cancel{\text{constant}}
+  -\left[
+    - n R \ln
+    \left(
+      P_1
+    \right)
+    + \cancel{\text{constant}}
+  \right] \\
+&= -n R 
+  \left[
+    \ln(P_2) - \ln(P_1)
+  \right] \\
+&= -n R 
+    \ln
+    \left(
+      \frac{P_2}{P_1}
+    \right)
 ```
 
-where $n$ is the number of moles, $V$ is the volume, and $R$ is the universal gas constant. For a mixture of CO$_2$ and another gas, the entropy change upon mixing is:
+
+
+### Derivation from Thermodynamic Principles
+
+
+We can also derive Equations [](#eq:entropy_pressure) and [](#eq:DeltaS_pressure) without needing to rely on the counting the microstates of the system. Starting from the First Law, we know that $\Delta U = Q − W$. In  a closed isothermal system we know that $\Delta U = 0$, and therefore $Q = W$. Recall that for a reversible process:
+```{math}
+Q_\text{rev} &= T \Delta S \\
+\delta W &= P \, dV \\
+W &= \int P \, dV,
+
+```
+where $P$ is the total pressure of the system. From these relations we can derive that
+```{math}
+\Delta S
+&= \frac{Q_\text{rev}}{T} \\
+&= \frac{W}{T} \\
+&= \int \frac{P}{T} dV. \\
+```
+From the ideal gas Equation [](#eq:ideal_gas_law) we know that $V = (n R T) / P$, and therefore (when $n$ and $T$ are constant)
+```{math}
+dV &= n R T \frac{\partial}{\partial P}
+  \left( 
+    \frac{1}{P} 
+  \right) \\ 
+  &= - \frac{n R T}{P^2} dP. \\
+```
+Combining these equations and evaluating the integral we get
+```{math}
+\Delta S 
+&= - \int \frac{P}{T} \frac{n R T}{P^2} dP \\
+&= - n R \int \frac{1}{P} dP \\
+&= - n R 
+  \Big[
+    \ln(P)
+  \Big]_{P_1}^{P_2} \\
+&= - n R \ln
+  \left(
+    \frac{P_2}{P_1}
+  \right),
+```
+which is the same result as given in Equation [](#eq:DeltaS_pressure). Both approaches show that the change in entropy $\Delta S$ scales with $-\ln P$.
+
+
+Previously, we derived the same entropy expression based on partial pressure using a statistical approach.
+In this second approach, we derived the relation for a reversible, isothermal gas expansion using the ideal gas law and the Second Law of Thermodynamics.  Why are these methods equivalent? The ideal gas law is rooted in the statistical mechanics of microstates, so while the derivations appear different, they ultimately reflect the same underlying principles.
+
+
+## Entropy of Mixing
+
+
+For a mixture of CO$_2$ and another gas, the entropy change upon mixing is:
 
 ```{math}
 \Delta S_{\text{mix}} = S_{\text{final}} - S_{\text{initial}} = -n_{\text{tot}} R \left( \alpha \ln \alpha + (1 - \alpha) \ln (1 - \alpha) \right).

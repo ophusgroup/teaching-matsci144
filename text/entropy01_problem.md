@@ -263,9 +263,10 @@ is the number of moles of gas molecules, we can write:
 
 :::{admonition} The Ideal Gas Law
 :class: danger
-$$
+```{math}
+:label: eq:ideal_gas_law
 P V = n R T
-$$
+```
 :::
 
 In summary, this equation relates the pressure $P$, volume $V$, number of molecules $n$, and temperature $T$ of an ideal gas, and demonstrated that the pressure exerted on a container is due to the thermal motion of gas molecules.
