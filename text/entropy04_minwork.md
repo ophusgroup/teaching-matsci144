@@ -7,7 +7,7 @@ numbering:
 
 
 
-## Minimum Work 
+## Minimum Work for a Reversible Process
 
 To calculate the minimum work required to separate and capture carbon dioxide, we begin by considering the thermodynamic principles governing the process. For a closed, isothermal system, the First Law of Thermodynamics gives:
 
@@ -41,6 +41,7 @@ Consider the system depicted in [](#fig:problem_sep), where a partition separate
 The minimum work for demixing is therefore given by:
 
 ```{math}
+:label: eq:gas_demixing
 W_{\text{min}} = -T \Delta S_{\text{mix}}.
 ```
 
@@ -265,6 +266,7 @@ So far, we have only considered the total entropy of mixing. However, for the CO
 
 We therefore need to calculate the **minimum work required to separate CO₂ per mole of CO₂**. If we assume this work is dominated by the entropy of mixing, this value will be the result of Equation [](#eq:entropy_CO2_mixing) divided by the number of moles of CO₂, equal to
 ```{math}
+:label: eq:co2_entropy_mixing_specific
 \Delta \overline{S}_\text{mix, CO2}
 &= 
   \frac{\Delta S_\text{mix}}{n_\text{CO2}} \\
@@ -297,7 +299,118 @@ Specific entropy of mixing for CO₂.
 
 ## Minimum Work for Gas Separation
 
-To conclude, we now have all of the pieces required to quantitatively compute the thermodynamic minimum work required to separate CO₂ or any other gas, as a function of the number of moles of gas and temperature.
+To conclude, we now have all of the pieces required to quantitatively compute the thermodynamic minimum work required to separate CO₂, as a function of the number of moles of CO₂ and temperature. Knowing that $\Delta S_\text{demix} = - \Delta S_\text{mix}$ and referring to Equations [](#eq:gas_demixing) and [](#eq:entropy_CO2_mixing), we can write
+```{math}
+W_\text{min} 
+&= 
+  - T \Delta S_\text{mix} \\
+&= 
+  n_\text{total} R \, T
+  \Big[
+  \alpha \ln \alpha
+  +
+  (1-\alpha) \ln (1 - \alpha)
+  \Big].
+```
+
+We can perform the same normalization as in Equation [](#eq:co2_entropy_mixing_specific) to calculate the specific work requited to separate one mole of CO₂ to be
+```{math}
+:label: eq:specific_work_CO2_capture
+\overline{W}_\text{min,CO2} 
+&= 
+  - \frac{R \, T}{\alpha}
+  \Big[
+  \alpha \ln \alpha
+  +
+  (1-\alpha) \ln (1 - \alpha)
+  \Big]. 
+```
+The units of $\overline{W}_\text{min,CO2}$ are J / mole CO₂. We can again see that separating a mole of CO₂ from a source with low CO₂ concentration will require more work than separating CO₂ from a source containing a high CO₂ concentration. As shown in [](#capture_co2), capturing CO₂ from flue gas will require less work than capturing CO₂ from the atmosphere. Equation [](#eq:specific_work_CO2_capture) always shows that the work requited will always be negative, which matches our sign convention that we need to input work into the system for gas separation.
+
+Typically, when working with gases we will express their quantity using partial pressures, which the pressure value of each individual gas component. In this case, the partial pressures of CO₂ $(p_\text{CO2})$ and the other gases $(p_\text{other})$ are equal to
+```{math}
+p_\text{CO2}
+&= 
+\alpha P_\text{total} \\
+p_\text{other}
+&=
+(1-\alpha) P_\text{total}, \\
+```
+where the total pressure $P_\text{total} = p_\text{CO2} + p_\text{other}$. Inserting these values into Equation [](#eq:specific_work_CO2_capture) yields
+```{math}
+:label: eq:min_work_CO2_pressure
+\overline{W}_\text{min,CO2} 
+&= 
+  - R \, T \frac{P_\text{total}}{p_\text{CO2}}
+  \Big[
+  \frac{p_\text{CO2}}{P_\text{total}} \ln 
+  \left(
+    \frac{p_\text{CO2}}{P_\text{total}}
+  \right)
+  +
+  \frac{p_\text{other}}{P_\text{total}} \ln 
+  \left(
+    \frac{p_\text{other}}{P_\text{total}}
+  \right)
+  \Big] \\
+&=
+  - R \, T 
+  \Big[
+  \ln 
+  \left(
+    \frac{p_\text{CO2}}{P_\text{total}}
+  \right)
+  +
+  \frac{p_\text{other}}{p_\text{CO2}} \ln 
+  \left(
+    \frac{p_\text{other}}{P_\text{total}}
+  \right)
+  \Big]. \\ 
+```
+
+
+We can also use Equation [](#eq:min_work_CO2_pressure) to calculate the minimum work to separate CO₂ with real units. The ideal gas constant $R$ is equal to 8.314 J/(K⋅mol). This minimum work is plotted in This expression is plotted in [](#fig:specific_entropy_co2_units) for one atmosphere of pressure ($P = 1$ atm) and room temperature ($T = 300$ K), equal to
+```{math}
+:label: eq:min_work_CO2_pressure
+\overline{W}_\text{min,CO2} 
+&=
+  - 8.314 \frac{\text{J}}{\text{K mol}}
+  300 K
+  \Big[
+  \ln 
+  \left(
+    p_\text{CO2}^\text{atm}
+  \right)
+  +
+  \frac{1-p_\text{CO2}^\text{atm}}{p_\text{CO2}^\text{atm}} \ln 
+  \left(
+    1-p_\text{CO2}^\text{atm}
+  \right)
+  \Big] \\ 
+&=
+  -2494 \frac{\text{J}}{\text{mol}}
+  \Big[
+  \ln 
+  \left(
+    p_\text{CO2}^\text{atm}
+  \right)
+  +
+  \frac{1-p_\text{CO2}^\text{atm}}{p_\text{CO2}^\text{atm}} \ln 
+  \left(
+    1-p_\text{CO2}^\text{atm}
+  \right)
+  \Big]. \\ 
+```
+
+
+```{figure} #specific_entropy_co2_units
+:label: fig:specific_entropy_co2_units
+:align: center
+Specific entropy of mixing for CO₂.
+```
+
+
+
 
 
 <!-- For a mixture of CO$_2$ and another gas, the entropy change upon mixing is:
