@@ -21,6 +21,7 @@ project:
   - title: Notebooks
     children:
       - file: notebooks/entropy/gas_molecule.ipynb
+      - file: notebooks/entropy/co2_mixing.ipynb
   # jupyter: true
   #  jupyter:
   #    binder:
