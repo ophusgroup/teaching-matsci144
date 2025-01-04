@@ -164,7 +164,7 @@ In this second approach, we derived the relation for a reversible, isothermal ga
 
 ## Entropy of Mixing
 
-[](#fig:entropy_co2_frac) shows a closed isothermal system, where the left chamber contains a volume fraction $alpha$ of CO₂ equal to
+[](#fig:entropy_co2_frac) shows a closed isothermal system, where the left chamber contains a volume fraction $\alpha$ of CO₂ equal to
 ```{math}
 \alpha = \frac{V_\text{CO₂}}{V_\text{total}},
 ```
