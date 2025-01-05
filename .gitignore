@@ -1,4 +1,5 @@
 _build
+exports
 ~*.docx
 
 .ipynb_checkpoints/
