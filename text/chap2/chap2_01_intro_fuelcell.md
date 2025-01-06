@@ -26,7 +26,7 @@ As shown in [](#fuel-cell-oxygen), with the help of catalysts, some oxygen gas m
 To extract elecrical work, we need to connect the anode with the cathode (O{sub}`2` chamber) to allow electrons to flow (i.e., electrical current), as seen in [](#fuel-cell-complete). The excess electrons will then combine with the oxygen gas to form oxygen ions, completing the reaction loop. The chemical reaction at the cathode can be expressed as {numref}`Equation {number} <canode-react>`.
 ```{math}
 :label: canode-react
-\mathrm{O}^2+4e^- \rightarrow 2\mathrm{O}^{2-}
+\mathrm{O}_2+4e^- \rightarrow 2\mathrm{O}^{2-}
 ```
 
 ```{figure} ../../images/fuel-cell/fuelcelllightbulbO2.png
@@ -40,7 +40,7 @@ A functional fuel cell with a light bulb powered by the complete circuit
 {numref}`Equation {number} <anode-react>` and {numref}`Equation {number} <canode-react>` are two half reactions that can be combined into a net reaction as seen in {numref}`Equation {number} <net-react>`.
 ```{math}
 :label: net-react
-2\mathrm{H}_2 + \mathrm{O}^2 \rightarrow 2\mathrm{H}_2\mathrm{O}
+2\mathrm{H}_2 + \mathrm{O}_2 \rightarrow 2\mathrm{H}_2\mathrm{O}
 ```
 
 The difference in the chemical potentials of oxygen and hydrogen species give rise a voltage across the cathode and the anode, which we will go into more details in later sections.
