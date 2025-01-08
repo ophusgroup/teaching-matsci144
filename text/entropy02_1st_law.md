@@ -13,16 +13,21 @@ Energy can be transferred into and out of a thermodynamic system in two ways:
 (sec:work)=
 ## Work
 
-Work is one of the fundamental ways energy can be transferred between a thermodynamic system and its surroundings. In this section, we define and explore the concept of work in thermodynamics, derive key equations, and illustrate examples to build intuition.
+Work is one of the fundamental ways energy can be transferred between a thermodynamic system and its surroundings. 
+In this section, we define and explore the concept of work in thermodynamics, derive key equations, and illustrate examples to build intuition.
 
-In thermodynamics, **work** $W$ is the transfer of energy that occurs when a system exerts a force or causes a displacement in its surroundings. Work does not always require directed motion in the classical sense; for instance, electromagnetic fields can perform work by altering potential energies or charges. In this section however we will focus on how work due to directed motion.
+In thermodynamics, **work** $W$ is the transfer of energy that occurs when a system exerts a force or causes a displacement in its surroundings. 
+Work does not always require directed motion in the classical sense; for instance, electromagnetic fields can perform work by altering potential energies or charges. 
+In this section however we will focus on work due to directed motion.
 
 If you have taken a mechanics course, you may recall the definition of work as
 ```{math}
 :label: work_def_simple
 W = F \Delta x,
 ```
-where $F$ is the force required to move an object, and $\Delta x$ is the displacement of the object. In this definition, force is a scalar and constant. We will generalize this expression to be
+where $F$ is the force required to move an object, and $\Delta x$ is the displacement of the object. 
+In this definition, force is a scalar and constant. 
+We will generalize this expression to be
 
 :::{admonition} Definition of Work
 :class: danger
@@ -62,13 +67,15 @@ In thermodynamics, the sign of work depends on the direction of energy transfer:
 
 **Example: Isothermal Expansion**
 
-Consider a gas in a piston undergoing isothermal expansion which changes the volume from $V_1$ to $V_2$, where the temperature $T$ remains constant. From the Ideal Gas Law:
+Consider a gas in a piston undergoing isothermal expansion which changes the volume from $V_1$ to $V_2$, where the temperature $T$ remains constant. 
+From the Ideal Gas Law:
 
 ```{math}
 :label: ideal_gas
 P V = n R T \quad \Rightarrow \quad P = \frac{n R T}{V},
 ```
-where $n$ is the number of moles of gas, $R$ is the universal gas constant, and $T$ is the absolute temperature. Substituting this into the work equation:
+where $n$ is the number of moles of gas, $R$ is the universal gas constant, and $T$ is the absolute temperature. 
+Substituting this into the work equation:
 
 ```{math}
 :label: work_isothermal
@@ -87,14 +94,15 @@ W &= n R T \int_{V_1}^{V_2} \frac{1}{V} dV.
 This result shows that the work done in an isothermal process depends logarithmically on the ratio of final to initial volumes.
 
 
-
-
-
 ## Heat
 
-The second fundamental way energy can be transferred between a thermodynamic system and its surroundings is **heat** $Q$. In this and the following section, we define and explore the concept of heat in thermodynamics, derive key equations, and illustrate examples to build intuition.
+The second fundamental way energy can be transferred between a thermodynamic system and its surroundings is **heat** $Q$. 
+In this and the following section, we define and explore the concept of heat in thermodynamics, derive key equations, and illustrate examples to build intuition.
 
-Heating is the transfer of energy caused by random molecular motion. Unlike work, which involves organized motion in a specific direction, such as a piston moving upward, heat is associated with disorganized, random motion of molecules. For example, when heat is added to a system, the random velocities of the gas molecules increase, raising their average kinetic energy. The sign of heat is positive when energy is added to the system and negative when energy leaves the system.
+Heating is the transfer of energy caused by random molecular motion. 
+Unlike work, which involves organized motion in a specific direction, such as a piston moving upward, heat is associated with disorganized, random motion of molecules. 
+For example, when heat is added to a system, the random velocities of the gas molecules increase, raising their average kinetic energy. 
+The sign of heat is positive when energy is added to the system and negative when energy leaves the system.
 
 :::{admonition} Definition of Heat
 :class: danger
@@ -111,7 +119,9 @@ If you have taken an introductory physics course, you may recall that heat trans
 :label: heat_transfer_simple
 Q = m c \Delta T,
 ```
-where $m$ is the mass of the material, $c$ is its specific heat capacity, and $\Delta T$ is the change in temperature. This equation describes the amount of heat required to change the temperature of a material. In this section, we will generalize this expression to account for heat transfer in a variety of systems and conditions.
+where $m$ is the mass of the material, $c$ is its specific heat capacity, and $\Delta T$ is the change in temperature. 
+This equation describes the amount of heat required to change the temperature of a material. 
+In this section, we will generalize this expression to account for heat transfer in a variety of systems and conditions.
 
 
 Heat transfer occurs via four main mechanisms:
@@ -155,13 +165,15 @@ Advection is particularly important in processes involving strong bulk fluid flo
 
 :::{admonition} Advection and Heat
 :class: danger
-Advection is **not** considered heat in thermodynamics because it transfers energy through the bulk motion of matter, not random molecular motion driven by temperature differences. Instead, we consider advection to be a mechanism of energy transport.
+Advection is **not** considered heat in thermodynamics because it transfers energy through the bulk motion of matter, not random molecular motion driven by temperature differences. 
+Instead, we consider advection to be a mechanism of energy transport.
 :::
 
 
 ### Convection
 
-Energy transfer through fluid motion is known as convection. We can express it as:
+Energy transfer through fluid motion is known as convection. 
+We can express it as:
 ```{math}
 :label: convection
 \dot{Q} = h A \Delta T,
@@ -183,14 +195,19 @@ where $\sigma$ is the Stefan-Boltzmann constant, $A$ is the area, $\epsilon$ is 
 
 ## Heat vs Work
 
-The distinction between heat and work lies in the nature of the motion. In work, molecules move collectively in a coordinated direction to transfer energy. In heat, energy transfer occurs through random motion in all directions. Both heat and work involve energy transfer, but they do so in fundamentally different ways. [](#heat_vs_work) illustrates this distinction by showing how work and heat manifest through the motions of gas molecules.
+The distinction between heat and work lies in the nature of the motion. 
+In work, molecules move collectively in a coordinated direction to transfer energy. 
+In heat, energy transfer occurs through random motion in all directions. 
+Both heat and work involve energy transfer, but they do so in fundamentally different ways.
+[](#heat_vs_work) illustrates this distinction by showing how work and heat manifest through the motions of gas molecules.
 
 
 ```{figure} ../images/entropy/heat_vs_work.png
 :label: heat_vs_work
 :align: center
 :width: 680px
-Increasing gas temperature via work or heat. By time 3, the states are indistinguishable, meaning that we cannot determine if the increased temperature is due to heat transfer or applied work.
+Increasing gas temperature via work or heat. 
+By time 3, the states are indistinguishable, meaning that we cannot determine if the increased temperature is due to heat transfer or applied work.
 ```
 
 When we apply a force to the piston in [](#heat_vs_work), energy is transferred from the motion of the piston moving to the right, into increased motion of the gas molecules from collisions with the wall. 
@@ -201,7 +218,9 @@ In contrast, adding heat directly to the enclosed volume in [](#heat_vs_work) in
 
 ## Internal Energy and the First Law of Thermodynamics
 
-The internal energy of a system, denoted $U$, is the total energy contained within the system. This includes all forms of microscopic energy, such as the kinetic energy of molecular motion and the potential energy of molecular interactions. Internal energy is a state function, meaning its value depends only on the current state of the system and not on the path taken to reach that state.
+The internal energy of a system, denoted $U$, is the total energy contained within the system. 
+This includes all forms of microscopic energy, such as the kinetic energy of molecular motion and the potential energy of molecular interactions. 
+Internal energy is a state function, meaning its value depends only on the current state of the system and not on the path taken to reach that state.
 
 
 :::{admonition} The First Law of Thermodynamics
@@ -213,7 +232,9 @@ The First Law of Thermodynamics states that the change in internal energy of a s
 ```
 :::
 
-The first law of thermodynamics expresses the conservation of energy in a thermodynamic system. Equation [](#first_law_thermodynamics) reflects the balance of energy within the system. Each term represents a different mode of energy transfer which we discussed above:
+The first law of thermodynamics expresses the conservation of energy in a thermodynamic system. 
+Equation [](#first_law_thermodynamics) reflects the balance of energy within the system. 
+Each term represents a different mode of energy transfer which we discussed above:
 - $Q$: Heat added to the system increases the internal energy.
 - $W$: Work done by the system decreases the internal energy.
 
@@ -260,7 +281,8 @@ We can classify thermodynamic systems into 3 categories based on their interface
 (left) An isolated thermodynamic system which contains a closed system, which itself contains an open system. (right) An isolated system which contains an open system.
 ```
 
-Consider the closed system contained inside the isolated system in [](#fig:systems). The first law of thermodynamics states 
+Consider the closed system contained inside the isolated system in [](#fig:systems). 
+The first law of thermodynamics states 
 ```{math}
 U_{\rm{closed}} = 
   Q_{\rm{input}} - Q_{\rm{output}}
@@ -268,14 +290,19 @@ U_{\rm{closed}} =
   W_{\rm{system}} - W_{\rm{surroundings}},
 )
 ```
-where $Q_{\rm{input}}$ and $Q_{\rm{output}}$ refer to heat transferred across the boundary, and $W_{\rm{system}}$ and $W_{\rm{surroundings}}$ refers to work done by the system on the surroundings and vice versa. The total amount of energy in the closed system changes by exactly the amount of heat added/removed
-to the system and the work done by/to the system, i.e. total energy is conserved. On the other hand, an isolated system by definition has $Q_{\rm{isolated}} = W_{\rm{isolated}} = 0$, and therefore also $U_{\rm{isolated}}$ = 0.
+where $Q_{\rm{input}}$ and $Q_{\rm{output}}$ refer to heat transferred across the boundary, and $W_{\rm{system}}$ and $W_{\rm{surroundings}}$ refers to work done by the system on the surroundings and vice versa. 
+The total amount of energy in the closed system changes by exactly the amount of heat added/removed to the system and the work done by/to the system, i.e. total energy is conserved. 
+On the other hand, an isolated system by definition has $Q_{\rm{isolated}} = W_{\rm{isolated}} = 0$, and therefore also $U_{\rm{isolated}}$ = 0.
 
 We can also categorize thermodynamic systems or processes into 4 categories based on the constraints imposed on state variables:
-1. **Isothermal** - The system undergoes a process at constant temperature $T$. Heat transfer occurs to maintain thermal equilibrium as work is done or energy changes.
-2. **Isobaric** - The system experiences a process at constant pressure $P$. Heat transfer can lead to changes in volume and temperature.
-3. **Isochoric** - The system's volume $V$ remains constant . No work is done, and any energy transfer appears as heat.
-4. **Adiabatic** - The system is thermally insulated, so no heat is exchanged ($Q = 0$). Changes in the system's energy result entirely from work done on or by the system.
+1. **Isothermal** - The system undergoes a process at constant temperature $T$. 
+Heat transfer occurs to maintain thermal equilibrium as work is done or energy changes.
+2. **Isobaric** - The system experiences a process at constant pressure $P$. 
+Heat transfer can lead to changes in volume and temperature.
+3. **Isochoric** - The system's volume $V$ remains constant . 
+No work is done, and any energy transfer appears as heat.
+4. **Adiabatic** - The system is thermally insulated, so no heat is exchanged ($Q = 0$). 
+Changes in the system's energy result entirely from work done on or by the system.
 
 
 
