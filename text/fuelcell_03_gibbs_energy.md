@@ -10,6 +10,6 @@ As seen in [Equation %s](#expanded_first_law_final), this expression has three i
 :label: legendre_u_to_f
 :remove-output: false
 :remove-input: true
-:width: 600px
+:width: 700px
 :align: center
 ```

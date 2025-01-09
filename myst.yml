@@ -30,6 +30,7 @@ project:
     children:
       - file: notebooks/entropy/gas_molecule.ipynb
       - file: notebooks/entropy/co2_mixing.ipynb
+      - file: notebooks/fuelcell/legendre.ipynb
   jupyter: true
   #  jupyter:
   #    binder:
