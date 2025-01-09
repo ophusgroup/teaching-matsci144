@@ -13,3 +13,11 @@ As seen in [Equation %s](#expanded_first_law_final), this expression has three i
 :width: 700px
 :align: center
 ```
+
+```{embed} #legendre_3d
+:label: legendre_3d
+:remove-output: false
+:remove-input: true
+:width: 700px
+:align: center
+```
