@@ -30,16 +30,16 @@ project:
     children:
       - file: notebooks/entropy/gas_molecule.ipynb
       - file: notebooks/entropy/co2_mixing.ipynb
-  # jupyter: true
+  jupyter: true
   #  jupyter:
   #    binder:
   #      url: https://y2j74k9mn0bz.curvenote.dev/services/binder/
   #      repo: msa-em/em-template
   #      ref: main
-  jupyter:
-    server:
-      url: 'http://localhost:8888'
-      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
+  #  jupyter:
+  #    server:
+  #      url: 'http://localhost:8888'
+  #      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
   open_access: true
   license: CC-BY-4.0
   banner: banner.jpg
@@ -100,7 +100,6 @@ project:
     kJ: kilojoules
     H₂O: water
     IGCC: integrated gasification combined cycle
-    mole: 6.022e23 amount of substance
     NGCC: natural gas combined cycle
     N₂: dinitrogen
     O₂: dioxygen
