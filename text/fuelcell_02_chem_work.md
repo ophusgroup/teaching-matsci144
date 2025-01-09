@@ -85,5 +85,5 @@ Remember that $U$ is a state function, so $dU_{\text{rev}}=dU_{\text{irrev}}$ si
 
 ```{math}
 :label: expanded_first_law_final
-dU=dU_{\text{rev}}=dU_{\text{irrev}}=T dS - P dV + \sum_i \mu_i dn_i
+dU_{\text{rev}}=dU_{\text{irrev}}=dU=T dS - P dV + \sum_i \mu_i dn_i
 ```
