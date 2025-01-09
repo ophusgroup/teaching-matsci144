@@ -10,7 +10,7 @@ An alternative to convert fuel to electricity is a fuel cell. Fuel cells work by
 
 To understand fuel cells, let's consider mixing at ambient pressure two reacting gases, such as hydrogen and oxygen, in a chamber. If we ignite the mixture, the fuel mixture will combust and release heat. However, such thermal energy cannot be converted into work unless coupled to a heat engine. Next, let's consider what would happen if we separate the hydrogen and oxygen gases into separate chambers. For simplicity, let's assume the two chambers are separated by a membrane that only allow oxygen ions to pass through both ways, but not electrons or charge-neutral hydrogen or hydrogen ions (See [](#fuel-cell-oxygen)).
 
-```{figure} ../images/fuel-cell/SOFCMembrane.png
+```{figure} ../images/fuelcell/SOFCMembrane.png
 :label: fuel-cell-oxygen
 :align: center
 :width: 500px
@@ -29,7 +29,7 @@ To extract elecrical work, we need to connect the anode with the cathode (O{sub}
 \mathrm{O}_2+4e^- \rightarrow 2\mathrm{O}^{2-}
 ```
 
-```{figure} ../images/fuel-cell/fuelcelllightbulbO2.png
+```{figure} ../images/fuelcell/fuelcelllightbulbO2.png
 :label: fuel-cell-complete
 :align: center
 :width: 500px

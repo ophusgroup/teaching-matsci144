@@ -18,7 +18,7 @@ We highlight 3 points here:
 (point-3)=
 3. If we assume this reaction to be spontaneous (a one-sided reaction where the precursors automatically combine to yield the product without added energy or being influenced by any "external factor"), it is necessarily exothermic (heat is released) and therefore we expect the temperature inside the container to increase.
 
-```{figure} ../images/fuel-cell/OHbarrier.png
+```{figure} ../images/fuelcell/OHbarrier.png
 :label: thought-exp
 :align: center
 :width: 500px
