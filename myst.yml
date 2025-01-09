@@ -18,14 +18,14 @@ project:
       - file: text/entropy02_1st_law.md
       - file: text/entropy03_2nd_law.md
       - file: text/entropy04_minwork.md
-  - file: text/chap2/chap2_00_chemeq.md
+  - file: text/fuelcell_00_chemeq.md
     children:
-      - file: text/chap2/chap2_01_intro_fuelcell.md
-      - file: text/chap2/chap2_02_chem_work.md
-      - file: text/chap2/chap2_03_gibbs_energy.md
-      - file: text/chap2/chap2_04_chem_eq.md
-      - file: text/chap2/chap2_05_chem_eq_fuelcell.md
-      - file: text/chap2/chap2_06_voltage_fuelcell.md
+      - file: text/fuelcell_01_intro_fuelcell.md
+      - file: text/fuelcell_02_chem_work.md
+      - file: text/fuelcell_03_gibbs_energy.md
+      - file: text/fuelcell_04_chem_eq.md
+      - file: text/fuelcell_05_chem_eq_fuelcell.md
+      - file: text/fuelcell_06_voltage_fuelcell.md
   - title: Notebooks
     children:
       - file: notebooks/entropy/gas_molecule.ipynb
