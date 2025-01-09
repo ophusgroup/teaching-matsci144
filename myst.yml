@@ -101,6 +101,7 @@ project:
     kJ: kilojoules
     H₂O: water
     IGCC: integrated gasification combined cycle
+    mol: 6.022 elementary entities 
     NGCC: natural gas combined cycle
     N₂: dinitrogen
     O₂: dioxygen
@@ -109,6 +110,8 @@ project:
     ppmv: parts per million by volume
     SO₂: sulphur dioxide
     Tg: teragrams
+  math:
+    \dd: '{\text{d}}'
 site:
   template: book-theme
   # template: article-theme
