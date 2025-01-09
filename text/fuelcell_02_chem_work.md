@@ -45,7 +45,7 @@ energy of a system. Its mathematical definition is
 \mathrm{Chemical\;Work}=-\int \mu dn
 ```
 where $\mu$ is the **chemical potential** and $dn$ is the differential change in number of moles. The minus sign
-in front of the integral is to ensure consistency with our sign conventions, where the formation of new species
+in front of the integral is to ensure consistency with our [sign conventions](#sign_conv), where the formation of new species
 (i.e., $dn>0$) means the formation of new chemical bonds, which releases heat. This is similar to the mechanical work case where the piston is being compressed, where the work is being done on the system, increasing the temperature, and vice versa.
 :::
 
