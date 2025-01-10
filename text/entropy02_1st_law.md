@@ -288,14 +288,13 @@ In this course, we will use the sign convention defined above in Equation [](#fi
 
 ## Thermodynamic Systems
 
-We can classify thermodynamic systems into 3 categories based on their interface conditions, summarized in [](#tab:systems) and illustrated in [](fig:systems):
+We can classify thermodynamic systems into 3 categories based on their interface conditions, summarized in [](#tab:systems) and illustrated in [](#fig:systems):
 1. An **open system** allows heat, work, and mass to cross its boundaries.
 2. A **closed system** permits only heat and work transfer, while mass remains contained.
 3. An **isolated system** allows no exchange of heat, work, or mass with its surroundings.
 
 :::{list-table} Classification of thermodynamic systems by boundary conditions.
 :label: tab:systems
-:widths: 1 1 1
 :header-rows: 1
 * - System Type
   - Permeable to Heat and Work

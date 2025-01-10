@@ -132,10 +132,11 @@ Force $\vec{F}$ is defined as the change in momentum $d\vec{p}/dt$, which combin
 
 ```{math}
 :label: ideal_gas_law_3
-\vec{F} 
-&= m \frac{d\vec{p}}{dt} \\
+\begin{align}
+\vec{F} = m \frac{d\vec{p}}{dt} \\
 &= m \frac{d\vec{v}}{dt} \\
 &= m \cdot \vec{a},
+\end{align}
 ```
 
 where acceleration $\vec{a}$ is equal to the time derivative of velocity $\vec{a}=d\vec{v}/dt$. 
@@ -148,16 +149,13 @@ If the change in momentum occurs in discrete time steps, we can also define the 
 where $\Delta \vec{p}$ is the momentum transfer per event.
 
 
-```{embed} #entropymolecule
-:label: entropymolecule
-:remove-output: false
-:remove-input: true
-:width: 400px
-:align: center
-```
+:::{figure} #entropymolecule
+:label: fig:entropymolecule
+A single gas molecule inside a cube with side lengths $l$ and volume $V = l^3$. 
+:::
 
 Now, consider a box containing gas molecules. 
-As shown above, as each molecule bounces off the walls it will impart outward momentum to the walls. 
+As shown above in [](#fig:entropymolecule), as each molecule bounces off the walls it will impart outward momentum to the walls. 
 As we add more molecules to the box, the momentum transferred to the walls of the box will increase in proportion to the total mass $m$ of the gas. 
 This transfer of momentum to the container walls is what we perceive as pressure. 
 Next, we will derive the dependence of this pressure on the temperature $T$ and number of gas molecules $N$.
@@ -168,114 +166,126 @@ First, we make some assumptions, which define an ideal gas:
 3. The molecules do not interact with each other.
 
 First, we will calculate the force imparted by a single molecule along the $y$-axis
-$$
+```{math}
 F_y = \Delta p_y * \lambda
-$$
+```
 The momentum change of the molecule along the $y$-axis will be its final momentum minus its initial momentum, while the momentum change of the wall is the same value in the opposite direction
-$$
+```{math}
+\begin{align}
 \Delta p_y 
 &= -1(p_y^{\rm{final}} - p_y^{\rm{initial}}) \\
 &= -1(m (-v_y) - (m  v_y)) \\
 &= 2 m v_y.
-$$
+\end{align}
+```
 
 We can find the rate $\lambda$ at which this molecule will hit the wall by considering how long it must travel between strikes. 
 For a cube with side length $l$, this rate is given by
-$$
+```{math}
 \lambda = \frac{v_y}{l}.
-$$
+```
 The units of a rate should be events per second; checking the units here we get (length/time)/(length) = (1/time). 
 If we combine these expressions, the force along the $y$-axis becomes
-$$
+```{math}
 F_y = \frac{2 m {v_y}^2}{l}.
-$$
+```
 
 We next expand this expression to the full 3D box and to $N$ total molecules, giving a total force
-$$
+```{math}
+\begin{align}
 F_{\rm{total}}
 &= \frac{2 m N}{l}({v_x}^2+{v_y}^2+{v_z}^2) \\
 &= \frac{2 m N |\vec{v}|^2}{l}.
-$$
+\end{align}
+```
 
 The total area $A_{\rm{total}}$ of our box is equal to
-$$
+```{math}
 A_{\rm{total}} = 6 \, l^2
-$$
+```
 
 We can combine these expressions with Equation [](#ideal_gas_law_1) to get
-$$
-\label{entropypressure1}
+```{math}
+:label: entropypressure1
+\begin{align}
 P 
 &= 
 \frac{2 m N |\vec{v}|^2}{l}
 \frac{1}{6 \, l^2} \\
 &= \frac{m N |\vec{v}|^2}{3 l^3} \\
 &= \frac{m N |\vec{v}|^2}{3 V},
-$$
+\end{align}
+```
 where $V$ is the total box volume.
 
 We next consider the internal energy $U$ of all $N$ molecules, which is equal to the sum of the kinetic energy of each molecule traveling with velocity $\vec{v}_i$
-$$
+```{math}
 U = \frac{1}{2} \sum_i^N m |\vec{v_i}|^2.
-$$
+```
 
 The total energy can be therefore be rewritten in terms of the the @wiki:Expected_value (average value) of translational kinetic energy $⟨E_k⟩_{\rm{trans}} = \frac{1}{2}m⟨|\vec{v}|^2⟩$ over the population of all $N$ molecules
-$$
-\label{entropyenergy1}
+```{math}
+:label: entropyenergy1
 U = N ⟨E_k⟩_{\rm{trans}}.
-$$
+```
 
 Combining Equations [](#entropypressure1) and [](#entropyenergy1) gives 
-$$
-\label{eq:PUV}
+```{math}
+:label: eq:PUV
+\begin{align}
 P 
-&= \frac{2}{3} \frac{N \frac{1}{2} m |\vec{v}|^2}{V} \\
+= \frac{2}{3} \frac{N \frac{1}{2} m |\vec{v}|^2}{V} \\
 &= \frac{2}{3} \frac{N ⟨E_k⟩_{\rm{trans}}}{V} \\
 &= \frac{2}{3} \frac{U}{V}
-$$
+\end{align}
+```
 
 As a sanity check, we can confirm that $U/V$ has the same units as pressure
-$$
+```{math}
+\begin{align}
 \frac{U}{V}
-&= \frac{\rm{energy}}{\rm{volume}} \\
+= \frac{\rm{energy}}{\rm{volume}} \\
 &= \frac{\rm{force} \cdot \rm{length}}{\rm{length^3}} \\
 &= \frac{\rm{force}}{\rm{length^2}} \\
 &= \frac{\rm{force}}{\rm{area}} \\
-$$
+\end{align}
+```
 
 Rearranging Equation [](#eq:PUV) we get
-$$
-\label{eq:PV}
+```{math}
+:label: eq:PV
 P \, V
 = \frac{2}{3} U.
-$$
+```
 
 We next rescale $U$ to a more convenient value that is easier to work with, by recognizing that $U \propto T$, i.e. the internal energy $U$ is proportional to temperature $T$. 
 We can also select a prefactor for $T$ which scales with the boiling and freezing points of water, defining
 
-$$
+```{math}
 100 
 = T_{\rm{H_2O}}^{\rm{boiling}}
 - T_{\rm{H_2O}}^{\rm{freezing}},
-$$
+```
 
 which is of course the temperature scale units of Centrigrade or Kelvins. 
 With these units, we further define
-$$
-\label{eq:boltzmann}
+```{math}
+:label: eq:boltzmann
+\begin{align}
 U 
 &= N ⟨E_k⟩_{\rm{trans}} \\
 &= \frac{3}{2} k_B T.
-$$
+\end{align}
+```
 This is the origin of the Boltzmann constant $k_B$. 
 This result ultimately comes from the equipartition theorem, which states that each degree of freedom contributes $\frac{1}{2} k_B T$ to the average energy, and the relationship between momentum transfer and pressure in kinetic theory. 
 The molecules moving in 3 dimensions (and thus have 3 degrees of freedom) therefore contribute $\frac{3}{2} k_B T$ total energy.
 
-If we substitute Equation [](#\label{eq:boltzmann}) into [](#eq:PV), we get
-$$
-\label{eq:PV_NkBT}
+If we substitute Equation [](#eq:boltzmann) into [](#eq:PV), we get
+```{math}
+:label: eq:PV_NkBT
 PV = N k_B T.
-$$
+```
 
 The Boltzmann constant is related to another important constant, the universal gas constant $R$, by a factor of Avagadro's number $N_A$ (equal to one mole), giving
 ```{math}
@@ -285,10 +295,10 @@ R = N_A k_B
 Here, Avogadro’s number $N_A$ represents the number of molecules in one mole, connecting the microscopic scale ($k_B T$) to macroscopic quantities ($R$).
 
 We can then perform the final substitution into Equation [](#eq:PV_NkBT) to get
-$$
+```{math}
 P V 
 = \frac{N}{N_A} R T.
-$$
+```
 Recognizing that 
 ```{math}
 :label: eq:num_moles
