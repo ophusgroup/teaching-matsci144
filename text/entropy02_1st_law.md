@@ -119,16 +119,23 @@ If you have taken an introductory physics course, you may recall that heat trans
 :label: heat_transfer_simple
 Q = m c \Delta T,
 ```
-where $m$ is the mass of the material, $c$ is its specific heat capacity, and $\Delta T$ is the change in temperature.
+where $m$ is the mass of the material, $c$ is its specific heat capacity in units of J/(kg·K), and $\Delta T$ is the change in temperature.
 This equation describes the amount of heat required to change the temperature of a material.
-In this section, we will generalize this expression to account for heat transfer in a variety of systems and conditions.
+
+In systems where the quantity of the material is more conveniently expressed in moles, we can rewrite this equation in terms of the number of moles $n$ and the molar heat capacity $c_p$ (at constant pressure) in units of J/(mol·K):
+```{math}
+:label: eq:heat_transfer_moles
+Q = n c_p \Delta T,
+```
+
+In this section, we will generalize these expression to account for heat transfer in a variety of systems and conditions.
 
 
 Heat transfer occurs via four main mechanisms:
-1. Conduction - Transfer of heat through a solid or stationary fluid due to molecular interactions.
-2. Advection - Transfer of heat through the bulk motion of a moving fluid.
-3. Convection - Combined heat transfer by conduction and advection in a fluid.
-4. Radiation - Transfer of heat via electromagnetic waves without requiring a medium.
+1. **Conduction** - Transfer of heat through a solid or stationary fluid due to molecular interactions.
+2. **Advection** - Transfer of heat through the bulk motion of a moving fluid.
+3. **Convection** - Combined heat transfer by conduction and advection in a fluid.
+4. **Radiation** - Transfer of heat via electromagnetic waves without requiring a medium.
 
 
 We typically describe heat transfer using the **heat transfer rate** $\dot{Q}$, equal to
@@ -172,7 +179,7 @@ Instead, we consider advection to be a mechanism of energy transport.
 
 ### Convection
 
-Energy transfer through fluid motion is known as convection.
+Energy transfer through fluid motion is known as convection, which involves both conduction and advection. 
 We can express it as:
 ```{math}
 :label: convection
@@ -238,17 +245,45 @@ Each term represents a different mode of energy transfer which we discussed abov
 - $Q$: Heat added to the system increases the internal energy.
 - $W$: Work done by the system decreases the internal energy.
 
+
 (sign_conv)=
-### Sign Conventions
+### Thermodynamic Sign Convention
 
-To ensure consistency, thermodynamics uses specific sign conventions:
-- Heat added to the system is positive ($Q > 0$).
-- Heat leaving the system is negative ($Q < 0$).
-- Work done by the system on the surroundings is positive ($W > 0$).
-- Work done on the system by the surroundings is negative ($W < 0$).
+In thermodynamics, when we define the 1st law to be $\Delta U = Q - W$, which leads to the following sign convention:
+- ($Q > 0$) Heat added to the system is positive.
+- ($Q > 0$) Heat leaving the system is negative.
+- ($W < 0$) Work done **to the system** (by its surroundings).
+- ($W > 0$) Work is done **by the system** (onto its surroundings).
+
+With this sign convention, when we apply positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = \int P \dd V$. This will give a negative value for work ($W<0$), i.e. work is being done to the system which will increase its internal energy $\Delta U > 0$.
 
 
-### Thermodynamic Systems
+### Chemistry Sign Convention
+
+In many chemistry contexts, you may see the opposite sign convention. There, the 1st law is defined by be $\Delta U = Q + W$, which leads to the following sign convention:
+- ($Q > 0$) Heat added to the system is positive.
+- ($Q > 0$) Heat leaving the system is negative.
+- ($W > 0$) Work done **to the system** (by its surroundings).
+- ($W < 0$) Work is done **by the system** (onto its surroundings).
+
+With this sign convention, when we apply positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = - \int P \dd V$. This will give a positive value for work ($W>0$), i.e. work is being done to the system which will increase its internal energy $\Delta U > 0$.
+
+
+
+### Which Convention to Use?
+
+Why the difference? The choice of sign convention depends on whether the focus is on the system or the surroundings:
+
+- **Thermodynamics Convention**: Widely used in physics and engineering, emphasizes energy flow and interactions with surroundings.
+- **Chemistry Convention**: Focuses on the system itself, often aligning with experimental measurements like pressure-volume work.
+
+In this course, we will use the sign convention defined above in Equation [](#first_law_thermodynamics). This convention is most often found in thermodynamic and engineering situations. One way to ensure that your calculations are always self-consistent is to remember that both must reduce to this form:
+```{math}
+\Delta U = Q - \int P \dd V
+```
+
+
+## Thermodynamic Systems
 
 We can classify thermodynamic systems into 3 categories based on their interface conditions, summarized in [](#tab:systems) and illustrated in [](fig:systems):
 1. An **open system** allows heat, work, and mass to cross its boundaries.
