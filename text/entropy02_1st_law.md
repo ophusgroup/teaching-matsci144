@@ -31,7 +31,7 @@ We will generalize this expression to be
 
 :::{admonition} Definition of Work
 :class: danger
-Work is energy transfer through force acting on displacement, which can be expressed as:
+Work is the energy transferred through force acting on displacement, expressed as
 ```{math}
 :label: work_definition
 W = \int \bm{F}(\bm{x}) d\bm{x},
@@ -81,7 +81,7 @@ Substituting this into the work equation:
 :label: work_isothermal
 W = \int_{V_1}^{V_2} \frac{n R T}{V} dV.
 ```
-Performing the integration:
+After integration:
 
 ```{math}
 :label: isothermal_result
@@ -128,7 +128,7 @@ In systems where the quantity of the material is more conveniently expressed in 
 Q = n c_p \Delta T,
 ```
 
-In this section, we will generalize these expression to account for heat transfer in a variety of systems and conditions.
+In this section, we will generalize these expressions to account for heat transfer in a variety of systems and conditions.
 
 
 Heat transfer occurs via four main mechanisms:
@@ -160,7 +160,7 @@ where $k$ is the thermal conductivity, $A$ is the cross-sectional area, and $\De
 
 ### Advection
 
-Energy transfer through the bulk motion of a fluid is known as advection, and is governed by the advection equation:
+Advection refers to energy transfer due to the bulk motion of a fluid, governed by the equation:
 
 ```{math}
 :label: advection_equation
@@ -249,30 +249,33 @@ Each term represents a different mode of energy transfer which we discussed abov
 (sign_conv)=
 ### Thermodynamic Sign Convention
 
-In thermodynamics, when we define the 1st law to be $\Delta U = Q - W$, which leads to the following sign convention:
-- ($Q > 0$) Heat added to the system is positive.
-- ($Q > 0$) Heat leaving the system is negative.
-- ($W < 0$) Work done **to the system** (by its surroundings).
-- ($W > 0$) Work is done **by the system** (onto its surroundings).
 
-With this sign convention, when we apply positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = \int P \dd V$. This will give a negative value for work ($W<0$), i.e. work is being done to the system which will increase its internal energy $\Delta U > 0$.
+In thermodynamics, defining the 1st law as $\Delta U = Q - W$ leads to the following sign convention:
+- ($Q > 0$) Heat added to the system is positive.
+- ($Q < 0$) Heat leaving the system is negative.
+- ($W > 0$) Work is done **by the system** (onto its surroundings).
+- ($W < 0$) Work done **to the system** (by its surroundings).
+
+With this sign convention, applying positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = \int P \dd V$. 
+This results in a negative value for work ($W<0$), indicating that work is done on the system, increasing its internal energy $\Delta U > 0$.
 
 
 ### Chemistry Sign Convention
 
-In many chemistry contexts, you may see the opposite sign convention. There, the 1st law is defined by be $\Delta U = Q + W$, which leads to the following sign convention:
+In this context, the 1st law is defined as $\Delta U = Q + W$, leading to the following sign convention:"
 - ($Q > 0$) Heat added to the system is positive.
-- ($Q > 0$) Heat leaving the system is negative.
-- ($W > 0$) Work done **to the system** (by its surroundings).
+- ($Q < 0$) Heat leaving the system is negative.
 - ($W < 0$) Work is done **by the system** (onto its surroundings).
+- ($W > 0$) Work done **to the system** (by its surroundings).
 
-With this sign convention, when we apply positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = - \int P \dd V$. This will give a positive value for work ($W>0$), i.e. work is being done to the system which will increase its internal energy $\Delta U > 0$.
+With this sign convention, when we apply positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = - \int P \dd V$. 
+This results in a positive value for work ($W>0$), indicating that work is done on the system, increasing its internal energy $\Delta U > 0$.
 
 
 
-### Which Convention to Use?
+### Choosing a Convention
 
-Why the difference? The choice of sign convention depends on whether the focus is on the system or the surroundings:
+Why the difference? The choice of sign convention reflects whether the focus is on the system or its surroundings:
 
 - **Thermodynamics Convention**: Widely used in physics and engineering, emphasizes energy flow and interactions with surroundings.
 - **Chemistry Convention**: Focuses on the system itself, often aligning with experimental measurements like pressure-volume work.
@@ -327,109 +330,18 @@ U_{\rm{closed}} =
 ```
 where $Q_{\rm{input}}$ and $Q_{\rm{output}}$ refer to heat transferred across the boundary, and $W_{\rm{system}}$ and $W_{\rm{surroundings}}$ refers to work done by the system on the surroundings and vice versa.
 The total amount of energy in the closed system changes by exactly the amount of heat added/removed to the system and the work done by/to the system, i.e. total energy is conserved.
-On the other hand, an isolated system by definition has $Q_{\rm{isolated}} = W_{\rm{isolated}} = 0$, and therefore also $U_{\rm{isolated}}$ = 0.
+
+By definition, an isolated system has $Q_{\rm{isolated}} = W_{\rm{isolated}} = 0$, and therefore $U_{\rm{isolated}}$ remains constant.
 
 We can also categorize thermodynamic systems or processes into 4 categories based on the constraints imposed on state variables:
 1. **Isothermal** - The system undergoes a process at constant temperature $T$.
 Heat transfer occurs to maintain thermal equilibrium as work is done or energy changes.
 2. **Isobaric** - The system experiences a process at constant pressure $P$.
 Heat transfer can lead to changes in volume and temperature.
-3. **Isochoric** - The system's volume $V$ remains constant .
+3. **Isochoric** - The system's volume $V$ remains constant.
 No work is done, and any energy transfer appears as heat.
 4. **Adiabatic** - The system is thermally insulated, so no heat is exchanged ($Q = 0$).
 Changes in the system's energy result entirely from work done on or by the system.
 
 
 
-
-
-<!-- Example: Heat Transfer in a Phase Change
-
-Consider a system undergoing a phase change, such as melting ice or boiling water. During a phase change, the temperature remains constant while heat is transferred to alter the system's state. The heat required is given by:
-
-```{math}
-:label: latent_heat
-Q = m L,
-```
-where $m$ is the mass of the substance and $L$ is the specific latent heat for the phase transition.
-
-For instance, during the melting of ice at $0^\circ$C, $L$ represents the heat of fusion for water.
-
-### Heat vs. Work
-
-
-While both heat and work are forms of energy transfer, they differ fundamentally in their mechanisms:
-
-Work involves organized motion or force interactions.
-Heat arises from temperature differences and random molecular motion.
-The First Law of Thermodynamics ties these concepts together:
-
-```{math}
-:label: first_law_heat
-\Delta U = Q - W,
-```
-where $\Delta U$ is the change in the system's internal energy, $Q$ is the heat added to the system, and $W$ is the work done by the system.
-
-Summary
-Heat is a cornerstone concept in thermodynamics, describing energy transfer due to temperature differences. The relationship $Q = T dS$ provides a powerful framework for analyzing heat transfer in diverse systems. Understanding heat not only aids in solving thermodynamic problems but also provides a foundation for exploring energy transfer at molecular and macroscopic scales.
- -->
-
-
-
-
-
-<!-- **Example: Adiabatic Expansion**
-
-In an adiabatic process, no heat is exchanged with the surroundings ($Q = 0$). The First Law of Thermodynamics simplifies to:
-
-```{math}
-:label: adiabatic_first_law
-\Delta U = -W.
-```
-For an ideal gas, the internal energy $U$ is related to the temperature by $U = \frac{n C_V T}{2}$, where $C_V$ is the molar heat capacity at constant volume. Using the Ideal Gas Law, $P V = n R T$, and the adiabatic condition, $P V^\gamma = \text{constant}$:
-
-```{math}
-:label: work_adiabatic
-W = \frac{P_1 V_1 - P_2 V_2}{\gamma - 1}, \quad \gamma = \frac{C_P}{C_V}.
-```
-Work for Polytropic Processes
-In a polytropic process, the relationship between pressure and volume is given by $P V^n = \text{constant}$, where $n$ is the polytropic index. Substituting into the work equation:
-
-```{math}
-:label: work_polytropic
-W = \int_{V_1}^{V_2} P dV = \int_{V_1}^{V_2} \frac{C}{V^n} dV.
-```
-Performing the integration:
-
-```{math}
-:label: polytropic_result
-W = \frac{P_2 V_2 - P_1 V_1}{1 - n}, \quad n \neq 1.
-```
-For $n = 1$, the process reduces to isothermal expansion, and the logarithmic relationship derived earlier is used.
-
-Work in Cyclic Processes
-In cyclic processes, the system returns to its initial state, so the change in internal energy is zero ($\Delta U = 0$). From the First Law of Thermodynamics:
-
-```{math}
-:label: cyclic_work
-W_{\text{net}} = Q_{\text{net}}.
-```
-
-Graphically, the work done in a cyclic process corresponds to the area enclosed by the curve on a $P$-$V$ diagram. For example, in a Carnot cycle, the net work is the difference between the heat absorbed during isothermal expansion and the heat released during isothermal compression.
-
-Work vs. Heat
-Both work and heat are energy transfer mechanisms, but they differ fundamentally:
-
-Work involves ordered energy transfer (e.g., moving a piston or transferring electrical energy).
-Heat involves disordered energy transfer (e.g., random motion of particles).
-The First Law of Thermodynamics relates these concepts:
-
-```{math}
-:label: first_law
-\Delta U = Q - W,
-```
-where $\Delta U$ is the change in internal energy, $Q$ is heat transfer, and $W$ is work.
-
-Summary
-
-Work plays a critical role in thermodynamics, describing energy transfer through force and displacement. Key relationships like $W = \int P dV$ provide a framework for analyzing processes involving gases. Understanding the nuances of work and its distinction from heat allows for deeper insights into energy transfer in physical systems. -->
