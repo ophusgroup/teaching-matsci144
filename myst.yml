@@ -101,7 +101,7 @@ project:
     kJ: kilojoules
     H₂O: water
     IGCC: integrated gasification combined cycle
-    mol: 6.022 elementary entities 
+    # mol: 6.022 elementary entities
     NGCC: natural gas combined cycle
     N₂: dinitrogen
     O₂: dioxygen
@@ -128,3 +128,5 @@ site:
   # actions:
   #   - title: A URL
   #   url: https://mystmd.org
+  options:
+    logo_text: MATSCI 144
