@@ -55,8 +55,10 @@ Substituting these relationships into the definition of work:
 
 ```{math}
 :label: work_pressure_volume
+\begin{aligned}
 W &= \int P A \frac{dV}{A} \\
-W &= \int P \, dV.
+W &= \int P \, dV
+\end{aligned}
 ```
 This integral form is widely used in thermodynamics to calculate the work done by or on a system.
 
@@ -85,11 +87,13 @@ After integration:
 
 ```{math}
 :label: isothermal_result
-W &= n R T \int_{V_1}^{V_2} \frac{1}{V} dV.
+\begin{aligned}
+W &= n R T \int_{V_1}^{V_2} \frac{1}{V} dV
 \\
 &= n R T \Big[ \log(V) \Big]_{V_1}^{V_2}
 \\
-&= n R T \log\left(\frac{V_2}{V_1}\right).
+&= n R T \log\left(\frac{V_2}{V_1}\right)
+\end{aligned}
 ```
 This result shows that the work done in an isothermal process depends logarithmically on the ratio of final to initial volumes.
 
@@ -179,10 +183,10 @@ Instead, we consider advection to be a mechanism of energy transport.
 
 ### Convection
 
-Energy transfer through fluid motion is known as convection, which involves both conduction and advection. 
+Energy transfer through fluid motion is known as convection, which involves both conduction and advection.
 We can express it as:
 ```{math}
-:label: convection
+:label: eq:convection
 \dot{Q} = h A \Delta T,
 ```
 where $h$ is the convective heat transfer coefficient, $A$ is the area through which the fluid flows, and $\Delta T$ is the temperature difference.
@@ -256,7 +260,7 @@ In thermodynamics, defining the 1st law as $\Delta U = Q - W$ leads to the follo
 - ($W > 0$) Work is done **by the system** (onto its surroundings).
 - ($W < 0$) Work done **to the system** (by its surroundings).
 
-With this sign convention, applying positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = \int P \dd V$. 
+With this sign convention, applying positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = \int P \dd V$.
 This results in a negative value for work ($W<0$), indicating that work is done on the system, increasing its internal energy $\Delta U > 0$.
 
 
@@ -268,7 +272,7 @@ In this context, the 1st law is defined as $\Delta U = Q + W$, leading to the fo
 - ($W < 0$) Work is done **by the system** (onto its surroundings).
 - ($W > 0$) Work done **to the system** (by its surroundings).
 
-With this sign convention, when we apply positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = - \int P \dd V$. 
+With this sign convention, when we apply positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = - \int P \dd V$.
 This results in a positive value for work ($W>0$), indicating that work is done on the system, increasing its internal energy $\Delta U > 0$.
 
 
@@ -341,6 +345,3 @@ Heat transfer can lead to changes in volume and temperature.
 No work is done, and any energy transfer appears as heat.
 4. **Adiabatic** - The system is thermally insulated, so no heat is exchanged ($Q = 0$).
 Changes in the system's energy result entirely from work done on or by the system.
-
-
-
