@@ -62,6 +62,7 @@ We can see that at constant $T$ and $P$, the Gibbs free energy is minimized with
 [Equation %s](#eq:reaction_eq) can be generalized to describe chemical equilibria with the following expression
 
 ```{math}
+:label: eq:general_reaction_eq
 \left(\frac{\partial G}{\partial \xi}\right)_{T, P} = \sum_i v_i \mu_i = 0
 ```
 

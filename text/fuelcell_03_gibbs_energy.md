@@ -212,6 +212,7 @@ Similar to the alternative definition of chemical potential in [Equation %s](#eq
 at constant $T$, $P$ and $n_{j\neq i}$, the chemical potential is defined as
 
 ```{math}
+:label: eq:chem_pot_g
 \mu_i = \left(\frac{\partial G}{\partial n_i}\right)_{T, P, n_{j\neq i}}
 ```
 
@@ -229,6 +230,7 @@ For now, let's recap two important lessons that we've learned so far.
 1. The chemical potential of species $i$ can be defined as partial molar quanties of different thermodyanmic potentials under different control variables,
 but these definitions are all equivalent.
 ```{math}
+:label: eq:various_mu_defs
 \mu_i = \left(\frac{\partial U}{\partial n_i}\right)_{S, V, n_{j\neq i}} = \left(\frac{\partial H}{\partial n_i}\right)_{S, P, n_{j\neq i}} = \left(\frac{\partial F}{\partial n_i}\right)_{T, V, n_{j\neq i}} = \left(\frac{\partial G}{\partial n_i}\right)_{T, P, n_{j\neq i}}
 ```
 
