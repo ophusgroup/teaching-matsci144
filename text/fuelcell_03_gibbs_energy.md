@@ -87,7 +87,10 @@ Now, to transform from $U(V)\big|_{S, n_i}$ to $\text{[?]}(P)\big|_{S, n_i}$, we
 :::{admonition} Definition of the Legendre transformation
 :class: danger
 
-The Legendre transformation allows us to transform from an initial thermodynamic potential $\Phi_i$ that has $N$ independent variables, $\Phi_i(\phi_i^1, \phi_i^2, \ldots, \phi_i^N)$, to a final thermodynamic potential $\Phi_f$ that may have a different set of $N$ independent variables, $\Phi_f(\phi_f^1, \phi_f^2, \ldots, \phi_f^N)$. In our case, since we are only changing one variable at a time (from $\phi_i^1$ to $\phi_f^1$), the final thermodynamic potential can be obtained from the initial thermodynamic potential by subtracting from the initial thermodynamic potential with the product between the independent variable $\phi_i^1$ that one wants to swap out and the partial derivative of the initial thermodynamic variable with respect to $\phi_i^1$. The mathematical expression is shown below,
+The Legendre transformation allows us to transform from an initial thermodynamic potential $\Phi_i$, with $N$ independent variables, $\Phi_i(\phi_i^1, \phi_i^2, \ldots, \phi_i^N)$, to a final thermodynamic potential $\Phi_f$, which may have a different set of $N$ independent variables, $\Phi_f(\phi_f^1, \phi_f^2, \ldots, \phi_f^N)$.
+
+In the case where only one variable is changed (from $\phi_i^1$ to $\phi_f^1$), the final thermodynamic potential can be obtained by subtracting from the initial thermodynamic potential the product of the independent variable $\phi_i^1$ being replaced and the partial derivative of the initial thermodynamic potential with respect to $\phi_i^1$. The transformation is expressed mathematically as:
+
 
 ```{math}
 :label: eq:one_var_legendre
@@ -107,7 +110,7 @@ From [Equation %s](#eq:u_partial_derivs), we know $(\partial U/\partial V)_{S, n
 \text{[?]}(S, P, n_i) = U(S, V, n_i) - (-P)\cdot V =  U(S, V, n_i) + PV
 ```
 
-By convention, we name this new thermodynamic potential as the enthalpy, $H$.
+By convention, we name this new thermodynamic potential as the enthalpy $H$.
 
 ```{math}
 H =  U + PV
