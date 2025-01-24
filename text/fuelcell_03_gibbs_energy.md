@@ -21,12 +21,12 @@ The subscripted $S$ and $V$ after $\big|$ mean that those variables are held con
 \mu_i = \left(\frac{\partial U}{\partial n_i}\right)_{S, V, n_{j\neq i}}
 ```
 
-Again, the subscripted $S$, $V$, $n_{j\neq i}$ mean those varibale are kept constant. The notation $n_{j\neq i}$ just means the moles of all species except $i$ are kept constant, where $j$ is used to represent any other chemical species that is not $i$. In a nutshell, _when $S$, $V$ and $n_{j\neq i}$ are held constant_, the chemical potential of a chemical species $i$ is defined as the partial derivative of the internal energy with respective to the number of moles of the species $i$. This quantity is also referred to as the _partial molar internal energy_, which we will discuss in more detail in [Section "{name}"](#sec:partial_molar).
+Again, the subscripted $S$, $V$, $n_{j\neq i}$ mean those variable are kept constant. The notation $n_{j\neq i}$ just means the moles of all species except $i$ are kept constant, where $j$ is used to represent any other chemical species that is not $i$. In a nutshell, _when $S$, $V$ and $n_{j\neq i}$ are held constant_, the chemical potential of a chemical species $i$ is defined as the partial derivative of the internal energy with respective to the number of moles of the species $i$. This quantity is also referred to as the _partial molar internal energy_, which we will discuss in more detail in [Section "{name}"](#sec:partial_molar).
 :::
 
 ## Legendre Transformation from $U(S, V, n_i)$ to $G(T, P, n_i)$
 
-In practice, it is often difficult to keep $S$ and $V$ constant during chemcial processes since it's almost impossible to obtain complete heat insulation, and materials wants to expand or shrink in volume during heat exchange. It is oftentimes more convenient to control a different set of variables, such as $T$ and $P$. The temperature can be fixed by coupling the system to an external heat reservoir, and the pressured can be fixed by adjusting the volume of the container or adding/removing materials from the system. By changing the underlying control variable, we are effectively transforming into a new thermodynamic potential that is different from the initial thermodynamic potential (i.e., the internal energy in this case). To obtain the expression for this new thermodyanmic potential, we follow a 3-step process to transform from the internal energy $U$ that depends on $(S, V, n_i)$ to a new thermodynamic potential that depends on $(T, P, n_i)$.
+In practice, it is often difficult to keep $S$ and $V$ constant during chemical processes since it's almost impossible to obtain complete heat insulation, and materials wants to expand or shrink in volume during heat exchange. It is oftentimes more convenient to control a different set of variables, such as $T$ and $P$. The temperature can be fixed by coupling the system to an external heat reservoir, and the pressured can be fixed by adjusting the volume of the container or adding/removing materials from the system. By changing the underlying control variable, we are effectively transforming into a new thermodynamic potential that is different from the initial thermodynamic potential (i.e., the internal energy in this case). To obtain the expression for this new thermodynamic potential, we follow a 3-step process to transform from the internal energy $U$ that depends on $(S, V, n_i)$ to a new thermodynamic potential that depends on $(T, P, n_i)$.
 
 ### Step 1
 
@@ -55,7 +55,7 @@ Here, the variables that immediately follow the $\dd$ operators are our independ
 
 For clarity, let's change one control variable at a time. One can either choose to change from $S$ to $T$ first, or change from $V$ to $P$ first. Here, we choose to change from $V$ to $P$ first.
 
-After such change, the new potential should depend on $(S, P, n_i)$, with its differential form looking something like the following expression
+After such a change, the new potential should depend on $(S, P, n_i)$, with its differential form looking something like the following expression
 
 ```{math}
 :label: eq:mystery_enthalpy
@@ -87,7 +87,10 @@ Now, to transform from $U(V)\big|_{S, n_i}$ to $\text{[?]}(P)\big|_{S, n_i}$, we
 :::{admonition} Definition of the Legendre transformation
 :class: danger
 
-The Legendre transformation allows us to transform from an initial thermodynamic potential $\Phi_i$ that has $N$ independent variables, $\Phi_i(\phi_i^1, \phi_i^2, \ldots, \phi_i^N)$, to a final thermodyanmic potential $\Phi_f$ that may have a different set of $N$ independent variables, $\Phi_f(\phi_f^1, \phi_f^2, \ldots, \phi_f^N)$. In our case, since we are only changing one variable at a time (from $\phi_i^1$ to $\phi_f^1$), the final thermodynamic potential can be obtained from the initial thermodynamic potential by subtracting from the initial thermodynamic potential with the product between the independent variable $\phi_i^1$ that one wants to swap out and the partial derivative of the initial thermodynamic variable with respect to $\phi_i^1$. The mathematical expression is shown below,
+The Legendre transformation allows us to transform from an initial thermodynamic potential $\Phi_i$, with $N$ independent variables, $\Phi_i(\phi_i^1, \phi_i^2, \ldots, \phi_i^N)$, to a final thermodynamic potential $\Phi_f$, which may have a different set of $N$ independent variables, $\Phi_f(\phi_f^1, \phi_f^2, \ldots, \phi_f^N)$.
+
+In the case where only one variable is changed (from $\phi_i^1$ to $\phi_f^1$), the final thermodynamic potential can be obtained by subtracting from the initial thermodynamic potential the product of the independent variable $\phi_i^1$ being replaced and the partial derivative of the initial thermodynamic potential with respect to $\phi_i^1$. The transformation is expressed mathematically as:
+
 
 ```{math}
 :label: eq:one_var_legendre
@@ -107,7 +110,7 @@ From [Equation %s](#eq:u_partial_derivs), we know $(\partial U/\partial V)_{S, n
 \text{[?]}(S, P, n_i) = U(S, V, n_i) - (-P)\cdot V =  U(S, V, n_i) + PV
 ```
 
-By convention, we name this new thermodynamic potential as the enthalpy, $H$.
+By convention, we name this new thermodynamic potential as the enthalpy $H$.
 
 ```{math}
 H =  U + PV
@@ -179,7 +182,7 @@ Here is an interactive version of the same transformation.
 
 ### Step 3
 
-Now, all that's left is to tranform the remaining independent variable from $S$ to $T$ since not only is $S$ hard to control,
+Now, all that's left is to transform the remaining independent variable from $S$ to $T$ since not only is $S$ hard to control,
 but also difficult to measure/quantify in the first place.
 Again by convention, we name this new thermodynamic potential as the Gibbs free energy, denoted by $G$.
 Following the general recipe of the Legendre transformation, we subtract from $H$ with the product between the initial indepdendent variable ($S$) and the partial derivative of $H$ with respect to $T$, while holding all other independent variable constant.
@@ -227,14 +230,14 @@ Under this scenario, we get
 The significance of [Equation %s](#eq:dG_const_TP) will become apparent in the next section.
 For now, let's recap two important lessons that we've learned so far.
 
-1. The chemical potential of species $i$ can be defined as partial molar quanties of different thermodyanmic potentials under different control variables,
+1. The chemical potential of species $i$ can be defined as partial molar quantities of different thermodynamic potentials under different control variables,
 but these definitions are all equivalent.
 ```{math}
 :label: eq:various_mu_defs
 \mu_i = \left(\frac{\partial U}{\partial n_i}\right)_{S, V, n_{j\neq i}} = \left(\frac{\partial H}{\partial n_i}\right)_{S, P, n_{j\neq i}} = \left(\frac{\partial F}{\partial n_i}\right)_{T, V, n_{j\neq i}} = \left(\frac{\partial G}{\partial n_i}\right)_{T, P, n_{j\neq i}}
 ```
 
-2. Legendre transformation allows us to transform from exisiting thermodynamic potentials to new ones with a different set of control variable.
+2. Legendre transformation allows us to transform from existing thermodynamic potentials to new ones with a different set of control variable.
 
 The transformation path that is demonstrated here is
 ```{math}
