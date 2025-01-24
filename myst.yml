@@ -28,9 +28,10 @@ project:
       - file: text/fuelcell_06_voltage_fuelcell.md
   - title: Notebooks
     children:
-      - file: notebooks/entropy/gas_molecule.ipynb
-      - file: notebooks/entropy/co2_mixing.ipynb
-      - file: notebooks/fuelcell/legendre.ipynb
+      # - file: notebooks/entropy/gas_molecule.ipynb
+      # - file: notebooks/entropy/co2_mixing.ipynb
+      # - file: notebooks/fuelcell/legendre.ipynb
+      - pattern: notebooks/**
   # jupyter: true
   #  jupyter:
   #    binder:
