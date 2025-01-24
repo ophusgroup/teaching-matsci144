@@ -72,6 +72,7 @@ As discussed in previous sections, when the pressure and temperature of a system
 ```
 
 :::{admonition} Definition of Partial Molar Quantities
+:label: def:partial_molar_quantity
 :class: danger
 
 We define the partial molar quantity of a thermodynamic variable to be, **at constant $T$ and $P$**, the partial derivative of that variable with respect to the number of moles of the $i^{\text{th}}$ species. As briefly mentioned in module 1, we will use the following notation to represent partial molar enthalpy ($h_i$) and partial molar entropy ($s_i$):
@@ -94,6 +95,7 @@ An additional note on the variables being held constant: recall from [Equation %
 
 Utilizing the notation introduced in [Equation %s](#eq:partial_molar_notation_def) on [Equation %s](#eq:partial_molar_mu), we get
 ```{math}
+:label: eq:partial_molar_mu_h_s
 \mu_i = h_i - T s_i
 ```
 
@@ -111,7 +113,7 @@ A more general comparison between a specific quantity and a partial molar quanti
 :label: fig:specific_vs_partial_molar
 :align: center
 :width: 700px
-:heigh: 700px
+:height: 700px
 
 Partial molar quantity vs. specific quantity
 ```
