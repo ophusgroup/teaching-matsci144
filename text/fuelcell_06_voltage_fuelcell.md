@@ -109,11 +109,64 @@ Collecting all like-terms, we obtain partital pressure dependent open-circuit vo
 \mathsf{V} = \frac{1}{4\mathscr{F}}\bigg[\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right) + RT \ln{\frac{\left(p_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p_{\text{O}_2}/p_{\text{ref}}\right)}{\left(p_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}} \bigg]
 ```
 
-The first three terms within the square bracket define the (inverse) standard chemical potential of the reaction, $\Delta \mu^0_{\text{rxn}} = \mu^0_{\text{products}} - \mu^0_{\text{reactants}} = -\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right)$. The standard reaction chemical potential is the change in the Gibbs free energy of the system per mole of the extent of the reaction when the reactants and the products all have their partial pressure equal to $p_{\text{ref}}$. The last term describe the configurational-entropic contribution to the change in the standard reaction chemical potential. Not suprisingly, [Equation %s](#eq:reaction_voltage_partial_pressure) states that the open-circuit voltage of the fuel cell not only depends on the types of reactants and products, but also on the concentration/partial pressure of each species.
+The first three terms within the square bracket define the (inverse) standard chemical potential of the reaction,
+
+```{math}
+:label: eq:std_rxn_mu
+\Delta \mu^0_{\text{rxn}} = \mu^0_{\text{products}} - \mu^0_{\text{reactants}} = -\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right)
+```
+
+The standard reaction chemical potential is the change in the Gibbs free energy of the system per mole of the extent of the reaction when the reactants and the products all have their partial pressure equal to $p_{\text{ref}}$. The last term describe the configurational-entropic contribution to the change in the standard reaction chemical potential. Not suprisingly, [Equation %s](#eq:reaction_voltage_partial_pressure) states that the open-circuit voltage of the fuel cell not only depends on the types of reactants and products, but also on the concentration/partial pressure of each species.
 
 
 ## A Note on Units
+In [Equation %s](#eq:reaction_voltage_partial_pressure), since $\mathscr{F}$ is defined as Coulomb per mole of electrons, the open-circuit voltage in that equation are in units of volt per mole of electrons. That being said, it is equally valid to define voltage in terms of volt per single electron, and with proper conversion factors, [Equation %s](#eq:reaction_voltage_partial_pressure) becomes
+
+```{math}
+:label: eq:open_circuit_v_per_e
+\mathsf{V} = \frac{1}{4e}\bigg[\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right) + k_{\text{B}}T \ln{\frac{\left(p_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p_{\text{O}_2}/p_{\text{ref}}\right)}{\left(p_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}} \bigg]
+```
+
+Here, $\mu_i$ is the chemical potential of a *single molecule/atom* of a species in units of electron-volts ($\text{eV}$), rather than the chemical potential of a mole of the species with units of $\text{J/mol}$. An electron-volt if the potential energy of an electron across the voltage of 1 $\text{V}$. The charge of a single electron is $e$ as seen in [Equation %s](#eq:open_circuit_v_per_e), which is equal to $-1.6\times 10^{-19}\;\text{Coulombs}$. In summary, all the constants in [Equation %s](#eq:open_circuit_v_per_e) differ from those in [Equation %s](#eq:reaction_voltage_partial_pressure) by Avogadro's number $N_{\text{A}}$, where $\mathscr{F}=N_{\text{A}}\times e$, $R = N_{\text{A}}\times k_{\text{B}}$, and $\mu_i$ in [Equation %s](#eq:reaction_voltage_partial_pressure) is equal to $N_\text{A}$ multiplied by $\mu_i$ in [Equation %s](#eq:open_circuit_v_per_e).
+
+For this course, we will mostly use $\mathscr{F}$, $R$ and $\mu_i$ in units of per mole. These units are more typical of chemistry. More physics-oriented courses tend to use $e$, $k_{\text{B}}$, and $\mu_i$ in units of per electron/molecule. You are welcome to use whatever units you feel more comfortable, and sometimes there are scenarios when one convention leads to numbers that are easier to work with than those under the other convention. Make sure you don't mix up the units in a single equation. If you mix them up, you may get unphysical quantities on the order of $10^{\pm 20}\; \text{V}$ for the open-circuit voltage. If you do find yourself getting such values, check that you are using consistent units.
 
 ## Dependence of Voltage on Partial Pressure
+To gain a deeper understanding of the open-circuit voltage's dependence on partial pressure, we plot the voltage as a function of the natural log of partial pressure of each species in [](#fig:voltage_partial_pressure). Here, only one component's partial pressure is varied at a time. When $p_i=p_{\text{ref}}$, the fuel cell's voltage is only given by the standard reaction chemical potential (this is shown as the same voltage-axis intercept for all three chemical species in [](#fig:voltage_partial_pressure)). We can see that the voltage increases when the partial pressure of oxygen or hydrogen gases increases; the voltage decreases when the partial pressure of water increases.
+
+```{figure} ../images/fuelcell/voltagepresure.png
+:label: fig:voltage_partial_pressure
+:align: center
+:width: 500px
+
+The voltage of a fuel cell as a function of the natural log of partial pressures. The intercept is determined by $\Delta \mu_{\text{rxn}}^0$ and can be changed by modifying the chemistry of the reaction. Increasing the reactant concentrtion increases the voltage, while increasing the product concentration decreases it.
+```
+
+To make sense of why the voltage increases with increasing oxygen or hydrogen partial pressures but decreases with increasing water partial pressure, let's revisit the net fuel cell reaction where hydrogen and oxygen react to form water, $2\mathrm{H}_2 + \mathrm{O}_2 \Leftrightarrow 2\mathrm{H}_2\mathrm{O}$. Let us imagine a fuel cell with lots of water and very little hydrogen and oxygen gases (i.e., high $p_{\text{H}_2\text{O}}$, low $p_{\text{H}_2}$ and low $p_{\text{O}_2}$). In such a fuel cell, there is almost no driving force to produce more water. Accordingly, this fuel cell has a small voltage since there is no driving force for hydrogen and oxygen to react to form more water. Alternatively, if a fuel cell has lots of hydrogen and oxygen gases but very little water (i.e., low $p_{\text{H}_2\text{O}}$, high $p_{\text{H}_2}$ and high $p_{\text{O}_2}$), there will be a significant driving force for hydrogen and oxygen gases to react to form water, leading to a high voltage. Such trends for voltage vs. partial pressure of reactants and product are consistent with the voltage lines plotted in [](#fig:voltage_partial_pressure).
 
 ## Voltages with Different Fuels
+The voltage of a fuel cell depends on the type of the chemical species involved. So far, we have only considered hydrogen and oxygen gases as reactants and water as the product. From [Equation %s](#eq:std_rxn_mu), with tabulated values at the standard condition, we can calculate the standard reaction chemical potential to be $\Delta \mu^0_{\text{rxn}}=-475000\,\text{J/mol}$ of $\text{O}_2$ consumed. Thus, $-\frac{\Delta \mu^0_{\text{rxn}}}{4\mathscr{F}} = 1.23\, \mathrm{V}$ at $1\;\text{atm}$ and $300\;\text{K}$.
+
+Now let's change the mobile ion from the oxygen ions ($\text{O}^{2-}$) to the protons ($\text{H}^+$). In such a fuel cell, the reactions become:
+
+```{math}
+\begin{aligned}
+\text{Anode}   &: 2\text{H}_2 \Leftrightarrow 4\text{H}^{+} + 4e^{-} \\
+\text{Cathode} &: \text{O}_2 + 4\text{H}^{+} + 4e^{-} \Leftrightarrow 2\text{H}_2\text{O} \\
+\text{Overall} &: 2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}
+\end{aligned}
+```
+
+Since the total number of electrons transferred and the overall reaction are the same as the fuel cell with $\text{O}^{2-}$ as the mobile ions, this alternative fuel cell with $\text{H}^{+}$ ions has the same open-circuit voltage expression as that in [Equation %s](#eq:reaction_voltage_partial_pressure). Such equivalence is underpinned by an important concept in thermodynamics: the Gibbs free energy and subsequently the open-circuit voltage are two thermodynamic variables that are state variables. That is to say these two variables are independent of the path taken in-between the initial and final states. Here, regardless of the mobile carrier being oxygen or hydrogen ions, the change in the molar Gibbs free energy is the same since the initial and final states in both overall reactions are the same, with the initial state being 2 moles of $\text{H}_2$, 1 mole of $\text{O}_2$ and the final state being 2 moles of  $\text{H}_2\text{O}$. Thus, the open-circuit voltage of a fuel cell based on proton conduction is equal to that of one based on oxygen ion conduction.
+
+Finally, let's change the hydrogen gas to methane. If oxygen ions can traverse through the membrane, the chemical reactions become:
+
+```{math}
+\begin{aligned}
+\text{Anode}   &: \text{CH}_4 + 4\text{O}^{2-} \Leftrightarrow \text{CO}_2 + 2\text{H}_2\text{O} + 8e^{-}  \\
+\text{Cathode} &: 2\text{O}_2 + 8e^{-} \Leftrightarrow 4\text{O}^{2-} \\
+\text{Overall} &: \text{CH}_4 + 2\text{O}_2 \Leftrightarrow \text{CO}_2 + 2\text{H}_2\text{O}
+\end{aligned}
+```
+
+Here, $\Delta \mu_{\text{rxn}}^0=-763000\,\text{J/mol}$ at $300\,\text{K}$, and $-\frac{\Delta \mu^0_{\text{rxn}}}{8\mathscr{F}} = 1.10\, \mathrm{V}$. This voltage differs from the hydrogen-oxygen fuel cell because the replacement of hydrogen with methane changes the bond energy difference upon reaction of methane and oxygen into water and carbon dioxide, which leads to a significant difference in the initial and final states of the overall reaction. In a nutshell, while changing the mobile ions in fuel cells while keeping the initial and final states the same in the overall reaction does not change the open-circuit voltage, changing the types of chemical species can.
