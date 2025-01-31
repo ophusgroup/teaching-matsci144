@@ -28,6 +28,7 @@ project:
       - file: text/fuelcell_06_voltage_fuelcell.md
       - file: text/fuelcell_07_fuelcell_vs_heateng.md
       - file: text/fuelcell_08_law_mass_action.md
+  - file: text/phase00.md
   - title: Notebooks
     children:
       - pattern: notebooks/**
