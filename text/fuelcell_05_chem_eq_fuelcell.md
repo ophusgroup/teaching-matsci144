@@ -5,7 +5,10 @@ numbering:
 ---
 
 ## Fuel Cell Equilibrium
-For the fuel cell shown in [](#fuel-cell-complete), we want to determine the its voltage at the open circuit condition (i.e., the current does not flow through the circuit due to a break in the circuit). The open circuit condition is to simplify our calculation since any non-zero current would lead to an change in voltage due to resistance in the fuel cell (on the zeroth order, one can rationalize such change in voltage with Ohm's law, $\Delta V=\Delta I\cdot R$). Such an open circuit can be achieved by removing the lightbulb in [](#fuel-cell-complete) to create a gap/break in the circuit.
+
+For the fuel cell shown in [](#fuel-cell-complete), we want to determine its voltage at the open circuit condition (i.e., the current does not flow through the circuit due to a break in the circuit). 
+The open circuit condition simplifies our calculation since any non-zero current would lead to a change in voltage due to resistance in the fuel cell (on the zeroth order, one can rationalize such change in voltage with Ohm's law, $\Delta V=\Delta I\cdot R$). 
+An open circuit can be achieved by removing the lightbulb in in [](#fuel-cell-complete) to create a gap in the circuit.
 To use the generalized expression for chemical equilibrium as seen in [Equation %s](#eq:general_reaction_eq), we first need to figure out all species in a fuel cell that are relevant to chemical equilibrium.
 
 :::{table} Fuel cell species and chemical reactions
@@ -20,7 +23,11 @@ To use the generalized expression for chemical equilibrium as seen in [Equation 
 | $\text{H}_2$ / $\text{H}_2\text{O}$ / $\text{O}_2$ | Anode/Cathode | No | $2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}$ |
 :::
 
-[](#tab:fuelcell_species) lists all species and chemical reactions in the fuel cell as shown in [](#fuel-cell-complete). The subscripts denote whether the reaction is taking place at the cathode (C) or the anode (A). An extra note on the $1^{\text{st}}$ and $2^{\text{nd}}$ reactions, technically speaking, they are not chemical reactions, but rather transport processes. At open circuit, for a chemical reaction in the fuel cell to reach equilibrium, it needs to have a participating species that can traverse across the membrane/circuit to allow the forward and reverse reactions to equilibrate, namely $\text{O}^{2-}$ in this case. As a result, only the $1^{\text{st}}$, $3^{\text{rd}}$ and $4^{\text{th}}$ reactions can equilibrate. The rest of reactions cannot equilibrate because the species are physically blocked from each other. For the $2^{\text{nd}}$ reaction, electrons cannot flow through the broken circuit gap. The $5^{\text{th}}$ reaction represents the overall reaction of the fuel cell, where the gases species and water are blocked by the membrane. In summary, to calculate the open-circuit voltage of the fuel cell, we need to consider the following three reactions at equilibrium:
+[](#tab:fuelcell_species) lists all species and chemical reactions in the fuel cell as shown in [](#fuel-cell-complete). The subscripts denote whether the reaction is taking place at the cathode (C) or the anode (A). An extra note on the $1^{\text{st}}$ and $2^{\text{nd}}$ reactions, technically speaking, they are not chemical reactions, but rather transport processes. At open circuit, for a chemical reaction in the fuel cell to reach equilibrium, it needs to have a participating species that can traverse across the membrane/circuit to allow the forward and reverse reactions to equilibrate, namely $\text{O}^{2-}$ in this case. As a result, only the $1^{\text{st}}$, $3^{\text{rd}}$, and $4^{\text{th}}$ reactions can equilibrate. 
+The remaining reactions cannot equilibrate because the species are physically separated.
+For the $2^{\text{nd}}$ reaction, electrons cannot flow through the broken circuit gap. 
+The $5^{\text{th}}$ reaction represents the overall reaction of the fuel cell, where the gaseous species and water are blocked by the membrane.
+In summary, to calculate the open-circuit voltage of the fuel cell, we need to consider the following three reactions at equilibrium:
 
 1. $2 \text{H}_2 + 2 \text{O}^{2-}_{\text{A}} \Leftrightarrow 2\text{H}_2\text{O} + 4 e^{-}_{\text{A}}$
 2. $\text{O}_2 + 4 e^{-}_{\text{C}} \Leftrightarrow 2\text{O}^{2-}_{\text{C}}$
@@ -32,7 +39,7 @@ Applying the equilibrium condition from [Equation %s](#eq:general_reaction_eq), 
 2. $-\mu_{\text{O}_2} - 4 \mu_{e^{-}_{\text{C}}} + 2\mu_{\text{O}^{2-}_{\text{C}}}=0$
 3. $-\mu_{\text{O}^{2-}_{\text{A}}} + \mu_{\text{O}^{2-}_{\text{C}}}=0$
 
-The goal here is to to obtain chemical potential difference between electrons in the cathode and the anode as a function of the chemical potentials of species in the overall $5^{\text{th}}$ reaction. The first step is to rearrange the equations as follows
+The goal here is to to obtain the chemical potential difference between electrons in the cathode and the anode as a function of the chemical potentials of species in the overall $5^{\text{th}}$ reaction. The first step is to rearrange the equations as follows
 
 1. $- 4\mu_{e^{-}_{\text{A}}} = -2 \mu_{\text{H}_2} -2 \mu_{\text{O}^{2-}_{\text{A}}} + 2\mu_{\text{H}_2\text{O}}$
 2. $ 4 \mu_{e^{-}_{\text{C}}} = -\mu_{\text{O}_2}  + 2\mu_{\text{O}^{2-}_{\text{C}}}$
@@ -54,8 +61,10 @@ We can see that the chemical potential of oxygen ions in the cathode cancels out
 \mu_{e^{-}_{\text{C}}} - \mu_{e^{-}_{\text{A}}} = \frac{1}{4}\left(-2 \mu_{\text{H}_2} - \mu_{\text{O}_2} + 2\mu_{\text{H}_2\text{O}}\right)
 ```
 
-From [Equation %s](#eq:fuel_cell_eq_electron_diff), we can see that the electron chemical potential difference in the cathode and the anode is equal to a quarter of the chemical potential difference between the product ($\text{H}_2\text{O}$) and the reactants ($\text{H}_2$, $\text{O}_2$) in the overall fuel cell equation, multiplied by their respective stoichiometric coefficient. The factor of $1/4$ reflects the fact that 4 electrons need to be transferred from the anode to the cathode for every mole of oxygen gas molecules consumed, if the circuit were to be a closed circuit. To reiterate, this means at open circuit, the difference in the electron chemical potentials between the cathode and the anode is precisely balanced out by the chemical potential difference between the overall products and reactants in a fuel cell, weighted by their stoichimetric coefficients. Again, with charged ions at play here, we left out the electrostatic potential to simplify the discussion.
-
+From [Equation %s](#eq:fuel_cell_eq_electron_diff), we can see that the electron chemical potential difference in the cathode and the anode is equal to a quarter of the chemical potential difference between the product ($\text{H}_2\text{O}$) and the reactants ($\text{H}_2$, $\text{O}_2$) in the overall fuel cell equation, multiplied by their respective stoichiometric coefficient. 
+The factor of $1/4$ reflects that 4 electrons must be transferred from the anode to the cathode for every mole of oxygen gas consumed, assuming a closed circuit.
+To reiterate, at open circuit, the electron chemical potential difference between the cathode and the anode is precisely balanced by the chemical potential difference between the overall products and reactants in the fuel cell, weighted by their stoichiometric coefficients.
+Again, since charged ions are involved, we have omitted the electrostatic potential for simplicity.
 
 (sec:partial_molar)=
 ## Partial Molar Quantities
@@ -99,7 +108,9 @@ Utilizing the notation introduced in [Equation %s](#eq:partial_molar_notation_de
 \mu_i = h_i - T s_i
 ```
 
-where $h_i$ relates to the change in the bond energy of the molecules/materials, and $s_i$ relates to the degree of randomness in the molecules. A more rigorous way to think about the partial molar enthalpy is to consider, at constant $T$ and $P$, how much is the infinitesimal change in a system's enthalpy as the species $i$ is added to or removed from the system by an infinitesimal amount. Similarly, the partial molar enthalpy is the infinitesimal change in a system's entropy as the species $i$ is added to or removed from the system by an infinitesimal amount, at constant $T$ and $P$. Using the $\text{CO}_2$ separation as an example: the partial molar change in entropy of mixing is $\Delta s_{\text{mix, CO}_2}=\frac{\partial \Delta S_{\text{mix}}}{\partial n_{\text{CO}_2}}$, whereas the specific change of entropy of mixing is $\Delta \overline{S}_{\text{mix, CO}_2}=\frac{\Delta S_{\text{mix}}}{n_{\text{CO}_2}}$, denoted by the green and red line in the following plot, respectively. (Note: here we are showing partial molar change in entropy of mixing, but we can also define a partial molar entropy for processes without mixing)
+where $h_i$ relates to the change in the bond energy of the molecules/materials, and $s_i$ relates to the degree of randomness in the molecules. 
+A more rigorous way to define partial molar enthalpy is as the infinitesimal change in a system's enthalpy when an infinitesimal amount of species $i$ is added or removed, at constant $T$ and $P$.
+Similarly, the partial molar enthalpy is the infinitesimal change in a system's entropy as the species $i$ is added to or removed from the system by an infinitesimal amount, at constant $T$ and $P$. Using the $\text{CO}_2$ separation as an example: the partial molar change in entropy of mixing is $\Delta s_{\text{mix, CO}_2}=\frac{\partial \Delta S_{\text{mix}}}{\partial n_{\text{CO}_2}}$, whereas the specific change of entropy of mixing is $\Delta \overline{S}_{\text{mix, CO}_2}=\frac{\Delta S_{\text{mix}}}{n_{\text{CO}_2}}$, denoted by the green and red line in the following plot, respectively. (Note: here we are showing partial molar change in entropy of mixing, but we can also define a partial molar entropy for processes without mixing)
 
 ```{figure} #specific_vs_partial_molar_entropy
 :label: fig:specific_vs_partial_molar_entropy

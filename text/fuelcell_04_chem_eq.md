@@ -12,19 +12,24 @@ The Gibbs free energy allows us to define equilibrium conditions for a system at
 
 3. There are no unbalanced driving forces or thermodynamic potentials.
 
-When we say there is no "net" flow/exchange of energy and matter, it doesn't mean there isn't any flow or exchange of energy and matter, but such flow/exchange should be balanced out when summed in all available directions. More formally, $G$ is minimized against perturbation in the composition of the system at constant $T$ and $P$
+When we say there is no "net" flow/exchange of energy and matter, it doesn't mean there isn't any flow or exchange of energy and matter, but such flow/exchange should be balanced out when summed in all available directions. 
+More formally, $G$ is minimized with respect to perturbations in the composition of the system at constant $T$ and $P$.
+
 
 ```{math}
 \dd G\big|_{T, P}=\sum_i \mu_i \dd n_i = 0
 ```
 
-In other words, an infinitesimal change in the composition of the system yield no change in the Gibbs free energy. For example, in a chemical reaction at constant $T$ and $P$, the number of moles of each species (A, B, C, D)  does not change independent of each other as seen in the following reaction formula
+In other words, an infinitesimal change in the composition of the system yields no change in the Gibbs free energy.
+For example, in a chemical reaction at constant $T$ and $P$, the number of moles of each species (A, B, C, D)  does not change independent of each other as seen in the following reaction formula
 
 ```{math}
 a\text{A} + b\text{B} \Leftrightarrow c\text{C} + d\text{D}
 ```
 
-where $a$, $b$, $c$, and $d$ are the stoichiometric coefficients. To make this more concrete, consider the reaction $2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}$. The convention is to think in the forward direction, where the stoichiometric coefficients are $-2$, $-1$ and $2$ for $\text{H}_2$, $\text{O}_2$ and $\text{H}_2\text{O}$, respectively. Now, let's write out the infinitesimal change in the Gibbs free energy for the above equation.
+where $a$, $b$, $c$, and $d$ are the stoichiometric coefficients. To make this more concrete, consider the reaction $2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}$. 
+The convention is to consider the forward reaction, where the stoichiometric coefficients are $-2$, $-1$, and $2$ for $\text{H}_2$, $\text{O}_2$, and $\text{H}_2\text{O}$, respectively.
+Now, let's write out the infinitesimal change in the Gibbs free energy for the above equation.
 
 ```{math}
 :label: eq:dG_4_dn
@@ -47,7 +52,7 @@ As a result, since the four $\dd n_i$ variables need to change in concert, there
 \end{aligned}
 ```
 
-Substituting these expression into [Equation %s](#eq:dG_4_dn), we then get
+Substituting these expressions into [Equation %s](#eq:dG_4_dn), we then get
 
 ```{math}
 :label: eq:reaction_eq
@@ -58,7 +63,7 @@ Substituting these expression into [Equation %s](#eq:dG_4_dn), we then get
 \end{aligned}
 ```
 
-We can see that at constant $T$ and $P$, the Gibbs free energy is minimized with respect to the change in the extent of the chemical reaction.
+We can see that at constant $T$ and $P$, the Gibbs free energy is minimized with respect to changes in the extent of the chemical reaction.
 [Equation %s](#eq:reaction_eq) can be generalized to describe chemical equilibria with the following expression
 
 ```{math}
@@ -66,9 +71,8 @@ We can see that at constant $T$ and $P$, the Gibbs free energy is minimized with
 \left(\frac{\partial G}{\partial \xi}\right)_{T, P} = \sum_i v_i \mu_i = 0
 ```
 
-where $v_i$ is the stoichiometric coefficient of species $i$ in the chemical reaction
-(negative for reactants and positive for products). On a final note,
-we can write the condition of chemical equilibrium for the water production reaction ($2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}$) as
+where $v_i$ is the stoichiometric coefficient of species $i$ in the chemical reaction (negative for reactants and positive for products). 
+Finally, we can express the condition of chemical equilibrium for the water production reaction ($2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}$) as
 ```{math}
 \left(\frac{\partial G}{\partial \xi}\right)_{T, P} = -2 \mu_{\text{H}_2} - \mu_{\text{O}_2} + 2 \mu_{\text{H}_2\text{O}}= 0
 ```
