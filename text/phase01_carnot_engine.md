@@ -38,7 +38,7 @@ PV = \text{constant}
 The change of pressure, volume, entropy and temperature during isothermal gas expansion.
 ```
 
-The left panel of [](#fig:isothermal_expansion) shows the relationship between pressure and volume. Recalling Eq. [](#work_pressure_volume), we know that the work done by the gas during expansion is:
+The left panel of [](#fig:isothermal_expansion) shows the relationship between pressure and volume. Recalling Equation [](#work_pressure_volume), we know that the work done by the gas during expansion is:
 
 ```{math}
 dW = P  dV
@@ -49,7 +49,7 @@ The expanding gas is doing work, which can be harvested through the motion of th
 ```{math}
 dU = dQ - dW = 0
 ```
-For a reversible process, we know from Eq. [](#eq:work_TdS) that heat transfer is given by:
+For a reversible process, we know from Equation [](#eq:work_TdS) that heat transfer is given by:
 
 ```{math}
 :label: eq:carnot_TdS
@@ -89,7 +89,7 @@ Thus, no net heat is converted to work.
 
 ## The Carnot Cycle
 
-To extract net work, the work done by the gas must exceed the work required to restore the system. This means that more heat must be absorbed during expansion than is released during compression. Considering Eq. [](#eq:carnot_TdS), to absorb more heat while keeping the entropy the same at the start and end of the cycle, we must increase temperature during expansion and decrease temperature during compression. This creates a complete cycle, plotted in [](#fig:carnotcycle_entropy).
+To extract net work, the work done by the gas must exceed the work required to restore the system. This means that more heat must be absorbed during expansion than is released during compression. Considering Equation [](#eq:carnot_TdS), to absorb more heat while keeping the entropy the same at the start and end of the cycle, we must increase temperature during expansion and decrease temperature during compression. This creates a complete cycle, plotted in [](#fig:carnotcycle_entropy).
 
 
 ```{figure} ../images/phase/carnotcycle_entropy_2.png
@@ -121,10 +121,11 @@ W_{\text{cycle}} = Q_{\text{in}} - Q_{\text{out}}
 We define efficiency $\eta$ as:
 
 ```{math}
+:label: eq:efficiency
 \eta = \frac{\text{net work done}}{\text{heat in}}
 ```
 
-We could use Eq. [](#work_pressure_volume) to calculate the work done, but there is an easier way. We can instead use the First Law and our knowledge that the cycle begins and ends at the same temperature:
+We could use Equation [](#work_pressure_volume) to calculate the work done, but there is an easier way. We can instead use the First Law and our knowledge that the cycle begins and ends at the same temperature:
 
 ```{math}
 \Delta U_{\text{cycle}} = Q - W = 0
@@ -149,6 +150,7 @@ Q_{\text{cycle}} = W_{\text{cycle}} = (T_H - T_C)(S_2 - S_1)
 The efficiency of the Carnot cycle simplifies to:
 
 ```{math}
+:label: eq:eff_carnot
 \begin{aligned}
 \eta_{\text{Carnot}} 
 &= \frac{\text{net work done}}{\text{heat in}} \\
@@ -156,7 +158,7 @@ The efficiency of the Carnot cycle simplifies to:
 &= 1 - \frac{T_C}{T_H} \\
 \end{aligned}
 ```
-This is the Carnot efficiency, the maximum efficiency of an ideal heat engine which alternates between two temperatures (in units of Kelvins). This efficiency is shown graphically in [](#fig:carnot_efficiency). The Carnot efficiency for a cold reservoir at 300 K is plotted in [](#fig:carnot_efficiency_300K).
+This is the Carnot efficiency, the maximum efficiency of an ideal heat engine which alternates between two temperatures (in units of Kelvins). This efficiency is shown graphically in [](#fig:carnot_efficiency). The Carnot efficiency for a cold reservoir at 300K is plotted in [](#fig:carnot_efficiency_300K).
 
 
 ```{figure} ../images/phase/carnotefficiencygraphic.png
@@ -181,26 +183,38 @@ The Carnot efficiency at 300K, as a function of the hot reservoir temperature.
 
 The Carnot cycle is an ideal process, but real-world engines always have some irreversible components. Any deviation from perfect reversibility lowers efficiency.
 
-For instance, consider a modification where the adiabatic steps (2 → 3 and 4 → 1) are not reversible. Instead of quasistatic changes in pressure and volume, real processes often involve stepwise changes, as shown in Figure 3.9.
+For instance, consider a modification where the adiabatic steps (2 → 3 and 4 → 1) are not reversible. Instead of quasistatic changes in pressure and volume, real processes often involve stepwise changes, as shown in [](#fig:irreversible_adiabats).
 
-When external pressure changes suddenly, the piston volume takes time to adjust. Friction and turbulence cause energy losses, reducing efficiency:
 
-arduino
+```{figure} ../images/phase/irreversible_adiabats.png
+:label: fig:irreversible_adiabats
+:align: center
+:width: 400px
+The P-V diagram of an approximate Carnot cycle which includes non-quasistatic adiabatic steps.
+```
+
+If we again consider the process shown in [](#fig:isothermal_piston), we know that in the real world when external pressure changes suddenly, the piston volume takes time to adjust. Friction and turbulence cause energy losses, reducing efficiency:
+
 ```{math}
 \eta < \eta_{\text{Carnot}}
 ```
-We can analyze this in terms of entropy. For a reversible process:
+We can analyze this efficiency loss in terms of entropy. For a reversible process:
 
-makefile
 ```{math}
 dS = \frac{dQ}{T}
 ```
 But for an irreversible process:
 
-r
 ```{math}
 dS > \frac{dQ}{T}
 ```
-Thus, entropy increases, meaning some energy is lost as waste heat.
+Thus, entropy increases, meaning some energy is lost as waste heat each cycle. This is shown schematically in [](#fig:irreversibleTS). Each change in temperature is accompanied by a slight increase in entropy of the universe, which causes a decrease in the efficiency loss. We could perform a similar analysis for [](#fig:irreversible_adiabats).
+
+```{figure} ../images/phase/irreversibleTS.png
+:label: fig:irreversibleTS
+:align: center
+:width: 500px
+A non-ideal thermodynamic cycle where the entropy of the system increases slightly at steps (2 → 3) and (4 → 1).
+```
 
 The Carnot cycle sets the upper limit on efficiency. Any real cycle with irreversible steps will be less efficient, as energy is lost due to friction, turbulence, and heat dissipation.
