@@ -4,7 +4,7 @@ numbering:
   enumerator: 2.8.%s
 ---
 
-From chemical equilibrium, we would like to derive an expression that tells us how a system might behave when it is away from equilirbrium. Starting from the open-circuit voltage in [Equation %s](#eq:reaction_voltage_partial_pressure), if a reaction is at equilibrium, this means there is no net driving force towards more products (postive voltage) or more reactants (negative voltage). Thus, the open circuit voltage should be 0 at equilibrium. We can then rearrange [Equation %s](#eq:reaction_voltage_partial_pressure) to be:
+From chemical equilibrium, we would like to derive an expression that tells us how a system might behave when it is away from equilibrium. Starting from the open-circuit voltage in [Equation %s](#eq:reaction_voltage_partial_pressure), if a reaction is at equilibrium, this means there is no net driving force towards more products (positive voltage) or more reactants (negative voltage). Thus, the open circuit voltage should be 0 at equilibrium. We can then rearrange [Equation %s](#eq:reaction_voltage_partial_pressure) to be:
 
 ```{math}
 \begin{aligned}
@@ -20,7 +20,7 @@ Recall that $\Delta \mu^0_{\text{rxn}}=-\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text
 \exp{\left(-\frac{\Delta \mu^0_{\text{rxn}}}{RT}\right)} = \frac{\left(p^{\text{eq}}_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}{\left(p^{\text{eq}}_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p^{\text{eq}}_{\text{O}_2}/p_{\text{ref}}\right)}
 ```
 
-Since $\Delta \mu^0_{\text{rxn}}$ is a constant for any reaction measured at the standard condition, if we know the temperature, we can solve for the ratio of equilibrum partial pressures of the products over those of the reactants, raised to their respective stoichiometric coeffcients. If we allow the hydrogen-oxygen fuel cell reaction to equilibrate over a long period of time, the final measured partial pressures will observe [Equation %s](#eq:h2_o2_keq). This expression is generally useful for calculating the theoretical yield of the product(s) at a given temperature, if we know the concentration/partial pressures of the reactants and the tabulated chemical potentials of all species at the standard condition.
+Since $\Delta \mu^0_{\text{rxn}}$ is a constant for any reaction measured at the standard condition, if we know the temperature, we can solve for the ratio of equilibrium partial pressures of the products over those of the reactants, raised to their respective stoichiometric coefficients. If we allow the hydrogen-oxygen fuel cell reaction to equilibrate over a long period of time, the final measured partial pressures will observe [Equation %s](#eq:h2_o2_keq). This expression is generally useful for calculating the theoretical yield of the product(s) at a given temperature, if we know the concentration/partial pressures of the reactants and the tabulated chemical potentials of all species at the standard condition.
 
 We will now generalize this derivation for any arbitrary reaction $a\text{A} + b\text{B} \Leftrightarrow c\text{C} + d\text{D}$. Recall that at constant $T$ and $P$, the condition of equilibrium is given by [Equation %s](#eq:reaction_eq). Substituting [Equation %s](#eq:mu_pi_over_pref) into [Equation %s](#eq:reaction_eq), we get
 

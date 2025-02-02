@@ -142,12 +142,14 @@ Q \leq T \Delta S,
 where the equality holds for reversible processes:
 
 ```{math}
+:label: eq:work_TdS
 Q_\text{rev} = T \Delta S.
 ```
 Here, the subscript "rev" indicates a reversible process.
 This distinction ensures consistency with the Second Law of Thermodynamics, which governs the direction of energy transfer and the irreversibility of natural processes.
 
 
+(sec:second_law)=
 ## Defining the Second Law
 
 
