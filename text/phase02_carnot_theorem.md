@@ -232,11 +232,39 @@ This also violates the Second Law, as heat flows from the cold reservoir to the 
 
 
 
-### Universality of Carnot's Theorem
+## Universality of Carnot's Theorem
 
 Although Carnot's theorem was originally derived for gas expansion and compression cycles, its implications extend to any system that extracts work from a temperature gradient. The key principle is that no process converting heat into work can surpass the Carnot efficiency. 
 
 For example, thermoelectric devices operate as solid-state heat engines, directly converting a temperature gradient into electrical work. Similarly, geothermal power plants leverage the Earth's internal heat as a thermal reservoir, using surface temperatures as a cold reservoir. 
 
 Regardless of the specific mechanism—whether gas expansion, solid-state transport, or fluid cycles, the Carnot theorem sets a fundamental upper bound on efficiency. Any system claiming to exceed this limit would violate the Second Law of Thermodynamics and constitute a perpetual motion machine.
+
+
+
+## Geothermal Power Efficiency
+
+
+
+[](#fig:carnot_efficiency_300K) and Equation [](#eq:eff_carnot) showed that the efficiency of a Carnot engine increases with increasing $T_\text{H}$ for a given $T_\text{C}$. However, geothermal plants in the real world experience additional efficiency losses. One of the largest losses is parasitic load, i.e. the energy required to run pumps that circulate water and steam. Many plants have parasitic loads of 20–30%, reducing their overall efficiency. [](#fig:geothermal_gen) shows the effect of these losses on the overall efficiency.
+
+
+
+```{figure} ../images/phase/generation.pdf
+:label: fig:geothermal_gen
+:align: center
+:width: 400px
+
+The efficiency of a geothermal plant operating at different temperatures and electricity generation efficiencies, accounting for the energy required to run pumps and other required steps.
+```
+
+The overall efficiency of a geothermal power plant is given by the product of the efficiency for heat-to-work conversion and the electrical generation efficiency.
+
+```{math}
+\eta_{\text{ heat to electricity}} = \eta_{\text{ heat to work}} \times \eta_{\text{ work to electricity}}
+```
+
+For super-hot-rock geothermal, higher temperatures and reduced parasitic losses nearly double plant efficiency. If parasitic loads were eliminated, efficiency could approach the Carnot limit.
+
+In the next section, we will examine phase transitions - specifically how boiling water into steam is essential for running a heat engine. Understanding these transitions is key to designing efficient geothermal systems.
 
