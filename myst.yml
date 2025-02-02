@@ -32,12 +32,11 @@ project:
     children:
       - file: text/phase01_carnot_engine
       - file: text/phase02_carnot_theorem
-      - file: text/phase03_efficiency
-      - file: text/phase04_water
-      - file: text/phase05_Clausius_Clapeyron
-      - file: text/phase06_evaporation
-      - file: text/phase07_vapor
-      - file: text/phase08_storing_work
+      - file: text/phase03_water
+      - file: text/phase04_Clausius_Clapeyron
+      - file: text/phase05_evaporation
+      - file: text/phase06_vapor
+      - file: text/phase07_storing_work
   - title: Notebooks
     children:
       - pattern: notebooks/**

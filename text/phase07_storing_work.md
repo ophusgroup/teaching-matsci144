@@ -1,7 +1,7 @@
 ---
-title: 3.1 Carnot Engine
+title: 3.7 Storing Work
 numbering:
-  enumerator: 3.1.%s
+  enumerator: 3.7.%s
 ---
 
 
