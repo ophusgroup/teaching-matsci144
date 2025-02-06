@@ -354,6 +354,8 @@ Knowing that $\Delta S_\text{demix} = - \Delta S_\text{mix}$ and referring to Eq
 \begin{aligned}
 W_\text{min}
 &=
+  T \Delta S_\text{demix} \\
+&=
   - T \Delta S_\text{mix} \\
 &=
   n_\text{total} R \, T
@@ -370,7 +372,7 @@ We can perform the same normalization as in Equation [](#eq:co2_entropy_mixing_s
 :label: eq:specific_work_CO2_capture
 \overline{W}_\text{min,CO2}
 =
-  - \frac{R \, T}{\alpha}
+  \frac{R \, T}{\alpha}
   \Big[
   \alpha \ln \alpha
   +
@@ -401,7 +403,7 @@ Inserting these values into Equation [](#eq:specific_work_CO2_capture) yields
 \begin{aligned}
 \overline{W}_\text{min,CO2}
 &=
-  - R \, T \frac{P_\text{total}}{p_\text{CO2}}
+  R \, T \frac{P_\text{total}}{p_\text{CO2}}
   \Big[
   \frac{p_\text{CO2}}{P_\text{total}} \ln
   \left(
@@ -414,7 +416,7 @@ Inserting these values into Equation [](#eq:specific_work_CO2_capture) yields
   \right)
   \Big] \\
 &=
-  - R \, T
+  R \, T
   \Big[
   \ln
   \left(
@@ -438,7 +440,7 @@ This minimum work is plotted in [](#fig:specific_entropy_co2_units) for one atmo
 \begin{aligned}
 \overline{W}_\text{min,CO2}
 &=
-  - 8.314 \frac{\text{J}}{\text{K mol}}
+  8.314 \frac{\text{J}}{\text{K mol}}
   300 K
   \Big[
   \ln
@@ -452,7 +454,7 @@ This minimum work is plotted in [](#fig:specific_entropy_co2_units) for one atmo
   \right)
   \Big] \\
 &=
-  -2494 \frac{\text{J}}{\text{mol}}
+  2494 \frac{\text{J}}{\text{mol}}
   \Big[
   \ln
   \left(
