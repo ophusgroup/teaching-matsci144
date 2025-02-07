@@ -2,6 +2,7 @@
 title: Chemical Equilibrium
 numbering:
   enumerator: 2.4.%s
+label: sec:chem_eq
 ---
 
 The Gibbs free energy allows us to define equilibrium conditions for a system at constant $T$ and $P$, which means three conditions need to be satisfied for a system to be at equilibrium:
