@@ -194,6 +194,7 @@ G=H-\left(\frac{\partial H}{\partial S}\right)_{P, n_i}\cdot S
 From [Equation %s](#eq:dH), we know that $\left(\frac{\partial H}{\partial S}\right)_{P, n_i}=T$. Thus, we conclude
 
 ```{math}
+:label: eq:gibbs_free_energy
 \begin{aligned}
 G &= H-TS \\
 &= U + PV - TS
