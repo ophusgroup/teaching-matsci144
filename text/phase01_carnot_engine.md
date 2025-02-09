@@ -71,7 +71,7 @@ The left panel of [](#fig:engine_cycle) shows the T-S diagram during this cycle.
 Isothermal expansion and then compression of a piston. Each cycle performs no net work. 
 ```
 
-Graphically, integrating $PdV$ in [](#fig:engine_cycle) does not generate any network since expansion and compression steps cancel each other out. 
+Graphically, integrating $PdV$ in [](#fig:engine_cycle) does not generate any net work since expansion and compression steps cancel each other out. 
 A complete isothermal cycle can be modeled by the expression 
 ```{math}
 \oint P dV = 0
