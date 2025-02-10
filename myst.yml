@@ -35,8 +35,8 @@ project:
       - file: text/phase03_water
       - file: text/phase04_Clausius_Clapeyron
       - file: text/phase05_evaporation
-      - file: text/phase06_vapor
-      - file: text/phase07_storing_work
+      - file: text/phase06_storing_work
+  - file: text/batteries00.md
   - title: Notebooks
     children:
       - pattern: notebooks/**

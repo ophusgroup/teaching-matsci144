@@ -102,7 +102,7 @@ The relationship between temperature and pressure during boiling is described by
 
 
 
-## Boiling and Equilibrium of Liquid and Gas
+## Equilibrium of Liquid and Gas
 
 The boiling point of water is often stated as 100°C, but as we saw above, it depends on pressure. 
 Similarly, the boiling pressure of water will also depend on the temperature.
