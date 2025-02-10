@@ -64,14 +64,14 @@ For now, the chemical potential defined in [Equation %s](#chemical_work_def) is 
 
 By incorporating both mechanical and chemical work, we can write an expanded First Law of thermodynamics for a reversible system (i.e., where $Q_{\text{rev}}=\int T dS$) in [Equation %s](#expanded_first_law)
 
-$$
-\label{expanded_first_law}
+```{math}
+:label: expanded_first_law
 \begin{aligned}
 \Delta U_{\text{rev}} &= Q_{\text{rev}} - W \\
 &= \int T \dd S - \left(\int P \dd V - \sum_i \int \mu_i \dd n_i\right) \\
 &= \int T \dd S - \int P \dd V + \sum_i \int \mu_i \dd n_i
 \end{aligned}
-$$
+```
 
 The corresponding differential form is
 ```{math}

@@ -41,11 +41,11 @@ By comparing [Equation %s](#eq:u_differential) to [Equation %s](#expanded_first_
 
 ```{math}
 :label: eq:u_partial_derivs
-\begin{align}
+\begin{aligned}
 \left(\frac{\partial U}{\partial S}\right)_{V, n_i} &= T  \\
 \left(\frac{\partial U}{\partial V}\right)_{S, n_i} &= -P \\
 \left(\frac{\partial U}{\partial n_i} \right)_{S, V, n_{j\neq i}} &= \mu_i
-\end{align}
+\end{aligned}
 ```
 
 Here, the variables that immediately follow the $\dd$ operators are our independent/control variables, which are $S$, $V$, and $n_i$, whereas $T$, $P$, $\mu_i$ and $U$ are dependent variables.
