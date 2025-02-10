@@ -50,7 +50,7 @@ f = (1) - (1) + 2 = 2
 
 This means there are **two degrees of freedom**, so temperature and pressure can vary independently.
 
-However, during oiling where liquid and vapor coexist, we have two phases present ($p = 2$), and therefore:
+However, during boiling where liquid and vapor coexist, we have two phases present ($p = 2$), and therefore:
 
 ```{math}
 f = (1) - (2) + 2 = 1
