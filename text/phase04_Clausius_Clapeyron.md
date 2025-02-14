@@ -243,7 +243,11 @@ Recall Equation [](#eq:work_TdS), which states that for a reversible process the
 }
 \\
 &= 
-\frac{Q}{n \, T_b}
+\frac{T_b}{\bar{Q}}
+\left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
+\\
+&= 
+\frac{T_b n}{ Q}
 \left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
 \end{aligned}
 ```
@@ -255,7 +259,7 @@ Recall Equation [](#eq:work_TdS), which states that for a reversible process the
 ```{math}
 \frac{\dd T_b}{\dd P_b}
 =
-\frac{L_b}{T_b}
+\frac{T_b}{L_b}
 \left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
 ```
 
@@ -268,7 +272,7 @@ The molar volume of water vapor is approximately 30 L / mol (at 100°C and 1 atm
 :label: eq:Clausius_Clapeyron_water
 \frac{\dd T_b}{\dd P_b}
 =
-\frac{L_b \bar{V}_\text{gas}}{T_b}
+\frac{T_b \bar{V}_\text{gas}}{L_b}
 
 ```
 
