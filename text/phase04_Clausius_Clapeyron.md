@@ -9,7 +9,7 @@ numbering:
 
 By convention, we define the melting point $T_m$ and boiling point $T_b$ of water as 0°C and 100°C, respectively. However, in reality, these temperatures depend on pressure.
 
-For example, a pressure cookerraises the boiling point above 100°C, allowing food to cook faster. In igh-altitude cities like Denver, where atmospheric pressure is lower than at sea level, water boils at temperatures below 100°C, requiring adjustments to cooking times. Conversely, in a vacuum, water boils at room temperature or lower.
+For example, a pressure cooker raises the boiling point above 100°C, allowing food to cook faster. In igh-altitude cities like Denver, where atmospheric pressure is lower than at sea level, water boils at temperatures below 100°C, requiring adjustments to cooking times. Conversely, in a vacuum, water boils at room temperature or lower.
 
 These observations show that the boiling point of water is not fixed, but rather a function of pressure. This dependence follows from **Gibbs’ phase rule**, which determines how many independent variables (such as temperature and pressure) must be specified to define a system at equilibrium.
 
@@ -39,7 +39,7 @@ The number of **degrees of freedom** $f$ in a system is:
 f = c - p + 2
 ```
 
-where $c$ is the number of hemical components in the system and $p$ is the number of phases present.
+where $c$ is the number of chemical components in the system and $p$ is the number of phases present.
 :::
 
 For pure liquid water, we have a single chemical component ($c = 1$) and one phase present ($p = 1$). Applying Gibbs' phase rule:
