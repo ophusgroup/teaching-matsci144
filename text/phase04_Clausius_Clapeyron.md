@@ -9,7 +9,7 @@ numbering:
 
 By convention, we define the melting point $T_m$ and boiling point $T_b$ of water as 0°C and 100°C, respectively. However, in reality, these temperatures depend on pressure.
 
-For example, a pressure cookerraises the boiling point above 100°C, allowing food to cook faster. In igh-altitude cities like Denver, where atmospheric pressure is lower than at sea level, water boils at temperatures below 100°C, requiring adjustments to cooking times. Conversely, in a vacuum, water boils at room temperature or lower.
+For example, a pressure cooker raises the boiling point above 100°C, allowing food to cook faster. In igh-altitude cities like Denver, where atmospheric pressure is lower than at sea level, water boils at temperatures below 100°C, requiring adjustments to cooking times. Conversely, in a vacuum, water boils at room temperature or lower.
 
 These observations show that the boiling point of water is not fixed, but rather a function of pressure. This dependence follows from **Gibbs’ phase rule**, which determines how many independent variables (such as temperature and pressure) must be specified to define a system at equilibrium.
 
@@ -39,7 +39,7 @@ The number of **degrees of freedom** $f$ in a system is:
 f = c - p + 2
 ```
 
-where $c$ is the number of hemical components in the system and $p$ is the number of phases present.
+where $c$ is the number of chemical components in the system and $p$ is the number of phases present.
 :::
 
 For pure liquid water, we have a single chemical component ($c = 1$) and one phase present ($p = 1$). Applying Gibbs' phase rule:
@@ -50,7 +50,7 @@ f = (1) - (1) + 2 = 2
 
 This means there are **two degrees of freedom**, so temperature and pressure can vary independently.
 
-However, during oiling where liquid and vapor coexist, we have two phases present ($p = 2$), and therefore:
+However, during boiling where liquid and vapor coexist, we have two phases present ($p = 2$), and therefore:
 
 ```{math}
 f = (1) - (2) + 2 = 1
@@ -243,7 +243,11 @@ Recall Equation [](#eq:work_TdS), which states that for a reversible process the
 }
 \\
 &= 
-\frac{Q}{n \, T_b}
+\frac{T_b}{\bar{Q}}
+\left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
+\\
+&= 
+\frac{T_b n}{ Q}
 \left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
 \end{aligned}
 ```
@@ -255,7 +259,7 @@ Recall Equation [](#eq:work_TdS), which states that for a reversible process the
 ```{math}
 \frac{\dd T_b}{\dd P_b}
 =
-\frac{L_b}{T_b}
+\frac{T_b}{L_b}
 \left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
 ```
 
@@ -268,7 +272,7 @@ The molar volume of water vapor is approximately 30 L / mol (at 100°C and 1 atm
 :label: eq:Clausius_Clapeyron_water
 \frac{\dd T_b}{\dd P_b}
 =
-\frac{L_b \bar{V}_\text{gas}}{T_b}
+\frac{T_b \bar{V}_\text{gas}}{L_b}
 
 ```
 
