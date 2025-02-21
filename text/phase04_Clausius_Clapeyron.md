@@ -21,7 +21,7 @@ Consider a system where water is **not** undergoing a phase transition. If we sp
 
 This difference in behavior arises because each phase transition removes a degree of freedom from the system. A **degree of freedom** refers to how many independent variables must be specified to fully define the state of the system.
 
-To formalize this, we revisit Equation [](eq:ideal_gas_law), the ideal gas law:
+To formalize this, we revisit Equation [](#eq:ideal_gas_law), the ideal gas law:
 
 ```{math}
 PV = nRT
@@ -104,12 +104,12 @@ The relationship between temperature and pressure during boiling is described by
 
 ## Equilibrium of Liquid and Gas
 
-The boiling point of water is often stated as 100°C, but as we saw above, it depends on pressure. 
+The boiling point of water is often stated as 100°C, but as we saw above, it depends on pressure.
 Similarly, the boiling pressure of water will also depend on the temperature.
 To understand why, we analyze the equilibrium condition during a phase transition:
 
 ```{math}
-\text{H}_2\text{O} \, (\text{liquid}) 
+\text{H}_2\text{O} \, (\text{liquid})
 \rightleftharpoons
 \text{H}_2\text{O} \, (\text{gas})
 ```
@@ -125,8 +125,8 @@ By definition, we have $T=T_b$ and $P=P_b$, the temperature and pressure of the 
 + \mu_{\text{liquid}} \dd n_\text{liquid}
 \\
 
-\dd G_{\text{gas}} 
-&= 
+\dd G_{\text{gas}}
+&=
 - S_{\text{gas}} \dd T_b
 \,\,\,\,\, + V_{\text{gas}} \dd P_b
 \,\,\,\, + \mu_{\text{gas}} \dd n_\text{gas}
@@ -157,12 +157,12 @@ Applying the [product rule](wiki:Product_rule) gives
 \dd G_\text{liquid}
 &=
 \mu_{\text{liquid}} \dd n_{\text{liquid}}
-+ n_{\text{liquid}} \dd \mu_{\text{liquid}} 
++ n_{\text{liquid}} \dd \mu_{\text{liquid}}
 \\
 \dd G_\text{gas}
 &=
 \mu_{\text{gas}} \dd n_{\text{gas}}
-\,\,\,\,\,\,\,\,\, + n_{\text{gas}} \dd \mu_{\text{gas}} 
+\,\,\,\,\,\,\,\,\, + n_{\text{gas}} \dd \mu_{\text{gas}}
 \\
 \end{aligned}
 ```
@@ -170,14 +170,14 @@ Applying the [product rule](wiki:Product_rule) gives
 Combining these expressions with Equation [](#eq:deriv_gibbs_gas_liquid) yields
 ```{math}
 \begin{aligned}
- n_\text{liquid} \dd \mu_{\text{liquid}} 
+ n_\text{liquid} \dd \mu_{\text{liquid}}
 &=
 - S_{\text{liquid}} \dd T_b
 + V_{\text{liquid}} \dd P_b
 \\
 
  n_\text{gas} \dd \mu_{\text{gas}}
-&= 
+&=
 - S_{\text{gas}} \dd T_b
 \,\,\,\,\, + V_{\text{gas}} \dd P_b
 \\
@@ -188,14 +188,14 @@ Dividing by the number of mols of liquid and gas gives us the derivative of the 
 ```{math}
 :label: eq:water_liquid_gas_eq1
 \begin{aligned}
-\dd \mu_{\text{liquid}} 
+\dd \mu_{\text{liquid}}
 &=
 - \bar{S}_{\text{liquid}} \dd T_b
 + \bar{V}_{\text{liquid}} \dd P_b
 \\
 
 \dd \mu_{\text{gas}}
-&= 
+&=
 - \bar{S}_{\text{gas}} \dd T_b
 \,\,\,\,\, + \bar{V}_{\text{gas}} \dd P_b
 \\
@@ -217,7 +217,7 @@ Rearranging this expression, we can write
 ```{math}
 :label: eq:cc_deriv_1
 \frac{\dd T_b}{\dd P_b}
-= 
+=
 \frac{
   \bar{V}_\text{gas} - \bar{V}_\text{liquid}
 }{
@@ -235,18 +235,18 @@ Recall Equation [](#eq:work_TdS), which states that for a reversible process the
 ```{math}
 \begin{aligned}
 \frac{\dd T_b}{\dd P_b}
-&= 
+&=
 \frac{
   \bar{V}_\text{gas} - \bar{V}_\text{liquid}
 }{
   \Delta \bar{S}
 }
 \\
-&= 
+&=
 \frac{T_b}{\bar{Q}}
 \left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
 \\
-&= 
+&=
 \frac{T_b n}{ Q}
 \left( \bar{V}_\text{gas} - \bar{V}_\text{liquid} \right)
 \end{aligned}
@@ -285,5 +285,3 @@ This expression is plotted for water in [](#fig:clausius_clapeyron_water). Above
 
 The approximate Clausius-Clapeyron relationship for water, given by Equation [](#eq:Clausius_Clapeyron_water).
 ```
-
-
