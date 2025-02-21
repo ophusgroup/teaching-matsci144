@@ -30,13 +30,17 @@ project:
       - file: text/fuelcell_08_law_mass_action.md
   - file: text/phase00.md
     children:
-      - file: text/phase01_carnot_engine
-      - file: text/phase02_carnot_theorem
-      - file: text/phase03_water
-      - file: text/phase04_Clausius_Clapeyron
-      - file: text/phase05_evaporation
-      - file: text/phase06_storing_work
+      - file: text/phase01_carnot_engine.md
+      - file: text/phase02_carnot_theorem.md
+      - file: text/phase03_water.md
+      - file: text/phase04_Clausius_Clapeyron.md
+      - file: text/phase05_evaporation.md
+      - file: text/phase06_storing_work.md
   - file: text/batteries00.md
+    children:
+      - file: text/batteries01_IVP.md
+      - file: text/batteries02_battery_fuelcell.md
+      - file: text/batteries03_battery_voltage.md
   - title: Notebooks
     children:
       - pattern: notebooks/**
