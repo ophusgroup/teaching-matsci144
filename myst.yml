@@ -10,6 +10,16 @@ project:
     - Course Reader
     - Undergraduate Thermodynamics
   github: https://github.com/ophusgroup/teaching-matsci144
+  # jupyter: true
+  #  jupyter:
+  #    binder:
+  #      url: https://y2j74k9mn0bz.curvenote.dev/services/binder/
+  #      repo: msa-em/em-template
+  #      ref: main
+  jupyter:
+    server:
+      url: 'http://localhost:8888'
+      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
   toc:
   - file: index.md
   - file: text/entropy.md
@@ -30,13 +40,22 @@ project:
       - file: text/fuelcell_08_law_mass_action.md
   - file: text/phase00.md
     children:
-      - file: text/phase01_carnot_engine
-      - file: text/phase02_carnot_theorem
-      - file: text/phase03_water
-      - file: text/phase04_Clausius_Clapeyron
-      - file: text/phase05_evaporation
-      - file: text/phase06_storing_work
+      - file: text/phase01_carnot_engine.md
+      - file: text/phase02_carnot_theorem.md
+      - file: text/phase03_water.md
+      - file: text/phase04_Clausius_Clapeyron.md
+      - file: text/phase05_evaporation.md
+      - file: text/phase06_storing_work.md
   - file: text/batteries00.md
+    children:
+      - file: text/batteries01_IVP.md
+      - file: text/batteries02_battery_fuelcell.md
+      - file: text/batteries03_battery_voltage.md
+      - file: text/batteries04_cathode_Li.md
+      - file: text/batteries05_anode_Li.md
+      - file: text/batteries06_singlephase_voltage.md
+      - file: text/batteries07_twophase_battery.md
+      - file: text/batteries08_summary.md
   - title: Notebooks
     children:
       - pattern: notebooks/**
@@ -44,16 +63,6 @@ project:
       # - file: notebooks/entropy/co2_mixing.ipynb
       # - file: notebooks/fuelcell/legendre.ipynb
       # - file: notebooks/fuelcell/partial_molar_entropy.ipynb
-  # jupyter: true
-  #  jupyter:
-  #    binder:
-  #      url: https://y2j74k9mn0bz.curvenote.dev/services/binder/
-  #      repo: msa-em/em-template
-  #      ref: main
-  #  jupyter:
-  #    server:
-  #      url: 'http://localhost:8888'
-  #      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
   open_access: true
   license: CC-BY-4.0
   banner: banner.jpg
