@@ -1,7 +1,7 @@
 ---
-title: 3.6 Storing Work
+title: Storing Work
 numbering:
-  enumerator: 3.6.%s
+  enumerator: 3.9.%s
 ---
 
 

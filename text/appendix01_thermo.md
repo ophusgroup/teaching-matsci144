@@ -4,8 +4,6 @@ numbering:
   enumerator: A.1.%s
 ---
 
-# Thermodynamics Toolkit
-
 (sign_conv)=
 ## Thermodynamic Sign Convention
 
