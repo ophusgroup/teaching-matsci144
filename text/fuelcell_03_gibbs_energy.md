@@ -21,7 +21,7 @@ The subscripted $S$ and $V$ after $\big|$ mean that those variables are held con
 \mu_i = \left(\frac{\partial U}{\partial n_i}\right)_{S, V, n_{j\neq i}}
 ```
 
-Again, the subscripted $S$, $V$, $n_{j\neq i}$ mean those variable are kept constant. The notation $n_{j\neq i}$ just means the moles of all species except $i$ are kept constant, where $j$ is used to represent any other chemical species that is not $i$. In a nutshell, _when $S$, $V$ and $n_{j\neq i}$ are held constant_, the chemical potential of a chemical species $i$ is defined as the partial derivative of the internal energy with respective to the number of moles of the species $i$. This quantity is also referred to as the _partial molar internal energy_, which we will discuss in more detail in [Section "{name}"](#sec:partial_molar).
+Again, the subscripted $S$, $V$, $n_{j\neq i}$ mean those variables are kept constant. The notation $n_{j\neq i}$ just means the moles of all species except $i$ are kept constant, where $j$ is used to represent any other chemical species that is not $i$. In a nutshell, _when $S$, $V$ and $n_{j\neq i}$ are held constant_, the chemical potential of a chemical species $i$ is defined as the partial derivative of the internal energy with respective to the number of moles of the species $i$. This quantity is also referred to as the _partial molar internal energy_, which we will discuss in more detail in [Section "{name}"](#sec:partial_molar).
 :::
 
 ## Legendre Transformation from $U(S, V, n_i)$ to $G(T, P, n_i)$
