@@ -56,6 +56,9 @@ project:
       - file: text/batteries06_singlephase_voltage.md
       - file: text/batteries07_twophase_battery.md
       - file: text/batteries08_summary.md
+  - title: Appendices
+    children:
+      - file: text/appendix01_thermo.md
   - title: Notebooks
     children:
       - pattern: notebooks/**

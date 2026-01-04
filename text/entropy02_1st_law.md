@@ -266,7 +266,7 @@ This results in a negative value for work ($W<0$), indicating that work is done 
 
 ### Chemistry Sign Convention
 
-In this context, the 1st law is defined as $\Delta U = Q + W$, leading to the following sign convention:"
+In this context, the 1st law is defined as $\Delta U = Q + W$, leading to the following sign convention:
 - ($Q > 0$) Heat added to the system is positive.
 - ($Q < 0$) Heat leaving the system is negative.
 - ($W < 0$) Work is done **by the system** (onto its surroundings).

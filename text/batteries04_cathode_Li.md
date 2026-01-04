@@ -21,49 +21,49 @@ where $N$ is the number of Li atoms. Writing the composition as $X = N/J$, with 
 Then, in integral form,
 
 $$
-\bar{G} = \mu X \qquad (4.9)
+\bar{G} = \mu X 
 $$
 
 For a completely filled site ($X=1$) the specific Gibbs free energy per filled lattice site should equal the chemical potential of a purely lithiated (LCO) lattice, $\mu^0_{\text{LCO}}$, while for an empty site ($X=0$) it equals the chemical potential of the empty host, $\mu^0_{\text{CO}}$. A simple weighted-average model gives
 
 $$
-\bar{G}_{\text{“Li”}} = \mu^0_{\text{LCO}}\,X + \mu^0_{\text{CO}}\,(1-X) \qquad (4.10)
+\bar{G}_{\text{“Li”}} = \mu^0_{\text{LCO}}\,X + \mu^0_{\text{CO}}\,(1-X) 
 $$
 
 or, rearranged,
 
 $$
-\bar{G}_{\text{“Li”}} = (\mu^0_{\text{LCO}} - \mu^0_{\text{CO}})X + \mu^0_{\text{CO}} \qquad (4.11)
+\bar{G}_{\text{“Li”}} = (\mu^0_{\text{LCO}} - \mu^0_{\text{CO}})X + \mu^0_{\text{CO}} 
 $$
 
 However, because $G = H - TS$ and there is a configurational entropy associated with mixing Li in the host lattice, the dependence on $X$ is modified. In fact, one writes
 
 $$
-\bar{G}_{\text{“Li”}} = \bar{G}_{\text{unmixed}} + \Delta \bar{G}_{\text{mix}} \qquad (4.12)
+\bar{G}_{\text{“Li”}} = \bar{G}_{\text{unmixed}} + \Delta \bar{G}_{\text{mix}} 
 $$
 
 with
 
 $$
-\Delta \bar{G}_{\text{mix}} = -T \Delta \bar{S}_{\text{mix}} \qquad (4.13)
+\Delta \bar{G}_{\text{mix}} = -T \Delta \bar{S}_{\text{mix}} 
 $$
 
 For a lattice gas the entropy of mixing is given by
 
 $$
-\Delta \bar{S}_{\text{mix}} = -R \{ X \ln X + (1-X) \ln (1-X) \} \qquad (4.19)
+\Delta \bar{S}_{\text{mix}} = -R \{ X \ln X + (1-X) \ln (1-X) \}
 $$
 
 Thus, the full expression for the specific Gibbs free energy in the positive electrode becomes
 
 $$
-\bar{G}_{\text{“Li”}} = (\mu^0_{\text{LCO}} - \mu^0_{\text{CO}})X + \mu^0_{\text{CO}} + RT \{ X \ln X + (1-X) \ln (1-X) \} \qquad (4.20)
+\bar{G}_{\text{“Li”}} = (\mu^0_{\text{LCO}} - \mu^0_{\text{CO}})X + \mu^0_{\text{CO}} + RT \{ X \ln X + (1-X) \ln (1-X) \} 
 $$
 
 Graphically (see Figure 4.8), the instantaneous chemical potential of Li in the positive electrode is the derivative of $\bar{G}_{\text{“Li”}}$ with respect to $X$, yielding
 
 $$
-\mu_{\text{“Li”}} = \mu^0_{\text{“Li”}} + RT \ln \frac{X}{1-X} \qquad (4.22)
+\mu_{\text{“Li”}} = \mu^0_{\text{“Li”}} + RT \ln \frac{X}{1-X} 
 $$
 
 where
