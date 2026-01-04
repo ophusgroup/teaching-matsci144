@@ -6,7 +6,14 @@ numbering:
 
 In a single-phase electrode we assume the crystal structure of the host remains constant. However, inserting sufficient Li into a host structure can cause the host to change its crystal structure. This change in structure alters the Gibbs free energy of Li insertion and hence the voltage during charging and discharging.
 
-Consider two phases of a lithium metal oxide: $\text{LiMO}_2(\alpha)$ and $\text{LiMO}_2(\beta)$, where the transition metal is denoted by $\text{M}$. Here, $\alpha$ and $\beta$ denote different crystal structures with distinct bonding environments for Li, M, and O (see Figure 4.11).
+```{figure} ../images/batteries/alpha_beta_phase_schematic.png
+:label: fig:alpha_beta_phase_schematic
+:align: center
+:width: 400px
+Two crystal structures, $\text{LiMO}_2(\alpha)$ and $\text{LiMO}_2(\beta)$, with distinct bonding environments for Li, M, and O.
+```
+
+Consider two phases of a lithium metal oxide: $\text{LiMO}_2(\alpha)$ and $\text{LiMO}_2(\beta)$, where the transition metal is denoted by $\text{M}$. Here, $\alpha$ and $\beta$ denote different crystal structures with distinct bonding environments for Li, M, and O (see [Figure %s](#fig:alpha_beta_phase_schematic)).
 
 Let us briefly review the thermodynamic background. Gibbs’ phase rule for a system with $p$ phases and $c$ components is
 
@@ -46,7 +53,15 @@ $$
 \mu^0_{\text{MO},\alpha} < \mu^0_{\text{MO},\beta},
 $$
 
-then the $\alpha$ phase is lower in energy for all Li fractions $X$. No phase transformation will occur, and the electrode remains single-phase. (See Figure 4.12.)
+then the $\alpha$ phase is lower in energy for all Li fractions $X$. No phase transformation will occur, and the electrode remains single-phase (see [Figure %s](#fig:gibbs_free_energy_alpha_stable)).
+
+```{figure} ../images/batteries/gibbs_free_energy_alpha_stable.png
+:label: fig:gibbs_free_energy_alpha_stable
+:align: center
+:width: 400px
+If $\mu^0_{\text{MO},\alpha} < \mu^0_{\text{MO},\beta}$ (with other terms equal), the $\alpha$ phase has lower specific Gibbs free energy for all $X$, so no phase transformation occurs.
+```
+
 
 ### 4.7.2 Varying $\mu^0_{\text{LMO},\cdot}$
 
@@ -56,7 +71,15 @@ $$
 \mu^0_{\text{LMO},\alpha} > \mu^0_{\text{LMO},\beta},
 $$
 
-then the $\beta$ phase has a lower Gibbs free energy at all compositions, and the electrode will exist entirely as the $\beta$ phase. (See Figure 4.13.)
+then the $\beta$ phase has a lower Gibbs free energy at all compositions, and the electrode the electrode will exist entirely as the $\beta$ phase (see [Figure %s](#fig:gibbs_free_energy_beta_stable).
+
+```{figure} ../images/batteries/gibbs_free_energy_beta_stable.png
+:label: fig:gibbs_free_energy_beta_stable
+:align: center
+:width: 400px
+If $\mu^0_{\text{LMO},\alpha} > \mu^0_{\text{LMO},\beta}$ (with other terms equal), the $\beta$ phase has lower specific Gibbs free energy for all $X$, so the electrode remains entirely in the $\beta$ phase.
+```
+
 
 ### 4.7.3 Varying Both Quantities
 
@@ -74,7 +97,16 @@ $$
 \bar{G}_{\text{tangent}} = (1-\phi)\,\bar{G}_\alpha(X_1) + \phi\,\bar{G}_\beta(X_2) 
 $$
 
-Here, $X_1$ and $X_2$ are the constant Li fractions in the $\alpha$ and $\beta$ phases during the transformation, and $\phi$ is the fraction of the electrode in the $\beta$ phase. Because the chemical potential (the slope of $\bar{G}$ versus $X$) is constant during the transformation, the battery voltage remains flat (see Figure 4.17).
+Here, $X_1$ and $X_2$ are the constant Li fractions in the $\alpha$ and $\beta$ phases during the transformation, and $\phi$ is the fraction of the electrode in the $\beta$ phase. Because the chemical potential (the slope of $\bar{G}$ versus $X$) is constant during the transformation, the battery voltage remains flat (see [Figure %s](#fig:two_phase_voltage_plateau)).
+
+
+```{figure} ../images/batteries/two_phase_voltage_plateau.png
+:label: fig:two_phase_voltage_plateau
+:align: center
+:width: 500px
+During two-phase coexistence, the chemical potential (slope of $\bar{G}$ vs. $X$) is constant, leading to a voltage plateau as the phase fraction $\phi$ changes.
+```
+
 
 ### 4.7.5 Lever Rule
 

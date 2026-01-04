@@ -46,9 +46,11 @@ Here, $\mu_{\text{Li}}$ is the chemical potential of $\text{Li}$ in metallic for
 
 Recall that the battery voltage is given by the difference in chemical potential between the negative and positive electrodes:
 
-$$
+
+```{math}
+:label: eq:voltage_from_mu
 V = \frac{1}{\mathscr{F}} \Bigl( \mu_{e^-_{\text{N}}} - \mu_{e^-_{\text{P}}} \Bigr)
 = \frac{1}{\mathscr{F}} \Bigl( \mu_{\text{Li}} - \mu_{\text{“Li”}} \Bigr)
-$$
+```
 
 A positive voltage implies that the chemical potential of $\text{Li}$ is higher in the negative electrode (metallic $\text{Li}$) than in the positive electrode (where $\text{Li}$ reacts with $\text{CoO}_2$ to form $\text{LiCoO}_2$). To discharge a battery, $\text{Li}$ moves from a region of higher potential (negative electrode) to one of lower potential (positive electrode), producing electrical work.

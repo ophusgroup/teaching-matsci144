@@ -1,5 +1,5 @@
 ---
-title: Chemical Potential of "Li" (in Positive Electrode)
+title: Chemical Potential of "Li" (Positive Electrode)
 numbering:
   enumerator: 4.4.%s
 ---
@@ -60,10 +60,19 @@ $$
 \bar{G}_{\text{“Li”}} = (\mu^0_{\text{LCO}} - \mu^0_{\text{CO}})X + \mu^0_{\text{CO}} + RT \{ X \ln X + (1-X) \ln (1-X) \} 
 $$
 
-Graphically (see Figure 4.8), the instantaneous chemical potential of Li in the positive electrode is the derivative of $\bar{G}_{\text{“Li”}}$ with respect to $X$, yielding
+```{figure} ../images/batteries/lattice_mixing_gibbs.png
+:label: fig:positive_electrode_lattice_mixing
+:align: center
+:width: 500px
+
+Specific Gibbs free energy $\bar{G}_{\text{“Li”}}$ for Li insertion in an ideal lattice-gas model, and the corresponding chemical potential $\mu_{\text{“Li”}}=\partial \bar{G}_{\text{“Li”}}/\partial X$.
+```
+
+Graphically (see [](#fig:positive_electrode_lattice_mixing)), the instantaneous chemical potential of Li in the positive electrode is the derivative of $\bar{G}_{\text{“Li”}}$ with respect to $X$, yielding
 
 $$
 \mu_{\text{“Li”}} = \mu^0_{\text{“Li”}} + RT \ln \frac{X}{1-X} 
+\label{eq:mu_li_lattice_gas}
 $$
 
 where
