@@ -63,6 +63,7 @@ project:
   - title: Appendices
     children:
       - file: text/appendix01_thermo.md
+      - file: text/appendix02_kinetics.md
   - title: Notebooks
     children:
       # - file: notebooks/entropy/gas_molecule.ipynb

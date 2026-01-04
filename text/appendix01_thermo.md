@@ -146,6 +146,57 @@ The $\ln(\cdot)$ term is the thermodynamic fingerprint of configurational entrop
 
 ---
 
+(dilute_vacancies)=
+## Dilute defects and vacancies (ideal solution limit)
+
+In many solids, point defects (especially vacancies) exist at low concentration and can often be treated as an ideal, dilute “solution” on a lattice. This is the thermodynamic origin of the familiar $\ln c$ terms used throughout kinetics.
+
+Consider a crystal with $J$ lattice sites and $N_v$ vacancies. Define the vacancy fraction
+
+$$
+c_v = \frac{N_v}{J},
+$$
+
+so the occupied fraction is $1-c_v$. The configurational entropy of mixing vacancies with occupied sites (lattice gas on a fixed number of sites) is
+
+$$
+\Delta S_{\text{mix}} = -R\left[c_v \ln c_v + (1-c_v)\ln(1-c_v)\right].
+$$
+
+For *dilute* vacancies, $c_v \ll 1$, we use $\ln(1-c_v)\approx -c_v$ and keep the dominant term:
+
+$$
+\Delta S_{\text{mix}} \approx -R\left[c_v \ln c_v - c_v\right].
+$$
+
+If forming a vacancy has an enthalpic cost (or, more generally, a reference free-energy cost) $\Delta G_v^\circ$ per vacancy, the specific free energy (per lattice site) can be written in a minimal form as
+
+$$
+\bar{G}(c_v) \approx \Delta G_v^\circ\,c_v + RT\left[c_v \ln c_v + (1-c_v)\ln(1-c_v)\right].
+$$
+
+The vacancy chemical potential follows from the same logic used for ideal solutions:
+
+$$
+\mu_v = \mu_v^\circ + RT\ln c_v,
+$$
+
+where $\mu_v^\circ$ absorbs the reference (non-configurational) contribution. At equilibrium, vacancy creation/annihilation is balanced against a reservoir (or against the corresponding atom chemical potential), giving an equilibrium vacancy fraction of the form
+
+$$
+c_v^{\text{eq}} \propto \exp\!\left(-\frac{\Delta G_v^\circ}{RT}\right).
+$$
+
+The key point is that *dilute defects inherit the same logarithmic dependence* as ideal mixtures. This is why defect concentrations and defect-driven processes are exponentially sensitive to temperature.
+
+:::{seealso}
+- The lattice-gas entropy form used here matches the configurational entropy used for Li insertion in [Chemical Potential of “Li” (Positive Electrode)](batteries04_cathode_Li.md).
+- In [Nucleation and Ripening](phase08_nucleation_ripening.md), the same $\Delta G$ vs. $T$ sensitivity explains why rates can change dramatically with temperature even when driving forces are modest.
+:::
+
+
+---
+
 (reaction_mass_action)=
 ## Reaction Free Energy and the Law of Mass Action
 
