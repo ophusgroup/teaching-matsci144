@@ -45,7 +45,10 @@ project:
       - file: text/phase03_water.md
       - file: text/phase04_Clausius_Clapeyron.md
       - file: text/phase05_evaporation.md
-      - file: text/phase06_storing_work.md
+      - file: text/phase06_capillarity_surface_energy.md
+      - file: text/phase07_gibbs_thomson_kelvin.md
+      - file: text/phase08_nucleation_ripening.md
+      - file: text/phase09_storing_work.md
   - file: text/batteries00.md
     children:
       - file: text/batteries01_IVP.md
@@ -55,10 +58,12 @@ project:
       - file: text/batteries05_anode_Li.md
       - file: text/batteries06_singlephase_voltage.md
       - file: text/batteries07_twophase_battery.md
-      - file: text/batteries08_summary.md
+      - file: text/batteries08_particle_size_effects.md
+      - file: text/batteries09_summary.md
   - title: Appendices
     children:
       - file: text/appendix01_thermo.md
+      - file: text/appendix02_kinetics.md
   - title: Notebooks
     children:
       # - file: notebooks/entropy/gas_molecule.ipynb

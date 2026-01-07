@@ -1,5 +1,5 @@
 ---
-title: Two-Phase Electrode and Solid Phase Transformations
+title: Two-Phase Electrode, Solid Phase Transformations
 numbering:
   enumerator: 4.7.%s
 ---
