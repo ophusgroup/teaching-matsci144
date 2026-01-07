@@ -24,6 +24,7 @@ $$
 
 This is the battery-relevant form of the Gibbs–Thomson (Kelvin) effect developed in [](phase07_gibbs_thomson_kelvin.md).
 
+
 ## Nucleation barrier and nucleation overpotential
 
 Two-phase electrodes require creating a new phase separated by an interface, which costs surface energy. Even when the two-phase equilibrium voltage is well-defined, a finite particle may require an additional driving force to nucleate the new phase.
