@@ -1,5 +1,5 @@
 ---
-title: Chemical Equilibrium
+title: 2.4 Chemical Equilibrium
 numbering:
   enumerator: 2.4.%s
 label: sec:chem_eq

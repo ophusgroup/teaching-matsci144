@@ -1,5 +1,5 @@
 ---
-title: Battery as a Closed Fuel Cell
+title: 4.2 Battery as a Closed Fuel Cell
 numbering:
   enumerator: 4.2.%s
 ---

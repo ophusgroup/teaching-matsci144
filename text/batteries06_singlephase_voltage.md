@@ -1,5 +1,5 @@
 ---
-title: Voltage of a Single-Phase Battery Electrode
+title: 4.6 Voltage of a Single-Phase Battery Electrode
 numbering:
   enumerator: 4.6.%s
 ---

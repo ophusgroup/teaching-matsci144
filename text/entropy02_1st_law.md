@@ -1,5 +1,5 @@
 ---
-title: The First Law of Thermodynamics
+title: 1.2 The First Law of Thermodynamics
 label: entropy02
 numbering:
   enumerator: 1.2.%s

@@ -1,5 +1,5 @@
 ---
-title: Particle Size Effects 
+title: 4.8 Particle Size Effects
 numbering:
   enumerator: 4.8.%s
 ---

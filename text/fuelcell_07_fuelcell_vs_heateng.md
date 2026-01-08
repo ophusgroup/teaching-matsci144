@@ -1,5 +1,5 @@
 ---
-title: Fuel Cell vs. Heat Engine
+title: 2.7 Fuel Cell vs. Heat Engine
 numbering:
   enumerator: 2.7.%s
 ---

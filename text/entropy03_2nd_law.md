@@ -1,5 +1,5 @@
 ---
-title: The Second Law of Thermodynamics
+title: 1.3 The Second Law of Thermodynamics
 numbering:
   enumerator: 1.3.%s
 ---

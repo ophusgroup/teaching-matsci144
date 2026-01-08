@@ -1,5 +1,5 @@
 ---
-title: Chemical Work
+title: 2.2 Chemical Work
 numbering:
   enumerator: 2.2.%s
 ---

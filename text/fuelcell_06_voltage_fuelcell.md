@@ -1,5 +1,5 @@
 ---
-title: Voltage of a Fuel Cell
+title: 2.6 Voltage of a Fuel Cell
 numbering:
   enumerator: 2.6.%s
 ---

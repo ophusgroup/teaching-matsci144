@@ -1,5 +1,5 @@
 ---
-title: Size-Dependent Equilibrium
+title: 3.7 Size-Dependent Equilibrium
 numbering:
   enumerator: 3.7.%s
 ---

@@ -1,5 +1,5 @@
 ---
-title: Capillarity and Surface Energy
+title: 3.6 Capillarity and Surface Energy
 numbering:
   enumerator: 3.6.%s
 ---

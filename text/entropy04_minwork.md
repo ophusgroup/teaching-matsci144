@@ -1,5 +1,5 @@
 ---
-title: Minimum Work for Separating CO₂
+title: 1.4 Minimum Work for Separating CO₂
 numbering:
   enumerator: 1.4.%s
 ---

@@ -1,5 +1,5 @@
 ---
-title: Gibbs Free Energy
+title: 2.3 Gibbs Free Energy
 numbering:
   enumerator: 2.3.%s
 ---
