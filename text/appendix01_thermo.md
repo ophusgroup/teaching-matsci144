@@ -4,23 +4,62 @@ numbering:
   enumerator: A.1.%s
 ---
 
+
+(first_law)=
+## The First Law: Energy Conservation for a Closed System
+
+For a **closed system** (fixed amount of matter), the First Law is a bookkeeping statement of energy conservation:
+
+$$
+\Delta U = Q - W,
+$$
+
+where:
+
+- $U$ is the system’s internal energy (a state function).
+- $Q$ is **heat added to the system** (energy transfer driven by a temperature difference).
+- $W$ is **work done by the system on the surroundings** (organized energy transfer via a generalized force–displacement pair).
+
+In differential form for pressure–volume work only,
+$$
+\dd U = \delta Q - P_{\mathrm{ext}}\,\dd V,
+$$
+where $\delta Q$ is an inexact differential (path dependent), and $P_{\mathrm{ext}}$ emphasizes that the work is set by the external pressure during the process.
+
+:::{seealso}
+- In [The First Law of Thermodynamics](entropy02_1st_law.md), we derive and apply this sign convention and compute $P\,\dd V$ work in common processes.
+:::
+
+---
+
 (sign_conv)=
 ## Thermodynamic Sign Convention
 
-In thermodynamics, defining the 1st law as $\Delta U = Q - W$ leads to the following sign convention:
+In this course we use the First Law in the form
+$$
+\Delta U = Q - W,
+$$
+which implies the sign convention:
+
 - ($Q > 0$) Heat added to the system is positive.
 - ($Q < 0$) Heat leaving the system is negative.
-- ($W > 0$) Work is done **by the system** (onto its surroundings).
-- ($W < 0$) Work done **to the system** (by its surroundings).
+- ($W > 0$) Work is done **by the system** (on its surroundings).
+- ($W < 0$) Work is done **on the system** (by its surroundings).
 
-With this sign convention, applying positive pressure ($\Delta P > 0$) to reduce the volume of a system, we calculate the work to be $W = \int P \, \dd V$.
-This results in a negative value for work ($W<0$), indicating that work is done on the system, increasing its internal energy $\Delta U > 0$.
+For pressure–volume work,
+$$
+W = \int_{V_i}^{V_f} P_{\mathrm{ext}}\,\dd V.
+$$
+During **compression**, $\dd V<0$, so $W<0$: the surroundings do work on the system. During **expansion**, $\dd V>0$, so $W>0$: the system does work on the surroundings.
+
+If $Q \approx 0$ (approximately adiabatic), compression tends to increase $U$, while expansion tends to decrease $U$.
 
 :::{seealso}
 This convention is used throughout the course, including:
 - In [The First Law of Thermodynamics](entropy02_1st_law.md), where we define $Q$ and $W$ and track energy flows.
 - In [Evaporation](phase05_evaporation.md), where pressure–volume work appears in phase-change reasoning.
 :::
+
 
 ---
 
@@ -81,6 +120,53 @@ Legendre transforms swap extensive variables (e.g., $S,V$) for their conjugate i
 :::{seealso}
 - In [Gibbs Free Energy](fuelcell_03_gibbs_energy.md), we focus on $G(T,P,\{N_i\})$ for chemical systems.
 :::
+
+
+---
+
+(second_law)=
+## The Second Law: Entropy Production and Spontaneous Direction
+
+The Second Law provides the criterion for spontaneous change:
+
+- For an **isolated** system (no exchange of energy or matter with the surroundings),
+  $$
+  \Delta S_{\text{total}} \ge 0.
+  $$
+  Equality holds at equilibrium.
+
+For a **system + environment**, it is often more useful to write the Second Law as an entropy balance:
+$$
+\Delta S_{\text{total}} = \Delta S_{\text{sys}} + \Delta S_{\text{env}} = \Delta S_{\text{gen}} \ge 0,
+$$
+where $\Delta S_{\text{gen}}$ is the *entropy generated* by irreversibilities (always nonnegative).
+
+### Connecting the Second Law to free-energy minimization
+
+If the environment is a large thermal reservoir at fixed temperature $T$ and the system exchanges heat $Q$ with it, then
+$$
+\Delta S_{\text{env}} = -\frac{Q}{T}.
+$$
+
+Using the First Law in this course’s sign convention, $\Delta U = Q - W$, and considering processes where the only work is pressure–volume work ($W = \int P\,\dd V$), the Second Law leads to the standard result:
+
+- At fixed **$T,V,\{N_i\}$**, spontaneous change decreases Helmholtz free energy:
+  $$
+  \Delta F \le 0.
+  $$
+- At fixed **$T,P,\{N_i\}$**, spontaneous change decreases Gibbs free energy:
+  $$
+  \Delta G \le 0.
+  $$
+
+These are not new “extra laws”—they are Second-Law statements specialized to common control conditions (reservoirs).
+
+:::{seealso}
+- In [The Second Law of Thermodynamics](entropy03_2nd_law.md), we develop the link between spontaneity, entropy, and free energy.
+- In [Chemical Equilibrium](fuelcell_04_chem_eq.md), we use $\Delta G \le 0$ at fixed $T,P$ to define equilibrium.
+:::
+
+
 
 ---
 
