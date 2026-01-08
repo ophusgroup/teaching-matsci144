@@ -21,55 +21,52 @@ project:
       url: 'http://localhost:8888'
       token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
   toc:
-  - file: index.md
-  - file: text/entropy.md
-    children:
-      - file: text/entropy01_problem.md
-      - file: text/entropy02_1st_law.md
-      - file: text/entropy03_2nd_law.md
-      - file: text/entropy04_minwork.md
-  - file: text/fuelcell_00_chemeq.md
-    children:
-      - file: text/fuelcell_01_intro_fuelcell.md
-      - file: text/fuelcell_02_chem_work.md
-      - file: text/fuelcell_03_gibbs_energy.md
-      - file: text/fuelcell_04_chem_eq.md
-      - file: text/fuelcell_05_chem_eq_fuelcell.md
-      - file: text/fuelcell_06_voltage_fuelcell.md
-      - file: text/fuelcell_07_fuelcell_vs_heateng.md
-      - file: text/fuelcell_08_law_mass_action.md
-  - file: text/phase00.md
-    children:
-      - file: text/phase01_carnot_engine.md
-      - file: text/phase02_carnot_theorem.md
-      - file: text/phase03_water.md
-      - file: text/phase04_Clausius_Clapeyron.md
-      - file: text/phase05_evaporation.md
-      - file: text/phase06_capillarity_surface_energy.md
-      - file: text/phase07_gibbs_thomson_kelvin.md
-      - file: text/phase08_nucleation_ripening.md
-      - file: text/phase09_storing_work.md
-  - file: text/batteries00.md
-    children:
-      - file: text/batteries01_IVP.md
-      - file: text/batteries02_battery_fuelcell.md
-      - file: text/batteries03_battery_voltage.md
-      - file: text/batteries04_cathode_Li.md
-      - file: text/batteries05_anode_Li.md
-      - file: text/batteries06_singlephase_voltage.md
-      - file: text/batteries07_twophase_battery.md
-      - file: text/batteries08_particle_size_effects.md
-      - file: text/batteries09_summary.md
-  - title: Appendices
-    children:
-      - file: text/appendix01_thermo.md
-      - file: text/appendix02_kinetics.md
-  - title: Notebooks
-    children:
-      # - file: notebooks/entropy/gas_molecule.ipynb
-      # - file: notebooks/entropy/co2_mixing.ipynb
-      # - file: notebooks/fuelcell/legendre.ipynb
-      - pattern: notebooks/**
+    - file: index.md
+    - file: text/entropy.md
+      children:
+        - file: text/entropy01_problem.md
+        - file: text/entropy02_1st_law.md
+        - file: text/entropy03_2nd_law.md
+        - file: text/entropy04_minwork.md
+    - file: text/fuelcell_00_chemeq.md
+      children:
+        - file: text/fuelcell_01_intro_fuelcell.md
+        - file: text/fuelcell_02_chem_work.md
+        - file: text/fuelcell_03_gibbs_energy.md
+        - file: text/fuelcell_04_chem_eq.md
+        - file: text/fuelcell_05_chem_eq_fuelcell.md
+        - file: text/fuelcell_06_voltage_fuelcell.md
+        - file: text/fuelcell_07_fuelcell_vs_heateng.md
+        - file: text/fuelcell_08_law_mass_action.md
+    - file: text/phase00.md
+      children:
+        - file: text/phase01_carnot_engine.md
+        - file: text/phase02_carnot_theorem.md
+        - file: text/phase03_water.md
+        - file: text/phase04_Clausius_Clapeyron.md
+        - file: text/phase05_evaporation.md
+        - file: text/phase06_capillarity_surface_energy.md
+        - file: text/phase07_gibbs_thomson_kelvin.md
+        - file: text/phase08_nucleation_ripening.md
+        - file: text/phase09_storing_work.md
+    - file: text/batteries00.md
+      children:
+        - file: text/batteries01_IVP.md
+        - file: text/batteries02_battery_fuelcell.md
+        - file: text/batteries03_battery_voltage.md
+        - file: text/batteries04_cathode_Li.md
+        - file: text/batteries05_anode_Li.md
+        - file: text/batteries06_singlephase_voltage.md
+        - file: text/batteries07_twophase_battery.md
+        - file: text/batteries08_particle_size_effects.md
+        - file: text/batteries09_summary.md
+    - title: Appendices
+      children:
+        - file: text/appendix01_thermo.md
+        - file: text/appendix02_kinetics.md
+    - title: Notebooks
+      children:
+        - pattern: notebooks/**
   # jupyter: true
   #  jupyter:
   #    binder:
