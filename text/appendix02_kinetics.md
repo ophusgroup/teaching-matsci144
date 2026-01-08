@@ -1,5 +1,5 @@
 ---
-title: Bridge to Kinetics
+title: A.2 Bridge to Kinetics
 numbering:
   enumerator: A.2.%s
 ---
@@ -17,7 +17,7 @@ In MATSCI 144, you already used (1) repeatedly (e.g., $\Delta G$ sets the maximu
 
 :::{seealso}
 - Review of thermodynamic control variables, potentials, and chemical potential: [Thermodynamics Toolkit](appendix01_thermo.md)
-- Surface/size thermodynamics introduced in Module 3: [Capillarity and surface energy](phase07_capillarity_surface_energy.md), [Gibbs–Thomson / Kelvin](phase08_gibbs_thomson_kelvin.md), [Nucleation and ripening](phase09_nucleation_ripening.md)
+- Surface/size thermodynamics introduced in Module 3: [Capillarity and surface energy](phase06_capillarity_surface_energy.md), [Gibbs–Thomson / Kelvin](phase07_gibbs_thomson_kelvin.md), [Nucleation and ripening](phase08_nucleation_ripening.md)
 :::
 
 ---
@@ -131,7 +131,7 @@ Consequences:
 - **Nucleation is harder at small length scales** because creating curved interfaces is costly.
 
 :::{seealso}
-- Derivation and physical interpretation: [Gibbs–Thomson / Kelvin](phase08_gibbs_thomson_kelvin.md)
+- Derivation and physical interpretation: [Gibbs–Thomson / Kelvin](phase07_gibbs_thomson_kelvin.md)
 :::
 
 ---
@@ -269,8 +269,8 @@ $$
 meaning the characteristic size grows slowly while the number density decreases.
 
 :::{seealso}
-- Thermodynamic origin and the role of Gibbs–Thomson: [Gibbs–Thomson / Kelvin](phase08_gibbs_thomson_kelvin.md)
-- Kinetic interpretation and “ripening process” context: [Nucleation and ripening](phase09_nucleation_ripening.md)
+- Thermodynamic origin and the role of Gibbs–Thomson: [Gibbs–Thomson / Kelvin](phase07_gibbs_thomson_kelvin.md)
+- Kinetic interpretation and “ripening process” context: [Nucleation and ripening](phase08_nucleation_ripening.md)
 :::
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: Law of Mass Action
+title: 2.8 Law of Mass Action
 numbering:
   enumerator: 2.8.%s
 ---

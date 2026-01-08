@@ -1,5 +1,5 @@
 ---
-title: Introduction to Fuel Cells
+title: 2.1 Introduction to Fuel Cells
 numbering:
   enumerator: 2.1.%s
 ---

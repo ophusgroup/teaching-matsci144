@@ -1,5 +1,5 @@
 ---
-title: Current, Voltage, and Power
+title: 4.1 Current, Voltage, and Power
 numbering:
   enumerator: 4.1.%s
 ---

@@ -1,5 +1,5 @@
 ---
-title: The Problem
+title: 1.1 The Problem
 numbering:
   enumerator: 1.1.%s
 ---

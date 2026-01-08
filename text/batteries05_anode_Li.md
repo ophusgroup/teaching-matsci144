@@ -1,5 +1,5 @@
 ---
-title: Chemical Potential of "Li" (Negative Electrode)
+title: 4.5 Chemical Potential of "Li" (Negative Electrode)
 numbering:
   enumerator: 4.5.%s
 ---

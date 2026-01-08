@@ -1,5 +1,5 @@
 ---
-title: Nucleation and Ripening
+title: 3.8 Nucleation and Ripening
 numbering:
   enumerator: 3.8.%s
 ---

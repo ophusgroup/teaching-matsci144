@@ -1,5 +1,5 @@
 ---
-title: Voltage of a Battery
+title: 4.3 Voltage of a Battery
 numbering:
   enumerator: 4.3.%s
 ---
