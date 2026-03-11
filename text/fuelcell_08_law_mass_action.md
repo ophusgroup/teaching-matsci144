@@ -59,7 +59,7 @@ K_{\text{eq}} \equiv \exp{\left(-\frac{\Delta \mu^0_{\text{rxn}}}{RT}\right)} = 
 [Equation %s](#eq:keq) is the Law of Mass Action, where the reactants' and products' partial pressures are related to the standard chemical reaction potential and temperature. A more general relationship for the Law of Mass Action is shown below:
 
 ```{math}
-K_{\text{eq}}=\exp{\left(-\frac{\sum_i v_i \mu_i}{RT}\right)} = \prod_i \left(\frac{p_i^{\text{eq}}}{p_{\text{ref}}}\right)^{v_i}
+K_{\text{eq}}=\exp{\left(-\frac{\sum_i v_i \mu_i^0}{RT}\right)} = \prod_i \left(\frac{p_i^{\text{eq}}}{p_{\text{ref}}}\right)^{v_i}
 ```
 
 where for reactants, $v_i < 0$ and for products $v_i > 0$. The $\prod$ symbol just means the product of all the terms enclosed. If the chemical reaction is not at equilibrium, one can define another ratio as the reaction quotient $\mathsf{Q}$ by removing the equilibrium superscripts in the partial pressures (i.e., the partial pressure of each species is not necessarily at equilibrium):
