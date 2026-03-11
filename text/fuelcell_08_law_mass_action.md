@@ -4,16 +4,29 @@ numbering:
   enumerator: 2.8.%s
 ---
 
-From chemical equilibrium, we would like to derive an expression that tells us how a system might behave when it is away from equilibrium. Starting from the open-circuit voltage in [Equation %s](#eq:reaction_voltage_partial_pressure), if a reaction is at equilibrium, this means there is no net driving force towards more products (positive voltage) or more reactants (negative voltage). Thus, the open circuit voltage should be 0 at equilibrium. We can then rearrange [Equation %s](#eq:reaction_voltage_partial_pressure) to be:
+From chemical equilibrium, we would like to derive an expression that tells us how a system might behave when it is away from equilibrium. Starting from the open-circuit voltage in [Equation %s](#eq:reaction_voltage_partial_pressure), if a reaction is at equilibrium, this means there is no net driving force towards more products (positive voltage) or more reactants (negative voltage). Thus, the open-circuit voltage should be 0 at equilibrium.
+
+```{math}
+\mathsf{Q}^{\text{eq}} = \frac{\left(p^{\text{eq}}_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}{\left(p^{\text{eq}}_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p^{\text{eq}}_{\text{O}_2}/p_{\text{ref}}\right)}
+```
+
+Using [Equation %s](#eq:reaction_voltage_partial_pressure) and [Equation %s](#eq:std_rxn_mu), the equilibrium condition can be written as
 
 ```{math}
 \begin{aligned}
--\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right) &= RT \ln{\frac{\left(p^{\text{eq}}_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p^{\text{eq}}_{\text{O}_2}/p_{\text{ref}}\right)}{\left(p^{\text{eq}}_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}} \\
-2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0 &= RT \ln{\left[\frac{\left(p^{\text{eq}}_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p^{\text{eq}}_{\text{O}_2}/p_{\text{ref}}\right)}{\left(p^{\text{eq}}_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}\right]^{-1}} \\
-\frac{2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0}{RT} &= \ln{\frac{\left(p^{\text{eq}}_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}{\left(p^{\text{eq}}_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p^{\text{eq}}_{\text{O}_2}/p_{\text{ref}}\right)}}
+0 &= -\frac{\Delta \mu^0_{\text{rxn}}}{4\mathscr{F}} - \frac{RT}{4\mathscr{F}}\ln \mathsf{Q}^{\text{eq}} \\
+&= -\frac{\Delta \mu^0_{\text{rxn}}}{4\mathscr{F}} + \frac{RT}{4\mathscr{F}}\ln{\left[\frac{1}{\mathsf{Q}^{\text{eq}}}\right]}
 \end{aligned}
 ```
-Recall that $\Delta \mu^0_{\text{rxn}}=-\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right)$, and by taking the exponential of both sides of the equation, we get
+
+or equivalently,
+
+```{math}
+\begin{aligned}
+\frac{-\Delta \mu^0_{\text{rxn}}}{RT} &= \ln \mathsf{Q}^{\text{eq}}
+\end{aligned}
+```
+By taking the exponential of both sides of the equation, we get
 
 ```{math}
 :label: eq:h2_o2_keq
@@ -55,6 +68,8 @@ where for reactants, $v_i < 0$ and for products $v_i > 0$. The $\prod$ symbol ju
 :label: eq:react_quotient
 \mathsf{Q} = \prod_i \left(\frac{p_i}{p_{\text{ref}}}\right)^{v_i}
 ```
+
+In some Nernst-equation forms you may see $\ln(1/\mathsf{Q})$ instead of $\ln \mathsf{Q}$; these are exactly equivalent since $\ln(1/\mathsf{Q})=-\ln \mathsf{Q}$.
 
 As you may recall from your chemistry class, if $\mathsf{Q} < K_{\text{eq}}$, there is an excess of reactants, the reaction will proceed toward the products; if $\mathsf{Q} > K_{\text{eq}}$, there is an excess of products, the reaction will then proceed toward the reactants. If $\mathsf{Q} = K_{\text{eq}}$, the reaction is at equilibrium.
 

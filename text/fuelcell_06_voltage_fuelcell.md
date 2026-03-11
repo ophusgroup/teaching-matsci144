@@ -103,10 +103,14 @@ Going back to the [open-circuit voltage](#eq:nernst_pot), we can express all the
 \end{aligned}
 ```
 
-Collecting all like-terms, we obtain partital pressure dependent open-circuit voltage
+Collecting all like-terms, we obtain the partial-pressure-dependent open-circuit voltage
 ```{math}
 :label: eq:reaction_voltage_partial_pressure
-\mathsf{V} = \frac{1}{4\mathscr{F}}\bigg[\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right) + RT \ln{\frac{\left(p_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p_{\text{O}_2}/p_{\text{ref}}\right)}{\left(p_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}} \bigg]
+\begin{aligned}
+\mathsf{V}
+&= \frac{1}{4\mathscr{F}}\bigg[\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right) \\
+&\qquad\qquad + RT \ln{\frac{\left(p_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p_{\text{O}_2}/p_{\text{ref}}\right)}{\left(p_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}} \bigg]
+\end{aligned}
 ```
 
 The first three terms within the square bracket define the (inverse) standard chemical potential of the reaction,
@@ -114,6 +118,26 @@ The first three terms within the square bracket define the (inverse) standard ch
 ```{math}
 :label: eq:std_rxn_mu
 \Delta \mu^0_{\text{rxn}} = \mu^0_{\text{products}} - \mu^0_{\text{reactants}} = -\left(2 \mu_{\text{H}_2}^0 +  \mu_{\text{O}_2}^0 - 2\mu_{\text{H}_2\text{O}}^0\right)
+```
+
+For the overall reaction $2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}$, define the reaction quotient in the thermodynamic convention (products over reactants):
+
+```{math}
+:enumerated: false
+\mathsf{Q} = \frac{\left(p_{\text{H}_2\text{O}}/p_{\text{ref}}\right)^2}{\left(p_{\text{H}_2}/p_{\text{ref}}\right)^2 \left(p_{\text{O}_2}/p_{\text{ref}}\right)}
+```
+
+Using [Equation %s](#eq:reaction_voltage_partial_pressure), [Equation %s](#eq:std_rxn_mu), and $\ln(1/\mathsf{Q})=-\ln \mathsf{Q}$, the voltage can be written in two equivalent forms:
+
+```{math}
+:enumerated: false
+\begin{aligned}
+\mathsf{V}
+&= -\frac{\Delta \mu^0_{\text{rxn}}}{4\mathscr{F}}
+- \frac{RT}{4\mathscr{F}}\ln \mathsf{Q} \\
+&= -\frac{\Delta \mu^0_{\text{rxn}}}{4\mathscr{F}}
++ \frac{RT}{4\mathscr{F}}\ln \!\left(\frac{1}{\mathsf{Q}}\right)
+\end{aligned}
 ```
 
 The standard reaction chemical potential is the change in the Gibbs free energy of the system per mole of the extent of the reaction when the reactants and the products all have their partial pressure equal to $p_{\text{ref}}$. The last term describe the configurational-entropic contribution to the change in the standard reaction chemical potential. Not suprisingly, [Equation %s](#eq:reaction_voltage_partial_pressure) states that the open-circuit voltage of the fuel cell not only depends on the types of reactants and products, but also on the concentration/partial pressure of each species.
