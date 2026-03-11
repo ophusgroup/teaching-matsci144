@@ -8,11 +8,59 @@ Recall that in Module 2 we examined a fuel cell schematic (see [](#fig:module_2_
 
 ```{math}
 :enumerated: false
-\mathsf{V} = -\frac{1}{\mathscr{F}} \Bigl( \mu_{e^-_\text{C}} - \mu_{e^-_\text{A}} \Bigr)
-= \frac{1}{4\mathscr{F}} \Biggl[
-\mu^0_{\text{O}_2} + 2\mu^0_{\text{H}_2} - 2\mu^0_{\text{H}_2\text{O}} + RT \ln  \frac{(p_{\text{H}_2}/p_{\text{ref}})^2 \; (p_{\text{O}_2}/p_{\text{ref}})}{(p_{\text{H}_2\text{O}}/p_{\text{ref}})^2}
+\begin{aligned}
+\mathsf{V}
+&= -\frac{1}{\mathscr{F}} \Bigl( \mu_{e^-_\text{C}} - \mu_{e^-_\text{A}} \Bigr) \\
+&= \frac{1}{4\mathscr{F}} \Biggl[
+\mu^0_{\text{O}_2} + 2\mu^0_{\text{H}_2} - 2\mu^0_{\text{H}_2\text{O}} \\
+&\qquad\qquad + RT \ln \frac{
+(p_{\text{H}_2}/p_{\text{ref}})^2 \; (p_{\text{O}_2}/p_{\text{ref}})
+}{
+(p_{\text{H}_2\text{O}}/p_{\text{ref}})^2
+}
 \Biggr]
+\end{aligned}
 ```
+
+For the overall reaction
+$2\text{H}_2 + \text{O}_2 \Leftrightarrow 2\text{H}_2\text{O}$, define the reaction quotient in the thermodynamic convention (products over reactants):
+
+```{math}
+:enumerated: false
+\begin{aligned}
+\mathsf{Q}
+&= \frac{
+(p_{\text{H}_2\text{O}}/p_{\text{ref}})^2
+}{
+(p_{\text{H}_2}/p_{\text{ref}})^2 \, (p_{\text{O}_2}/p_{\text{ref}})
+}
+\end{aligned}
+```
+
+Then the same voltage can be written as
+
+```{math}
+:enumerated: false
+\begin{aligned}
+\mathsf{V}
+&= -\frac{\Delta \mu^0_{\text{rxn}}}{4\mathscr{F}}
+- \frac{RT}{4\mathscr{F}}\ln \mathsf{Q}
+\end{aligned}
+```
+
+and equivalently
+
+```{math}
+:enumerated: false
+\begin{aligned}
+\mathsf{V}
+&= -\frac{\Delta \mu^0_{\text{rxn}}}{4\mathscr{F}}
++ \frac{RT}{4\mathscr{F}}\ln \!\left(\frac{1}{\mathsf{Q}}\right) \\
+&= \frac{1}{4\mathscr{F}} \Biggl[\mu^0_{\text{O}_2} + 2\mu^0_{\text{H}_2} - 2\mu^0_{\text{H}_2\text{O}} + RT \ln \frac{(p_{\text{H}_2}/p_{\text{ref}})^2 \; (p_{\text{O}_2}/p_{\text{ref}})}{(p_{\text{H}_2\text{O}}/p_{\text{ref}})^2}\Biggr]
+\end{aligned}
+```
+
+Both forms are identical since $\ln(1/\mathsf{Q})=-\ln \mathsf{Q}$. Below, we keep the $\ln(1/\mathsf{Q})$ form because it directly tracks reactant depletion in the closed cell.
 
 
 ```{figure} ../images/batteries/fuelcellschematic.png
@@ -42,9 +90,17 @@ As current is drawn, the partial pressures $p_{\text{H}_2}$, $p_{\text{O}_2}$, a
 Then the voltage becomes
 
 $$
-\mathsf{V} = \frac{1}{4\mathscr{F}} \Biggl[
-\mu^0_{\text{O}_2} + 2\mu^0_{\text{H}_2} - 2\mu^0_{\text{H}_2\text{O}} + RT \ln \frac{(p_{\text{H}_2,\text{init}}(1-x))^2 \; (p_{\text{H}_2,\text{init}}(1-x)/2)}{(p_{\text{H}_2\text{O},\text{init}} + p_{\text{H}_2,\text{init}}x)^2}
+\begin{aligned}
+\mathsf{V}
+&= \frac{1}{4\mathscr{F}} \Biggl[
+\mu^0_{\text{O}_2} + 2\mu^0_{\text{H}_2} - 2\mu^0_{\text{H}_2\text{O}} \\
+&\qquad\qquad + RT \ln \frac{
+(p_{\text{H}_2,\text{init}}(1-x))^2 \; (p_{\text{H}_2,\text{init}}(1-x)/2)
+}{
+(p_{\text{H}_2\text{O},\text{init}} + p_{\text{H}_2,\text{init}}x)^2
+}
 \Biggr]
+\end{aligned}
 $$
 
 where $x$ is the fraction of $\text{H}_2$ molecules that have reacted (the extent of reaction) and the reference pressure has been dropped for convenience. As $x$ approaches 1, almost all hydrogen is consumed and the water partial pressure increases to $p_{\text{H}_2\text{O},\text{init}} + p_{\text{H}_2,\text{init}}$. Plotting $\mathsf{V}$ as a function of $x$ gives the curve shown in [](#fig:closed_fuelcell_voltage).

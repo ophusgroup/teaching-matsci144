@@ -8,7 +8,7 @@ numbering:
 
 For the fuel cell shown in [](#fuel-cell-complete), we want to determine its voltage at the open circuit condition (i.e., the current does not flow through the circuit due to a break in the circuit). 
 The open circuit condition simplifies our calculation since any non-zero current would lead to a change in voltage due to resistance in the fuel cell (on the zeroth order, one can rationalize such change in voltage with Ohm's law, $\Delta V=\Delta I\cdot R$). 
-An open circuit can be achieved by removing the lightbulb in in [](#fuel-cell-complete) to create a gap in the circuit.
+An open circuit can be achieved by removing the lightbulb in [](#fuel-cell-complete) to create a gap in the circuit.
 To use the generalized expression for chemical equilibrium as seen in [Equation %s](#eq:general_reaction_eq), we first need to figure out all species in a fuel cell that are relevant to chemical equilibrium.
 
 :::{table} Fuel cell species and chemical reactions
@@ -39,7 +39,7 @@ Applying the equilibrium condition from [Equation %s](#eq:general_reaction_eq), 
 2. $-\mu_{\text{O}_2} - 4 \mu_{e^{-}_{\text{C}}} + 2\mu_{\text{O}^{2-}_{\text{C}}}=0$
 3. $-\mu_{\text{O}^{2-}_{\text{A}}} + \mu_{\text{O}^{2-}_{\text{C}}}=0$
 
-The goal here is to to obtain the chemical potential difference between electrons in the cathode and the anode as a function of the chemical potentials of species in the overall $5^{\text{th}}$ reaction. The first step is to rearrange the equations as follows
+The goal here is to obtain the chemical potential difference between electrons in the cathode and the anode as a function of the chemical potentials of species in the overall $5^{\text{th}}$ reaction. The first step is to rearrange the equations as follows
 
 1. $- 4\mu_{e^{-}_{\text{A}}} = -2 \mu_{\text{H}_2} -2 \mu_{\text{O}^{2-}_{\text{A}}} + 2\mu_{\text{H}_2\text{O}}$
 2. $ 4 \mu_{e^{-}_{\text{C}}} = -\mu_{\text{O}_2}  + 2\mu_{\text{O}^{2-}_{\text{C}}}$
