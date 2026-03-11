@@ -32,7 +32,7 @@ where $\delta Q$ is an inexact differential (path dependent), and $P_{\mathrm{ex
 
 ---
 
-(sign_conv)=
+(sign_conv_appendix)=
 ## Thermodynamic Sign Convention
 
 In this course we use the First Law in the form
@@ -93,7 +93,6 @@ Legendre transforms swap extensive variables (e.g., $S,V$) for their conjugate i
 
 :::{list-table} Thermodynamic potentials (single-phase, simple compressible system)
 :header-rows: 1
-:widths: 12 24 24 40
 
 * - Potential
   - Definition

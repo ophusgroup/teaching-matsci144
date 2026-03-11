@@ -11,7 +11,6 @@ numbering:
 ## Table of Contents
 
 :::{table}
-:widths: 25 75
 :align: left
 
 | Module | Sections |
@@ -62,7 +61,6 @@ It is based on Emma Kaeli’s course at Stanford University, adapted from Profes
 ## Licence
 
 This reader was developed under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
-
 
 
 

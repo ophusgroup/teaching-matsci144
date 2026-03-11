@@ -122,7 +122,7 @@ $$
 $$
 
 :::{seealso}
-- Vacancy thermodynamics that motivates $\ln c$ terms: [Dilute defects and vacancies](appendix01_thermo.md#dilute-vacancies)
+- Vacancy thermodynamics that motivates $\ln c$ terms: [Dilute defects and vacancies](appendix01_thermo.md#dilute_vacancies)
 - Diffusion topics emphasized in the MATSCI 145 reader include boundary conditions, defect-mediated diffusion, and interdiffusion (e.g., Kirkendall and Darken relations).
 :::
 
