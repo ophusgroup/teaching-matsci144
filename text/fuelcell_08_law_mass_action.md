@@ -38,7 +38,7 @@ Since $\Delta \mu^0_{\text{rxn}}$ is a constant for any reaction measured at the
 We will now generalize this derivation for any arbitrary reaction $a\text{A} + b\text{B} \Leftrightarrow c\text{C} + d\text{D}$. Recall that at constant $T$ and $P$, the condition of equilibrium is given by [Equation %s](#eq:reaction_eq). Substituting [Equation %s](#eq:mu_pi_over_pref) into [Equation %s](#eq:reaction_eq), we get
 
 ```{math}
-:label: eq:
+:label: eq:mass_action_general_derivation
 \begin{aligned}
 0 &= -a\left[\mu^0_{\text{A}} + RT \ln{\left(\frac{p^{\text{eq}}_{\text{A}}}{p_{\text{ref}}}\right)}\right]
 - b\left[\mu^0_{\text{B}} + RT \ln{\left(\frac{p^{\text{eq}}_{\text{B}}}{p_{\text{ref}}}\right)}\right] \\

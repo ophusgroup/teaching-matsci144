@@ -223,7 +223,7 @@ We next consider the internal energy $U$ of all $N$ molecules, which is equal to
 U = \frac{1}{2} \sum_i^N m |\vec{v_i}|^2.
 ```
 
-The total energy can be therefore be rewritten in terms of the the @wiki:Expected_value (average value) of translational kinetic energy $⟨E_k⟩_{\rm{trans}} = \frac{1}{2}m⟨|\vec{v}|^2⟩$ over the population of all $N$ molecules
+The total energy can therefore be rewritten in terms of the @wiki:Expected_value (average value) of translational kinetic energy $⟨E_k⟩_{\rm{trans}} = \frac{1}{2}m⟨|\vec{v}|^2⟩$ over the population of all $N$ molecules
 ```{math}
 :label: entropyenergy1
 U = N ⟨E_k⟩_{\rm{trans}}.
@@ -287,7 +287,7 @@ If we substitute Equation [](#eq:boltzmann) into [](#eq:PV), we get
 PV = N k_B T.
 ```
 
-The Boltzmann constant is related to another important constant, the universal gas constant $R$, by a factor of Avagadro's number $N_A$ (equal to one mole), giving
+The Boltzmann constant is related to another important constant, the universal gas constant $R$, by a factor of Avogadro's number $N_A$ (equal to one mole), giving
 ```{math}
 :label: eq:gas_const_avagadro_boltzmann
 R = N_A k_B
@@ -314,7 +314,7 @@ P V = n R T
 ```
 :::
 
-In summary, this equation relates the pressure $P$, volume $V$, number of molecules $n$, and temperature $T$ of an ideal gas, and demonstrated that the pressure exerted on a container is due to the thermal motion of gas molecules.
+In summary, this equation relates the pressure $P$, volume $V$, number of moles $n$, and temperature $T$ of an ideal gas, and demonstrates that the pressure exerted on a container is due to the thermal motion of gas molecules.
 
 
 

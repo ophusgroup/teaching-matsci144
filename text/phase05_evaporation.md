@@ -76,7 +76,7 @@ Thus, the equilibrium vapor pressure follows:
 where $L$ is the heat of evaporation, equivalent to the latent heat of boiling. $L$ Is positive because breaking the intermolecular bonds of liquid water requires heat.
 This equation describes how vapor pressure changes with temperature.
 
-Note how we are using the same expression to describe both boiling and evaporation. This is because the relationship between equilibrium temperature and pressure follows the same physics both both cases.
+Note how we are using the same expression to describe both boiling and evaporation. This is because the relationship between equilibrium temperature and pressure follows the same physics in both cases.
 The Clausius-Clapeyron relationship is a differential equation, relating the change of pressure and temperature, but does not itself specify the temperature.
 
 
@@ -146,4 +146,3 @@ The Gulf Stream warms the Atlantic, increasing $P_{\text{vapor,eq}}$ and humidit
 ```
 
 Warmer oceans lead to more water vapor in the air, increasing humidity. Cooler oceans have the opposite effect, explaining the difference between the US coasts.
-
